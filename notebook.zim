@@ -1,0 +1,11 @@
+[Notebook]
+version=0.4
+name=IT Notes
+interwiki=
+home=Home
+icon=
+document_root=D:\IT Stuff\IT Notes
+shared=True
+endofline=dos
+disable_trash=False
+

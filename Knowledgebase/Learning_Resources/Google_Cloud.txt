@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-05T15:56:47-04:00
+
+====== Google Cloud ======
+
+Resources for learning the Google Cloud Platform
+
+	* Google Workspace Automation - https://www.coursera.org/specializations/g-suite-administration
+	* Networking in Google Cloud - https://is.gd/BEGfMc
+	* Associate Cloud Engineer Learning Path - https://is.gd/e6rgnI
+	* Professional Cloud Network Engineer Path - https://is.gd/NCWnJn
+	* Professional Security Engineer Path - https://is.gd/QM3ViK
+
+@learning @googlecloud

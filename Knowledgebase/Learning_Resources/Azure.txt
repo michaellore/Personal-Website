@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-05T16:34:33-04:00
+
+====== Azure ======
+
+Training for Microsoft's Azure cloud program
+
+	* Azure Fundamentals - https://is.gd/DuQ8n0
+	* Azure Administrator Associate - https://is.gd/wKiz2e  /  https://is.gd/y2DkXe
+	* Identity and Access Admin Associate - https://is.gd/u9hRJo  /  https://www.youtube.com/playlist?list=PLVY1cokqlbC7uejA2EsdED4FmKxBh8xTk
+	* Security Operations Analyst Associate - https://is.gd/73nS1Y  /  https://www.youtube.com/playlist?list=PLVY1cokqlbC7KDYRNm8FwGK3cCJWbpvmg
+
+@learning	@azure

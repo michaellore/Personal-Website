@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-06T11:10:18-04:00
+
+====== Cybersecurity ======
+Resources for Cybersecurity Training
+
+Coursera:
+	* Intro - https://www.coursera.org/specializations/intro-cyber-security
+	* Advanced - https://www.coursera.org/specializations/cyber-security#courses
+
+EdX:
+	* NYU MicroBachelors - https://www.edx.org/microbachelors/nyux-cybersecurity-fundamentals
+	* RIT MicroMasters - https://www.edx.org/micromasters/ritx-cybersecurity
+
+@learning @cybersecurity

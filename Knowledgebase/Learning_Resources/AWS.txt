@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-05T16:02:59-04:00
+
+====== AWS ======
+
+Training for Amazon's AWS platform
+	* AWS Basics - https://www.youtube.com/watch?v=ulprqHHWlng
+	* AWS Cloud Practitioner - https://www.youtube.com/watch?v=3hLmDS179YE
+	* AWS Fundamental Specialization - https://is.gd/c4UO12
+	* AWS Solutions Architect - https://www.youtube.com/watch?v=Ia-UEYYR44s
+	* AWS SysOps Admin - P1 - https://is.gd/HFnipR - P2 - https://is.gd/GHyRDS
+
+@learning @aws
