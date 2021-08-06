@@ -8,7 +8,7 @@ I'm an Interactive Multimedia graduate from The College of New Jersey looking to
 
 This is my personal website and serves as a repository for my [[Knowledgebase|Personal Knowledgebase]].
 
-See this website on Github.
+See this website on [[https://github.com/michaellore/knowledgebase|Github]].
 
 
 
