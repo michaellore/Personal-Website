@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-14T10:18:24-04:00
+
+====== OSI Model ======
+
+Similar to [[TCPIP Model|TCP/IP Model]] but abstracts application layer into multiple layers
+
+Bottom - physical, connects entity to transmission media
+2nd - data link - error control
+3rd - network - routes info in network
+4th - transport - end to end communication control
+5th - session - handles non-communication issues
+6th - presentation - converts info
+7th - application - provides services to the application
+
+{{.\pasted_image001.png?width=700}}
+
+{{.\pasted_image.png}}
+
+@networking @osi @tcpip 

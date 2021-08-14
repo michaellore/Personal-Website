@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-14T10:09:07-04:00
+
+====== TCP/IP Model ======
+
+{{.\pasted_image.png}}
+
+Bottom layer - physical layer cables, specs describe how signals are sent
+
+2nd - data link layer (or network access layer) - introduces protocols, defines way of interpreting signals to communicate (ethernet, wifi)
+
+3rd -  network layer - delivers data across a collection of networks (IP - internet protocol)
+
+4th - transport - sorts out which clients and servers get data (tcp - transmission control protocol, udp - user datagram protocol)
+
+5th - Application - protocols are application specific, "contents of package"
+
+{{.\pasted_image001.png}}
+
+See [[OSI Model]]
+
+@networking @tcpip 

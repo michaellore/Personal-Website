@@ -7,7 +7,8 @@ Resources for other IT certs (Cisco, Comptia Specialty)
 
 	* Comptia Cloud+ - https://www.youtube.com/playlist?list=PLOYQCApvKhV1K2_jtzPVsPCnEv87piiw5
 	* Comptia Linux+ - https://www.youtube.com/playlist?list=PLC5eRS3MXpp-zlq64CcDfzMl2hO2Wtcl0
-	* Cisco CCNA - https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ
-	* Cisco DevOps Associate - https://www.youtube.com/playlist?list=PLTVaTVde43FcI7qzxn4-YYbwAeqDd6H9z
+	* Cisco CCNA - https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ | https://is.gd/K3hx28
+	* Cisco CyberOps Associate - https://www.youtube.com/playlist?list=PLTVaTVde43FcI7qzxn4-YYbwAeqDd6H9z
+	* Cisco CCNP Enterprise - core -  https://is.gd/q0HV3M | ENARSI concentration - https://is.gd/GE5hgx
 
 @learning @comptia @cisco

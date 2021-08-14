@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-14T10:27:01-04:00
+
+====== Devices ======
+
+**Cables** - transmit datas, point-to-point connections
+	* Copper - most common, pairs of copper wires in plastic, changes voltages to send data
+		* Cat5, Cat5e, Cat6 - different categories for different phyical, determine how fast data is sent
+			* Cat5 produces crosstalk, accidental detection of pulses by a wire on other wires
+			* Higher quality (cat5e, cat6) can re-transmit data
+			* Cat6 has different internal arrangement, shorter max distance
+
+	* Fiber - cables are individual optical fibers made of glass, uses pulses of light
+		* generally faster than copper and greater distance, but much more expensive
+
+
+Hubs and switches connect devices on a LAN.
+
+**Hubs **- allows connections from many devices at once, "layer 1 physical device"
+	* each connected system determines if data was meant for them
+		* causes noise, collision domain where only one device can communicate at once
+			* forces a waiting period slowing down network
+
+**Switches** - similar to hubs but are a layer 2 "data link" device 
+	* can inspect data to determine what system it is for and only send it to that system
+		* eliminates collision domains, fewer re-transmissions
+
+**Routers -** can forward data to indepent networks, a level 3 "network layer" device
+	* store tables containing info about how to route traffic
+	* home or small business, takes traffic and forwards it to ISP where a core router takes over
+		* core router connects to many other routers
+		* routers share data via BGP - border gateway protocol - learn most optimal path to forward traffic
+
+**Servers** provide data to requesting devices. The device receiving data is the **client**. Devices on a network are **nodes**. Apllications can also be clients and servers or both.
+
+@networking @cables @hub @switch @router @server @client 
