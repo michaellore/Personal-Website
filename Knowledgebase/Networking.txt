@@ -6,6 +6,8 @@ Creation-Date: 2021-08-14T10:04:51-04:00
 	* [[+TCP/IP Model|TCP/IP Model]]
 	* [[+OSI Model|OSI Model]]
 	* [[+Devices|Devices]]
+	* [[+The Data Link Layer|The Data Link Layer]]
+	* [[+The Physical Layer|The Physical Layer]]
 
 
 

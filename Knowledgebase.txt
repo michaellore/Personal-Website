@@ -6,20 +6,9 @@ Creation-Date: 2021-08-05T13:21:05-04:00
 
 Personal knowledgebase for IT.
 
-==== [[+Learning Resources|Learning Resources]] ====
-	* [[+Learning Resources:Fundamentals|Fundamentals]]
-	* [[+Learning Resources:Google Cloud|Google Cloud]]
-	* [[+Learning Resources:AWS|AWS]]
-	* [[+Learning Resources:Azure|Azure]]
-	* [[+Learning Resources:Microsoft 365|Microsoft 365]]
-	* [[+Learning Resources:HelpdeskSupport|Helpdesk / Support]]
-	* [[+Learning Resources:Other Certs (CISCOCompTIA)|Other Certs (CISCO / CompTIA)]]
-	* [[+Learning Resources:Cybersecurity|Cybersecurity]]
+==== • [[+Learning Resources|Learning Resources]] ====
 
-==== [[+Networking|Networking]] ====
-	* [[+Networking:TCPIP Model|TCP/IP Model]]
-	* [[+Networking:OSI Model|OSI Model]]
-	* [[+Networking:Devices|Devices]]
+==== • [[+Networking|Networking]] ====
 
 
 

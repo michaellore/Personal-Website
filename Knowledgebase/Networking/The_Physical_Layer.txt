@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-15T10:14:46-04:00
+
+====== The Physical Layer ======
+
+Devices and means of transmitting bits across networks.
+
+modulation -  varying voltage of charge moving across cable
+	* line coding - allows devices on either end of link to understand charge
+
+{{.\pasted_image.png?width=450}}
+
+Most common cabling is twisted pair. 
+Duplex communication - info flows in both direction, reserves pairs for communicating for simultaneous comms (full-duplex). in an error, half-duplex means only one device communicates at a time
+
+Simplex - only one way 
+{{.\pasted_image001.png?width=350}}
+
+Ethernet over twisted pair - comms protocol that determines how much data can be sent over a cable, how quickly, and how long the cable can be before data quality degrades. See more info on Wiki - https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+
+Twisted pair cables temrinate at an endpoint where they are exposed in a plug. Most common is RJ45 (registered jack 45)
+most ports have 2 LEDs, link and activity.
+
+Sometimes network ports are in a wall, whichare connected to a patch panel. Patch panels contains many ports, and connects to a switch or routers
+
+@networking @tcpip @osi 

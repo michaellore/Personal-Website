@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-15T10:27:47-04:00
+
+====== The Data Link Layer ======
+
+The data link layer abstracts away the need for higher layers to care about specific hardware so they can operate device-agnostically.
+
+Ethernet solves collision domain with "carrier sense multiple access with collision detection" (CSMA/CD). Determines when comms channels are clear and device can transmit. Senses when data is being sent both ways and waits a random interval of time before sending again to prevent collisions
+
+MAC address (media access control) is a global unique identifier - 48-bit (6 byte) number represented by 6 hexadecimal groupings of 2 numbers
+	* first 3 octets are Organizationally Unique identifier (OUI) -  assigned to individual hardware manufacturers
+	* last 3 octets assigned freely as long as they are unique
+
+Ethernet uses MAC address to keep data sent correctly
+
+
+Unicast transmission - meant for only one destination. looks for special bit in destination MAC - If the least significant bit in the first octet of a destination address is set to zero. sent to all devices on collision domain, only processed by recepient
+
+Multicast - If the least significant bit in the first octet of a destination address is set to one. sent to all devices on collision domain, accepted or rejected based on criteria. Network interfaces can be configured to accept multicast addresses
+
+Broadcast - sent to every device on the LAN using a broadcast address. All Fs
+
+
+Data packet - any set of binary data sent across network link
+	* at ethernet level, known as ethernet frame - highly structured, presented in specific order
+{{.\pasted_image.png}}
+preamble - 8bytes (64 bits), can be split into two sections
+	* first 7 bytes act as a buffer between frames and can synchronize internal clocks to regulate speed
+	* last byte is SFD start frame delimiter - signals to receiver preamble is over, actual contents follow
+
+Destination address & Source - MAC addresses of receiver and sender
+
+Ether-type - 16-bits, describes protocol of frame contents
+
+VLAN header - not always present, indicates frame is a VLAN frame. Virtual LAN - multiple logical LANs on the same physical equipment, often used to segregate traffic. Ex - phones on one, desktops on another
+
+Payload - the actual data
+
+Frame Check Sequence - 4byte (32 bit) number that is a checksum for entire frame. Calculated by performing a cyclical redundancy check against frame (CRC)
+	* CRC - verifies integrity of data. if receiving checksum is not the same as sender, data is thrown out. Highler layers determines retransmission
+
+@networking @ethernet @MACaddress @tcpip @osi 
