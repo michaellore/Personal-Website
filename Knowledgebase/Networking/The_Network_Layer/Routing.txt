@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-18T12:14:25-04:00
+
+====== Routing ======
+router forwards traffic, has at least 2 network addresses
+{{.\pasted_image.png}}
+Router has an interface on each network it is in. 
+{{.\pasted_image001.png}}
+Router inspects ip datagram header for destination IP then looks at routing table. creates a new ip datagram by duplicating the old, decrementing TTL by 1, and sets new source and destination MAC.
+
+core internet routers are often connected in a mesh - many different paths for packet to take
+
+routing table - basic setup - 4 columns
+	* destination network - row for each network the router knows about
+	* next hop - ip address of next router that should receive data
+	* total hops - best path to take
+	* interface - which interface router should forward traffic matching destination network out of
+
+
+interior gateway protocol - share info within a single autonomous system - collection of networks under control of single network operator, like a large corp with many offices
+	* link state routing protocols and distance-vector protocols
+		* distance-vector - older, sends routing table list (vector) to every other directly connected router, doesn't know much about outside routers
+		* link state - each router advertises state of the link of each interface, runs algorithms to determine best path
+
+exterior gateway protocol - share info within independent autonomous systems
+	* Border gateway protocol BGP - only currently used standard
+
+Internet Assigned Numbers Authority (IANA) non-profit helps manage IP address allocation, and autonomous system number (ASN), numbers assigned to individual autonomous systems
+
+Non-routable address space - IP addresses set aside for anyone that cannot be routed to, no gateway router will attempt to forward traffic
+	* 3 ranges defined as non-routable by RFC 1918 - 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+		* appropriate for use within autonomous system, external gateway will not route 
+
+RFC - request for comments
+
+@networking @routing 
+

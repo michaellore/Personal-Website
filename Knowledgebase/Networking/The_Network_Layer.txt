@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-18T11:09:23-04:00
+
+====== The Network Layer ======
+MAC addresses are good for LANs, but do not scale well.
+
+ip address - 32 bits, 4 octets. Each octect can represent all decimal numbers from 0 to 255. 12.30.56.78 is valid, 123.456.789.100 is not. This format is dotted decimal.
+
+ip address are distributed in large sections to organizations and companies.
+	Ex - IBM owns ip addresses that have 9 as the first octet.
+IP addresses owned by network, not physical device.
+
+Device is assigned an IP when connecting to a network by dynamic host configuration protocol (DHCP) - dynamic IP
+
+Static IP are configured manually.
+
+IP Protocol packet - IP datagram, strictly defined
+{{.\pasted_image.png}}
+first field - version - 4 bits, IP protocol version, IPv4, IPv6
+header length - almost always 20 bytes for ipv4
+service type - 8 bits, quality of service
+total length - indicates total length, 16 bits
+identification - groups messages together, max size of data gram is largest 16-bit number, 65535. If data is bigger, it is split up into groups. uses ID field to keep track
+
+Flag - indicates if datagram is or is allowed to be fragmented
+	* fragmentation - splitting an IP datagram
+
+fragmentation offset - puts fragmented back together
+TTL - time to live, how many router hops a datagram can travel before thrown away, stops endless loops
+protocol - cotains data about transport layer protocol (tcp/udp)
+checksum - verifies integrity
+source & destination IP
+options - optional, sets characteristic for datagrams, primarily used for testing
+padding - series of zeroes ensuring total header size
+
+IP datagram encapsulated as payload of ethernet frame. IP payload are the contents of a tcp/udp packet.
+
+IP address have 2 sections, network id and host id.
+	{{.\pasted_image001.png}}
+address class system - defines how ip addresses are split up global
+	* class A - where the first octet is used for the network ID and the last three are used for the host ID.
+	* class B - where the first two octets are used for the network ID, and the second two are used for the host ID
+	* class C - where the first three octets are used for the network ID, and only the final octet is used for the host ID
+{{.\pasted_image002.png}}
+
+address class system mostly replaced by classless inter-domain routing (CIDR)
+
+Address Resolution protocol (ARP) - discover hardware address of a node with a certain ip address
+transmitting device needs a destination MAC address to complete the Ethernet frame header. Almost all network connected devices will retain a local ARP table. An ARP table - list of IP addresses an the MAC addresses associated with them.
+
+ARP table entries usually expire quickly to account for network changes
+
+@networking @ipaddress @tcpip @osi 

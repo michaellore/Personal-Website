@@ -8,6 +8,9 @@ Creation-Date: 2021-08-14T10:04:51-04:00
 	* [[+Devices|Devices]]
 	* [[+The Data Link Layer|The Data Link Layer]]
 	* [[+The Physical Layer|The Physical Layer]]
+	* [[+The Network Layer|The Network Layer]]
+		* [[+The Network Layer:Subnetting|Subnetting]]
+		* [[+The Network Layer:Routing|Routing]]
 
 
 
