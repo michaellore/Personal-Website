@@ -4,7 +4,7 @@ Creation-Date: 2021-08-14T10:18:24-04:00
 
 ====== OSI Model ======
 
-Similar to [[TCPIP Model|TCP/IP Model]] but abstracts application layer into multiple layers
+Similar to [[TCPIP Model|TCP/IP Model]] but abstracts application layer into multiple layers. Open systems interconnection
 
 Bottom - physical, connects entity to transmission media
 2nd - data link - error control

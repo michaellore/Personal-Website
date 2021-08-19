@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-19T12:14:51-04:00
+
+====== The Transport Layer ======
+multiplexing - nodes on the network can direct traffic to many different receiving services
+demultiplexing - take straffic aimed at a node and delivering it to proper receiver
+{{.\pasted_image.png}}
+Port - 16bit number used to direct traffic to specific services
+	* http - unencrypted web traffic - port 80
+	* normally denoted with a colon - 10.1.1.100:80 - socket address/socket number
+	* FTP - old method for transferring files - port 21
+
+	* Ports 1-1023 are referred to as system ports, or sometimes as “well-known ports.” ex - http, ftp
+	* Ports 1024-49151 are known as registered ports - network services ex - 3306 - many databases
+	* ports 49152-65535. These are known as private or ephemeral ports. establishing outbound connections
+
+TCP segment - encapsulated in ip datagram
+	* header and data section
+
+TCP header
+{{.\pasted_image001.png}}
+source and destination port - source is high number, chosen from section known as "ephemeral ports"
+sequence number- 32bit number used to keep track of where in a sequence of tcp segments this one is supposed to be
+acknowledgement number - number of next expected segment
+data offset field - 4bit, how long tcp header segment is
+tcp control flags - 6 of them
+tcp window - range of sequence numbers that might be sent before acknowledgement is required
+checksum - verifies integrity
+urgent pointer - used with tcp control flags to point out important segments
+options - rarely used, more complicated flow control
+padding - ensures payload is at expected location
+
+TCP control flags
+	* URG - urgent - value of one indicates segment is considered urgent, more info in urgent pointer
+	* ACK - acknowledged - acknowledgement number field should be exampined
+	* PSH - push - transmitting device wants receiving device to push buffered data to the application asap
+		* buffer - data held before being sent, used to send large chunks efficiently
+	* RST - reset - one of the sides in connection hasn't been able to recover from missing or malformed segment
+	* SYN - synchronize - used when first establishing connection to make sure receiving end knows to examine sequence number field
+	* FIN - finish - no more data, connection can close
+
+handshake - way for two devices to ensure they are using same protocol
+Three-way handshake
+{{.\pasted_image002.png}}
+
+Four-way handshake
+{{.\pasted_image003.png}}
+
+TCP socket states - instantiation of an endpoint in a potential tcp connection. tcp sockets require a program to instatiate them, vs. a port which is virtual descriptive
+
+	* LISTEN - tcp socket is ready and listening for connections
+	* SYN-SENT - synchronization request has been sent, connection not yet established
+	* SYN-RECEIVED - socket previously in LISTEN received sync request and sent a SYN/ACK back
+	* ESTABLISHED - tcp connection established
+	* FIN_WAIT - FIN has been sent, corresponding ACK not yet received
+	* CLOSE_WAIT - connection closed at TCP layer, but application that opned socket hasn't released hold on socket yet
+	* CLOSED - connection fully terminated
+
+connection-oriented protocol - establishes a connection and uses this to ensure data has been properly transmitted. transport layer responsible for resending data
+
+connectionless protocol - udp - doesn't rely on acknowledgements - just set destination port and go. removes overhead of tcp
+
+firewall - device that blocks traffic based on set criteria, operate at multiple layers, most common at transport layer. can block and allow traffic at different ports
+
+@networking @tcp @port 
