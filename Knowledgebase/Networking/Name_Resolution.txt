@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-20T11:37:26-04:00
+
+====== Name Resolution ======
+dns - domain name system, global distributed network services that resolves strings of IP addresses into letters, EX - 184.29.131.121 - weather.com
+
+domain name - term for something that can be resolved by dns. lets administrative changes happen without effecting end user
+
+Data transmits quicker when physsically closer, DNS lets orginations decide which ip address that domains resolve to. Ex - new york user = new york data server
+
+5 types of DNS servers:
+	* caching name server - purpose is to store domain name lookup for period of time, most are also recursive
+	* recursive name server - perform full dns resolution request
+	* root name server
+	* TLD name server
+	* authoritative name server
+any DNS server can fulfill many roles at once
+strict heirarchal system for accurate lookups, security against malware traffic redirects
+{{.\pasted_image.png}}
+
+all domain names in dns system have a TTL time to live, value in seconds configured by owner of domain name for how long a name server can cache entry before it is discarded
+
+Anycast - techinque to route traffic to different destinations based on factors like location, congestion, link health
+TLD - top level domain, last part of any domain
+
+DNS uses UDP, far less packets than tcp, 8 packets vs 44. DNS over tcp does exist as web has gotten more complex as not all lookup responses can fit in udp diagram
+
+resource record types - many types allow for different types of resolutions
+	* A record - used to point to a certain domain name at a certain ipv4 address
+		* single domain can have multiple A records - dns round robin - balance traffic across IPs, iterate over lists one by one
+	* AAAA (quad A) record - returns an ipv6 address instead of ipv4
+	* CNAME (canonical name) record - redirects traffic from one domain to another ex - making microsoft.com resolve to www.microsoft.com
+	* MX (mail exchange) record - used to deliver email to correct server
+	* SRV (service) record - defines location of specific services, similar to mx but for many service types (CalDEV)
+	* TXT (text) record - communicates config preferences about network services
+
+Domain names have 3 parts:
+
+www.google.com
+
+last part - .com - is the top-level domain TLD - many vanity TLDs are available now, handled by ICANN, internet corp for assigned names and numbers
+middle - google - domain - demarcates where control moves from tld name server to authoritative name server
+first - www - (subdomain/host name)
+
+All together- fully qualified domain name (FQDN). DNS can handle up to 127 levels. Each section can only be 63 characters and complete FQDN can be 255
+
+registrar - company with an agreement with ICANN to sell unregistered domains
+
+DNS zone- hierarchal concepts, allow for easier control over multiple levels of a domain. 
+{{.\pasted_image001.png}}
+zones configured with zone files - simple config file declaring all resource records for a zone
+SOA - start of authority - declares zone and name of name server that is authoritative for it
+NS record - other name servers that might also be responsible for this zone
+
+Reverse lookup zone file - let dns resolvers ask for an IP and get the FQDN associated with it
+	same as zone file, but instead have Pointer resource record (PTR) - resolves ip to a name
+
+@networking @dns 

@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-20T13:38:48-04:00
+
+====== Network Address Translation ======
+NAT is a technique, not a defined standard.
+
+Takes one ip address and translates it into another. 
+Allows a gateway (router or firewall) to rewrite source ip of an outgoing ip datagram while retaining original IP to rewrite it into the response
+
+{{.\pasted_image.png}}
+
+NAT hides ip of computer 1 from computer 2 - IP masquerading - no one can establish connection to your computer if they don't know its IP
+
+in our example, you could have hundreds of computers on network A with entire address space protected and invisible. One-to-many NAT.
+
+port preservation - source port chosen by client is the same port used by the router
+{{.\pasted_image001.png}}
+
+port forwarding - specific destination ports can be configured to always be delivered to specific nodes
+
+IANA assigns address blocks to the 5 regional internet registries RIRs
+	* AFRINIC - africa
+	* ARIN - US, CAN, parts of Caribbean
+	* APNIC - Asia, Aus, NZ, pacific islands
+	* LACNIC - central and south america, other parts of caribbean
+	* RIPE - Euro, russia, middle east, parts of central asia
+
+@networking @nat 

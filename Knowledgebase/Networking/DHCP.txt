@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-20T13:17:26-04:00
+
+====== DHCP ======
+Every computer on a modern network needs 4 things configured:
+	* IP address
+	* Subnet mask
+	* primary gateway
+	* name server
+
+subnet mask, gateway, and dns server are likely the same on every node on network, but ip address must be different.
+
+DHCP - dynamic host configuration protocol - automates config process of hosts on network
+DHCP ensures all devices on the network can obtain a correct ip address
+
+Dynamic allocation - most common, range of ip addresses set assice and issued to device when requested
+
+automatic allocation - range of ip addresses set aside for assignment purposes. DHCP server keeps track of allocations, assigns same ip to same machine each time if possible
+
+fixed allocation - manually specified list of mac addresses and corresponding ip. if mac address not found, can fall back to dynamic or automatic or refuse to assign an ip. can be used as a security measure to ensure only devices with configured mac can connect
+
+NTP (network time protocol) - used to keep all computers on a network synchronized in time
+
+DHCP discovery - process by which a client configured to use dhcp attempts to get network config info
+	1. server discovery - clients send out message from udp port 68 - dhcp server listens on port 67. DHCPDISCOVER message
+	2. dhcp server receives message, responds with DHCPOFFER message
+	3. client machine processes offer, responds with DHCPREQUEST message "yes i would like IP"
+	4. server responds with DHCPACK or acknowledgement message
+Process known as DHCP lease because it has an expire time, after expiration client must negotiate a new lease. client can also release its lease on the server, allowing IP address to return to available pool
+
+@networking @dhcp 
+

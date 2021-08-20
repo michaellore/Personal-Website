@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-20T13:57:20-04:00
+
+====== VPNs and Proxies ======
+VPN - virtual private network - extends a private or local network to users not on that network
+tunneling protocol - provisions computer with virtual interface with IP that matches address space of the network they're connecting to, encrypted tunnels
+
+one of the first technologies to use two factor authorization - more than just username and password.
+
+proxy service - server that acts on behalf of a client to access another service. sit between client and server, provide anonymity, security, content filtering
+
+web proxy - built for web traffic.  direct all web traffic through it, it caches data. users get cached data instead of having to retreive fresh copy. not so common now, since connections are fast and web is dynamic. more common to use web proxies to filter trafic from certain sites
+
+reverse proxy - service appears to be a single server but is actually many. Ex twitter, many servers needed to process all requests. appears as a single front end for the user. can also decrypt encrypted traffic
+
+@networknig @vpn @proxy 
