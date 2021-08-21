@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-21T12:35:28-04:00
+
+====== WANs and Wireless Networks ======
+WAN - wide area network, acts like a single network, spans across multiple physical locations. contract with ISP to send data across network
+
+point-to-point vpn or site-to-site vpn - vpn tunnel between two sites, cheaper than WAN technology. Many companies don't need WAN tech anymore because many services like email are often handled in the cloud through a third-party
+
+many devices now use wireless networking.
+wireless standards defined by IEEE 802.11 standards - make up WiFi tech
+frequency band - section of radio spectrum agreed upon to be used for certain communications - In NA FM radio operates between 88 and 108 MHz
+Wifi most commonly operates on 2.4 GHz and 5 Ghz. 5 GHz generally faster but has less range. 2.4GHz more susceptible to interference but have more range.
+
+Multiple specs for 802.11:
+	* 802.11b
+	* 802.11a
+	* 802.11g
+	* 802.11n
+	* 802.11ac
+	* each newer verisons has seen some improvement in speed, etc
+
+802.11 data frame
+{{.\pasted_image.png}}
+
+* Ad-hoc network - all nodes speak to each other directly, no supporting network infrastructure
+	* some smartphones can share photos with nearby phones, sometimes used in warehouse settings
+	* useful in disaster situations when network infrastructure is knocked out 
+
+* Wireless LAN - WLAN - one or more access points act as a bridge
+
+* Mesh - hybrid between the two, most mesh networks are groups of wireless access points still connected to wired network, lets you add more wireless access points without running cables to each
+
+wireless channels - individual, smaller sections of the overall frequency band used by a wireless network. help address collision domains
+{{.\pasted_image001.png}}
+
+Wireless network security - wireless networks not inherently private like wired, no cables just radio waves, anyone could listen in
+	* WEP wireless equivalent privacy - very low level privacy, should be seen as sending unencrypted data over a wired connection. 40bit encryption key
+	* WPA wifi protected access - 128 bit key, harder to crack
+	* WPA2 - 256 bit key, even harder to crack
+	* Mac filtering - configure access point to only allow connections from a specific set of MAC addresses
+cell networks also operate over radio frequencies. built around the concept of cells - each cell has a specific frequency band. cell towers are like access points
+airplane mode disables all networking services
+
+metered connection - limit on data
+

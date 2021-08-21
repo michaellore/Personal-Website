@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-21T11:37:12-04:00
+
+====== Connecting to the Internet ======
+original - public switched telephone network PSTN or POTS - plain old telephone service - already in place by the late 1970s.  USENET
+dial-up connection uses POTS for data transfer, cpnnection established by dialling a phone number
+modem translates signal from analog to digital - modulator/demodulator.
+Early modems had low baud rate - how many bits passed across phone line per second
+	* late 1950s - 110 bits per second
+	* usenet - 300 bits
+	* dial-up households early 1990s - 14.4 kilobits
+
+Broadband - any connectivity tech that isn't dial-up. much faster than dial-up, always on. don't need to be established with each use
+
+t-carrier techonlogies - originally invented by AT&T to transmit multiple phone call over a single link
+	* Transmission system 1 - T1 - 24 simultaneous data transfers over one cable at 64kb each, total of 1.544 megabits
+	* T3 - 28 T1s multiplexed for 44.736 megabits
+	* mostly surpassed by newer and cheaper tech
+Digital subscriber line - DSL - much more data than dial-up, allows for data transfer and voice calls simultaneously
+	uses modems - DSLAM, similar to dial up, but long running connection
+	ADSL - asymmetric -  different outbound and incoming speeds, usually slower upload than download
+	SDSL - symmetric - same upload and download speeds, capped at 1.544 like a T1
+	HDSL - high-bit rate, above 1.544 mb
+
+Cable Broadband - cable TV coax cables can transmit much more data than DSL. 
+	* Shared bandwith technology - many users share bandwith. can slow down during heavy use.
+	* Cable modem - sits at edge of users network, connects to cable modem termination system, CMTS. connects cable connection to ISP core network
+
+Fiber - used by core of internet, higher speeds and longer cables. starting to be used by home users
+	FTTX - fiber to the  "x" - 
+		FTTN - fiber to the neighborhood, fiber goes to a box, coax from box to user
+		FTTB - fiber to the building, basement, building - fiber to an individual building (aka FTTP, fiber to the premises)
+		FTTH - fiber to the home (aka FTTP)
+		Optical network terminator ONT - converts data from fiber network protocols to more traditional twisted pair copper networks
+
+@networking @internet 

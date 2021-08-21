@@ -17,6 +17,8 @@ Creation-Date: 2021-08-14T10:04:51-04:00
 	* [[+DHCP|DHCP]]
 	* [[+Network Address Translation|Network Address Translation]]
 	* [[+VPNs and Proxies|VPNs and Proxies]]
+	* [[+Connecting to the Internet|Connecting to the Internet]]
+		* [[+Connecting to the Internet:WANs and Wireless Networks|WANs and Wireless Networks]]
 
 
 
