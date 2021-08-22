@@ -1,0 +1,57 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-22T10:31:04-04:00
+
+====== Troubleshooting ======
+ICMP Internet Control Message Protocol - communicates issues with connectivity. mainly used by router or remote host to communicate why a transmission has failed back to the origin
+ICMP packet
+{{.\pasted_image.png}}
+type - type of message, destination unreachable, time exceeded, etc
+code - more specific reason, ex, individual destination unreachable types like network or port
+Rest of header- optionally used for more info
+data - contains ip header and first 8 data bytes so recepient knows exactly which transmission casued error
+
+Ping - lets you send icmp message cause echo request, if destination is available it will send an echo reply
+	* in cmd, type ping with destination ip or domain
+	{{.\pasted_image001.png}}
+	* in mac and linux ping will run until it is interrupted by user (CTRL + C)
+
+Traceroute - discover path between two nodes and gives you info on each hop
+	* tracert on windows, traceroute on mac/linux + destination ip or domain
+	* mtr on mac/linux, pathping on windows are similar, long-running traceroutes
+
+Testing at transport layer
+	* netcat - mac/linux - command nc, arguments host and port - nc google.com 80 = try to establish at google.com:80
+		* if successful, will wait for use to send data
+		* -z flag just shows status, zero input/output
+		* -v will give a more useful verbose output
+		* ex -  nc -z -v google.com 80
+	* Test-NetConnection on windows - Test-NetConnection google.com
+		* -port to specify a port, ex - Test-NetConnection google.com -port 80
+
+DNS tools
+	* nslookup + host name, output is server and resolution result
+	* can use type= to get specific record, AAAA or mx, etc.
+
+An ISP almost always gives you access to a recursive name server, but many businesses run their own DNS for internals. Can be useful to have a backup DNS, a public DNS server, such as one from Level 3 Communications, 4.2.2.1 thru 4.2.2.6
+
+Before DNS, numbered network addresses were correlated with words thru hosts files - contains on each line a network address followed by a host name
+	* OSes and phones still have a host file - loopback address points to self, bypassses network infrastructure 
+		* ipv4 = 127.0.0.1 localhost 
+		* ipv6= ::1 localhost
+	* popular way for viruses to disrupt and redirect traffic
+
+Cloud computing - resources are provisioned to be shareable so many users can use them
+	* hardware virtualization - a single physical host machine can run many virtual instances, called guests
+		* hypervisor - software runs and manages virtual machines, offers guests a virtual operating platofrm indistinguishable from real hardware
+		* instead of needing separate physical machines, you can have virtual instances to only use when you need
+	* public cloud - large cluster of machines run by another company
+	* private cloud - used by single large corp, usually physically hosted on premises
+	* hybrid - situation where some services are on a private cloud, other less-sensitive services on a public
+
+X as a Service
+	IaaS - infrastructure, don't have to worry about building your own network
+	PaaS - platform, platform provided for customers to run services, ex - web dev needs a server to run web app
+	SaaS - software, licensing use of software while keeping software centrally hosted,  ex - gmail for business
+	
+@networking @cloud @dns @troubleshooting 

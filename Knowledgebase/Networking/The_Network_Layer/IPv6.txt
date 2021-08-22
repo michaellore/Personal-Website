@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-22T11:33:05-04:00
+
+====== IPv6 ======
+starting to be more common because we are out of ipv4 addresses. 8 groups of 4 hexadecimal numbers
+{{.\pasted_image.png}}
+2001:0db8 are reserved ips for documentation and education.
+Can shorten an ipv6 address by removing leading zeroes
+Any number of consecutive groups of just zeroes can be replaced by two colons ::, can happen once for any specific address
+{{.\pasted_image001.png}}
+
+Loopback address
+{{.\pasted_image002.png}}
+shortened to ::1
+
+Any address beginning with FF00 is reserved for multicast
+FE80: are reserved for link-local unicast - allow for local network segment comms
+
+{{.\pasted_image003.png}}
+
+Ipv6 header
+{{.\pasted_image004.png}}
+* version - what version of ip is in use
+* traffic class - type of traffic, different classes of traffic get different priorities
+* flow label - routers make decisions about quality of service level
+* payload length - how long data payload section is
+* next header - defines type of next immeidate header
+* hop limit - identical to TTL
+
+Ipv4 mapped address space - space reserved for addresses that directly correlate to existing ipv4 addresses
+
+Ipv6 tunnels - take incoming ipv6 taffic and encapsulate it within ipv4 datagrams
+	* tunnel broker - company provides ipv6 endpoints so you don't need additional equipment on your network
+
+
+@networking @ipv6 
