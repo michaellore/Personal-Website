@@ -11,7 +11,7 @@ Get-ChildItem = ls = dir
 	* Get-ChildItem C:\ gives same output as **ls = **same as** dir**
 
 Help command for CMD = /?
-	* Get-Help ls = dir [[/?]]
+	* Get-Help ls = dir /?
 
 Windows has 3 I/O streams, stdin, stdout, stderr - standard in, out, error
 	* User provides input into the the stdin stream
