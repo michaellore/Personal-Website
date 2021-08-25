@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T11:48:11-04:00
+
+====== Basic CLI Commands ======
+
+Two command line interfaces, CMD and Powershell. Powershell is newer and supports more commands.
+
+* Get-Help <command> - gives help text for a specific command
+* ls - lists all directories in a path
+	* -Force parameter to show hidden files
+* pwd - lists current directory
+* cd <path> - change directory
+	* cd .. - move up one level
+	* ~ - shortcut for home directory
+* mkdir <name> - make a new directory
+	* for spaces, surround in quotes or escape with backtick - "my folder" or my` folder
+* history - shows previously used commands
+	* up or down keys to scroll
+	* CTRL+R or #<command> to search
+* clear - clears shell, does not delete history
+* cp <file to copy> <path to copy to> - copy files, ex - cp myfile.txt C:\users\mike\Desktop
+	* can use wildcards * to copy multiple files, ex - cp *jpg C:\users\mike\Desktop - copies all .jpg files
+	* to copy contents of a directory, use -Recurse parameter, cp 'My Pics' C:\users\mike\Desktop -Recurse -Verbose
+	* -Verbose gives an output message
+* mv <file to rename> <new name> - rename a file -  mv blue.txt yellow.txt
+	* can also move documents - mv <file to move> <new directory> - mv yellow.txt ~\Documents
+		* move multiples with * wildcards
+* rm or remove <file or directory> - removes a file, bypasses recycle bin
+
+@os @windows @cli 

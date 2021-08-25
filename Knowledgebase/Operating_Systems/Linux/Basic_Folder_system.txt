@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T12:05:03-04:00
+
+====== Basic Folder system ======
+
+* /bin - essential binaries/programs
+* /etc - system config files
+* /home - perosnal user directory
+* /proc - info about currently running programs
+* /usr - user installed software
+* /var - system logs
+
+@os @linux 

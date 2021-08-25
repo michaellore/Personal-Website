@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T11:15:30-04:00
+
+====== Operating Systems ======
+
+* [[+Linux|Linux]]
+
+* [[+Windows|Windows]]
+
+@os @windows @linux 

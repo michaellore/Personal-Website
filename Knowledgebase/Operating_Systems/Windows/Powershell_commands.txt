@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T13:43:46-04:00
+
+====== Powershell commands ======
+Commands listed on the [[Basic CLI Commands]] page are Aliases for actual Powershell commands. To see an alias, use: Get-Alias <command>
+Command.exe (CMD) commands also use aliases.
+
+Get-alias ls -> Get-ChildItem
+Get-ChildItem = ls = dir
+	* Get-ChildItem C:\ gives same output as **ls = **same as** dir**
+
+Help command for CMD = /?
+	* Get-Help ls = dir [[/?]]
+
+Windows has 3 I/O streams, stdin, stdout, stderr - standard in, out, error
+	* User provides input into the the stdin stream
+	* process communicates back to you by putting data in stdout stream and CLI writes it onscreen
+	* 1 = stdout
+	* 2 = stderr
+
+Writing files:
+	* echo = Write-Output, prints to screen
+	* > is a redirect operator, allows sending stdout to a file instead of the screen. 
+		* echo woof > dog.txt will create or overwrite a file "dog.txt" with text 'woof'
+		* echo woof >> dog.txt will instead append the text
+		* Get-Help about_redirection for more info
+
+	* can pass output of one command into input of another with pipe |
+		* cat words.txt | Select-String st
+			* will pass contents of a words.txt file and search it for the string 'st'
+
+		* cat words.txt | Select-String st > st_words.txt
+			* perform the same search, but write the output to a st_words.txt file
+
+	* can also redirect stderr output into a file. ex - rm my_secure_file outputs insufficient permission error text
+		* rm my_secure_file 2> error.txt instead outputs this text into a file, error..txt
+			* 2 is for the output stream, stderr
+
+		* if we don't care about error msg, can redirect to null
+			* rm my_secure_file 2> $null
+
+@os @windows @powershell 

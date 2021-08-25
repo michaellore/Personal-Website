@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T13:12:42-04:00
+
+====== File and Text Manipulation ======
+
+* cat - view contents of file - cat myfile.txt
+	* -Head - show first 10 lines
+	* -Tail - show last 10 lines
+* more - view contents, but pauses when terminal window is filled
+	* enter - advance file by one line
+	* space - advance by one page (fill terminal window)
+	* q key - quit more, go back to shell
+* start <file editor> <file name> - open file in editor - start notepad myfile.txt
+
+Searching within files:
+	* Windows search service - gui option, but indexing takes a long time
+		* Search for "indexing"
+	* Powershell - SLS - Select-String <search term / pattern / regex> <file> - Select-String cow myfile.txt
+		* Multiple files, use Wildcard * instead of specific file
+
+Searching directories:
+	* -Recurse to list, -Filter to filter results for a pattern. 
+		* ls 'C:\Program Files' -Recurse -Filter *.exe will show all matching .exe files
+

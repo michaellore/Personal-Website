@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-25T12:02:20-04:00
+
+====== Basic Shell commands ======
+
+-<flag> adds options to commands like wndows parameters
+* ls <path> - list directories
+	* --help flag, gives help text
+	* -l, long, gives more info
+	* -a, all, show all/hidden files
+	* can combine flags like -la 
+* man <command> - manual pages for commands
+* pwd - prints current directory
+* cd - change directory
+	* ~ - home directory
+* mkdir <name> - make directory, escape spaces with a backslash \ or quotes - my\ cool\ folder or 'my cool folder'
+* history - show command history
+* clear - clear terminal
+* cp <file to copy> <path to copy to> - copy files
+	* as wildcard to select multiple
+* mv <file to rename> <new name> - rename a file
+	* also used for moving - mv <file to move> <new path>
+	* wildcards to move multiple
+* rm or remove <file to remove> - remove files
+	* -r flag to recursively remove directories
+
+
+@os @linux @shell 
