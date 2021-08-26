@@ -14,7 +14,7 @@ Help command for CMD = /?
 	* Get-Help ls = dir /?
 
 Windows has 3 I/O streams, stdin, stdout, stderr - standard in, out, error
-	* User provides input into the the stdin stream
+	* User provides input into the stdin stream
 	* process communicates back to you by putting data in stdout stream and CLI writes it onscreen
 	* 1 = stdout
 	* 2 = stderr
