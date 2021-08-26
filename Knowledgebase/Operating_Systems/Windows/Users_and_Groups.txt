@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-26T12:57:16-04:00
+
+====== Users and Groups ======
+View user and group info with Computer Management
+
+Windows domain - network of computers, users, files that are added to a central database
+
+* Task scheduler - lets you schedule tasks to run at certain times, like shutting down at midnight
+* Event viewer - stores system logs
+* shared folders - folders all users can view
+* users and groups - user management (Win+R netplwiz on windows 10 home) - can use to force password change, enable/disable account
+* performance - resource monitoring
+* device manager - manage devices like peripherals, drivers etc
+
+User Access Control UAC - built in feature to prevent system changes
+
+Powershell:
+	* __Get-LocalUser__ - lists all local accounts
+	* __Get-LocalGroup__ - lists groups
+	* __Get-LocalGroupMember <group name>__ - list members of a group
+
+Adding and removing users:
+	* In Computer Management, right click local users and groups -> add user
+	* right-click -> delete to delete
+	* In powershell, __net user <username> * /add__
+		* __net user <username> <password> /add /logonpasswordchg: yes__ - create a new user and force password change on first login
+	* __net user <username> /del__ - remove account
+	* __Remove-LocalUser <username>__ - remove account
+
+Some groups:
+	* Everyone - all users and local accounts
+	* Guests - special user allowed to use computer without an account, disabled by default
+	* Authenticated users - all users with a password
+
+
+@windows @groups @users 

@@ -4,14 +4,14 @@ Creation-Date: 2021-08-25T13:16:18-04:00
 
 ====== File and Text manipulation ======
 
-* cat <file> - view contents of document
-* less <file>- similar to windows **more **- better functionality than cat
+* __cat <file>__ - view contents of document
+* __less <file>__- similar to windows **more **- better functionality than cat
 	* g key - move to beginning of file
 	* G - moves to end of file
 	* /word_search - search for word or phrase
 	* q - quit less, go back to shell
-* head <file> - first 10 lines of file
-* tail <file> last 10 lines
+* __head <file>__ - first 10 lines of file
+* __tail <file>__ last 10 lines
 
 Editing files - many test editors
 	* nano <file>, opens in nano, commands at bottom. ^G = Ctrl + G
@@ -19,21 +19,21 @@ Editing files - many test editors
 	* emacs
 
 Search for file name or word in file:
-	* grep <term> <file name>
-	* grep <term> *.txt
+	* __grep <term> <file name>__
+	* __grep <term> *.txt__
 
 Same 3 output streams as in [[:Knowledgebase:Operating Systems:Windows:Powershell commands|Windows.]]
-	* echo woof > dog.txt - redirects text 'woof' into a file dog.txt
-	* echo woof >> dog.txt - appends text instead
-	* < to get input from a file instead of keyboard
+	* __echo woof > dog.txt__ - redirects text 'woof' into a file dog.txt
+	* __echo woof >> dog.txt__ - appends text instead
+	* __<__ to get input from a file instead of keyboard
 		* cat < file_input.txt
-	* 2> to redirect stderr into a file
+	* __2>__ to redirect stderr into a file
 		* ls /dir/fake_dir 2> error_output.txt
 	* can also filter out error messages by sending to /dev/null
-		* less /var/log/syslog 2> /dev/null
+		* __less /var/log/syslog 2> /dev/null__
 
 	* pipe | to redirect input - search for 'bluetooth' in /etc directory
-		* ls -la /etc | grep bluetooth
+		* __ls -la /etc | grep bluetooth__
 
 
 @os @linux @shell

@@ -8,4 +8,9 @@ Creation-Date: 2021-08-25T11:15:30-04:00
 
 * [[+Windows|Windows]]
 
+Standard user - has retricted access to install software or change settings
+Administrator - has complete control
+
+Users can be put into groups with different permissions
+
 @os @windows @linux 

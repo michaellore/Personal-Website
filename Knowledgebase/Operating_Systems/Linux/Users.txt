@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-26T13:13:51-04:00
+
+====== Users ======
+Users work similar to [[:Knowledgebase:Operating Systems:Windows:Users and Groups|Windows]]. There are users and administrators. Also a special user called the 'root' user, or superuser, created when OS is installed.
+
+Instead of logging in as root, you can run specfic commands as superuser with 'sudo', or 'superuser do'. Instead of running sudo everytime, you can use the 'su' command to log in as a different user, and if you don't specificy you will be logged in as root.
+
+* __cat /etc/group__ - view group memberships
+	* output - <group name> <group password> <group id> <users in group>
+* __cat /etc/passwd__ - contains user account info
+	* output - <user name> <user password (encrypted)> <user id>
+
+Adding/deleting users:
+	* __sudo useradd <name> __ - can combine with password command to force a password change
+	* __sudo userdel <name>__
+
+@linux @users @groups 

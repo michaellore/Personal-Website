@@ -7,6 +7,9 @@ Creation-Date: 2021-08-25T11:41:54-04:00
 * [[+Basic CLI Commands|Basic CLI Commands]]
 * [[+File and Text Manipulation|File and Text Manipulation]]
 * [[+Powershell commands|Powershell commands]]
+* [[+Users and Groups|Users and Groups]]
+* [[+Passwords|Passwords]]
+* [[+Permissions|Permissions]]
 
 
 Subdirectories separated by backslashes \

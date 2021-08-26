@@ -7,6 +7,9 @@ Creation-Date: 2021-08-25T11:45:42-04:00
 * [[+Basic Shell commands|Basic Shell commands]]
 * [[+Basic Folder system|Basic Folder system]]
 * [[+File and Text manipulation|File and Text manipulation]]
+* [[+Users|Users]]
+* [[+Passwords|Passwords]]
+* [[+Permissions|Permissions]]
 
 Root directory denoted with a /
 Subdirectories separated by a forward slash. /

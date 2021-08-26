@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-26T15:19:38-04:00
+
+====== Permissions ======
+File and directory permissions assigned using Access Control Lists or ACLs.
+	* System Access Control Lists SACLS - tell windows to use an event log to make a note every time a file is accessed
+	* Discretionary Access Control List DACLs - note about who can use a file and what they're allowed to do
+		* Properties -> Security tab, list of users and groups with permissions
+
+* Read - lets you see a file exists, and can read its contents
+* Read & Execute - read files, and execute file if it is executable
+* List folder contents - alias for Read & Execute on a directory
+* Write - can make changes, and create subdirectories
+* Modify - umbrella for read, execute, write
+* Full control - can do anything to file, modify, take ownership
+
+* __icacls <path or file>__ - see permissions on a file
+	* spits out some shorthand, F = full control, M = modify, R = read only, RX - read&execute, W = write
+	* OI = object inherit, new files in directory will inherit permissions
+	* CI = container inherit, new directories will inherit this DACL
+
+Changing permissions:
+	* adding - right click on folder/file -> Properties -> Security, click Edit, then Add, add username of person. Then click username and then check allow boxes
+	* deny - can deny permissions for specific users even if they are in an allowed group
+
+	can also use __icacls __in powershell or command prompt
+		* __icacls <'path'> /grant 'permissions'  __ - icacles 'My Pictures' /grant 'Everyone:(OI)(CI)(R)' - surround with single quotes in powershell
+		* in CMD - __icacls "My Pictures" /grant Everyone(OI)(CI)(R)__ - double quotes around path, none around perms
+			* special group Everyone = everyone who uses computer
+	To remove:
+		* __icacls <'path'> /remove <group>__
+
+These permissions are all simple permission, or sets of specific permissions. For ex, when you set "read" perm, you are actually setting multiple special perms.
+Often simple perms are enough, but sometimes a file doesn't fit the pattern.
+
+Let's say we want to allow users to create files on C:\windows\temp
+	* __icacls c:\windows\temp__ to see perms
+	* {{.\pasted_image.png}}
+	* IO - inherit only
+	* S - synchronize
+	* WD - create files/write data
+	* AD - create folders/append data
+
+@windows @permissions 

@@ -12,25 +12,25 @@ Rest of header- optionally used for more info
 data - contains ip header and first 8 data bytes so recepient knows exactly which transmission casued error
 
 Ping - lets you send icmp message cause echo request, if destination is available it will send an echo reply
-	* in cmd, type ping with destination ip or domain
+	* in cmd, type __ping with destination ip or domain__
 	{{.\pasted_image001.png}}
 	* in mac and linux ping will run until it is interrupted by user (CTRL + C)
 
 Traceroute - discover path between two nodes and gives you info on each hop
-	* tracert on windows, traceroute on mac/linux + destination ip or domain
-	* mtr on mac/linux, pathping on windows are similar, long-running traceroutes
+	* __tracert__ on windows, traceroute on mac/linux + destination ip or domain
+	* __mtr__ on mac/linux, pathping on windows are similar, long-running traceroutes
 
 Testing at transport layer
-	* netcat - mac/linux - command nc, arguments host and port - nc google.com 80 = try to establish at google.com:80
+	* __netcat__ - mac/linux - command nc, arguments host and port - __nc google.com 80__ = try to establish at google.com:80
 		* if successful, will wait for use to send data
 		* -z flag just shows status, zero input/output
 		* -v will give a more useful verbose output
 		* ex -  nc -z -v google.com 80
-	* Test-NetConnection on windows - Test-NetConnection google.com
+	* Test-NetConnection on windows - __Test-NetConnection google.com__
 		* -port to specify a port, ex - Test-NetConnection google.com -port 80
 
 DNS tools
-	* nslookup + host name, output is server and resolution result
+	* __nslookup__ + host name, output is server and resolution result
 	* can use type= to get specific record, AAAA or mx, etc.
 
 An ISP almost always gives you access to a recursive name server, but many businesses run their own DNS for internals. Can be useful to have a backup DNS, a public DNS server, such as one from Level 3 Communications, 4.2.2.1 thru 4.2.2.6

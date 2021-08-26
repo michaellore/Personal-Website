@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-26T15:29:13-04:00
+
+====== Permissions ======
+Read - read contents
+write - can write info to a file or folder
+execute - execute programs
+
+use __ls -l <file>__ to view perms on a file
+{{.\pasted_image.png}}
+10 bits, first bit '-' means it is a regular file. d for directory
+last 9 bits are groupled into 3s
+	* first 3 is the permissions of the fileowner - __rwx__ = can read, write and execute
+	* second 3 is the permissions of the group the file belongs to - __rw-__  =can read and write
+	* last 3 is the permission of all other users - __r--__  = can only read
+
+Change permissions with __chmod__, change mode command
+	* u for owner
+	* g for group
+	* o for other users
+	* a to give all users a perm
+	* + or - to add or remove permissions
+	* when using on a directory, files within directory aren't affected
+
+__chmod u+x my_file.tx__ - gives executable 'x' access to owner of the file
+__chmod u+rx my_file.txt__ - gives multiple perms 'r and x' to the owner
+__chmod ugo+r my_file.txt__ - gives read access to owner, group, and all other users
+
+R W and X also have numerical equivalents
+	* 4 for r
+	* 2 for w
+	* 1 for x
+	* add numbers for every permission set
+
+__chmod 754 my_file.txt__
+	7 for owner, gives rwx perms
+	5 for group, gives rx perms
+	4 for other users, gives read perms
+
+can change the owner of a file with __chown__, change owner
+	__sudo chown <other user> my_file.txt__
+
+change file group with __chgrp__, change group
+	__sudo chgrp <some other group> my_file.txt__
+
+Special permissions - if we want users to be able to change certain files without giving them root
+	* SetUID - special permission to run certain commands with permissions of owner of file, 's' or numerically as '4' prepended to other perms
+	* {{.\pasted_image001.png}}
+		* __sudo chmod u+s my_file.txt__
+		* __sudo chmod 4755 my_file.txt__
+
+	* SetGID - run file as member of the file group, 's' or 2
+		* __sudo chgrp g+s my_file.txt__
+		* __sudo chgrp 2755 my_file.txt__
+	* Sticky bit - anyone can write, only owner or root can delete, 't', or 1
+		* __sudo chmod +t my_file.txt__
+		* __sudo chmod 1755 my_file.txt__
+
+@linux @permissions 
