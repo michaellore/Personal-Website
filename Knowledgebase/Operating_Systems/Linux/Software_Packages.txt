@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-28T11:13:25-04:00
+
+====== Software Packages ======
+See: [[:Knowledgebase:Operating Systems:Windows:Software Packages|Software Packages in Windows]]
+
+Different Linux distributions can have different package types. Ubuntu uses Debian, .deb files.
+
+Installing a standalone debian package - dpkg command, i flag for install, r for remove, does not automatically install dependencies
+	* __sudo dpkg -i atom-amd64.deb__
+	* __sudo dpkg -r atom-amd64.deb__
+Can use __grep __command to search if a package is installed:
+	* __dpkg -l | grep atom __- pipe sends output of dpkg -l and sends it to input of grep
+
+You can also use 7-zip with linux:
+	* __7z -e <file to extract>__
+Can also use the __tar__ command that is included with most distros
+	* [[http://www.linfo.org/tar.html|More info on tar command]]
+
+Use package managers to install dependencies for programs - apt Advanced Package Tool
+	* __sudo apt install gimp__
+	* __sudo apt remove gimp__
+	* Package sources and links are listed in the __/etc/apt/sources.list__ file
+	* There are also other repositories called personal package archives - PPAs
+		* Hosted on Launchpad servers, allows open source devs to develop, maintain, and distribute software
+
+Update packages:
+	* __apt update__ - gets list of applicable updates
+	* __apt upgrade__ - installs the updates
+
+In linux, everything is considered a file, even hardware. When you plug a device in, a file is created in /dev/
+	* Character devices like keyboard and mouse, transmit data character by character
+	* Block devices, like usb drives, hard drives, CDs transfer blocks of data
+	* /dev/sda - sd is a mass storage device, 'a' or 'b' is the order they are detected by computer
+	* In __ls -la__ output, the first bit is the type
+		* d for directory
+		* c for character device
+		* b for block device
+		* {{.\pasted_image.png}}
+
+Device drivers are sometimes built into the kernel, but if not you can install a kernel module which extends kernel functionality for your device.
+
+In Linux you update the kernel as if it is any other package.
+	* __uname -r__ - see kernel version
+	* __sudo apt update__ - update application sources
+	* __sudo apt full-upgrade__ - update kernel, will install new packages or uninstall if needed, use caution
+
+@linux @packages 

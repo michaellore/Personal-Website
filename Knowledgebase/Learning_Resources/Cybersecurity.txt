@@ -13,4 +13,8 @@ EdX:
 	* NYU MicroBachelors - https://www.edx.org/microbachelors/nyux-cybersecurity-fundamentals
 	* RIT MicroMasters - https://www.edx.org/micromasters/ritx-cybersecurity
 
+Other:
+	* https://tryhackme.com/
+	* https://www.hackthebox.eu/
+
 @learning @cybersecurity

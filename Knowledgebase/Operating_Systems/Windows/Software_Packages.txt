@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-28T10:53:36-04:00
+
+====== Software Packages ======
+See: [[:Knowledgebase:Operating Systems:Linux:Software Packages|Software Packages in Linux]]
+
+Software is usually packaged in a .exe executable file that contains instructions for the computer to run. Created according to Microsofts portable executable PE format.
+
+Portable executable includes text, images, sometimes an MSI file - Microsoft install package, guides the Installer in the installation, maintenance, and removal of programs. If there's no MSI file, the exe will contain all instructions for installation.
+
+Windows Store is a repository for universal windows platform apps than can run on any compatible Windows device, use a format called appx.
+
+You can run an executable from the command line by navigating to the directory with an executable, and type its name.
+
+Oftentimes files and installers are stored in archive files - .zip, .tar, .rar, which must be extracted before they can be used. Archives can be extracted using programs like 7-zip or Winrar. Archives make it easier to send many files at once.
+
+You can add files to an archive in powershell:
+	* __Compress-Archive -Path <path to files> <Path to archive>__
+Extract:
+	* __Expand-Archive -Path <path to archive> -DestinationPath <path to extract to>__
+
+Software packages often require other software or pieces of code to work correctly - dependencies - a game may need an outside rendering library.
+	* In Windows, shared libraries are called Dynamic Link Libraries, .dll files
+	* The same DLL can be used by many different programs
+	* Shared libraries are managed by side-by-side assemblies, SxS, stored at C:|Windows\WinSxS
+		* Programs list their required libraries in a manifest
+
+You can use Powershell to find software along with its dependencies, __Find-Package__ cmdlet
+	* __Find-Package sysinternals -IncludeDependencies __- lists the package to install with dependencies
+
+Can use package managers like Chocolatey to install from the command line
+	* __Install-Package -Name sysinternals__
+
+Windows groups all devices and drivers together in Device Manager.
+	* automatically installs new plugged-in devices with the Plug-n-Play system
+
+Windows Update client service runs in the background to download and install OS updates.
+	* Windows 10 uses cumulative updates, theoretically saving space instead of having to install hundreds of updates
+		* Downside is that updates aren't optional
+
+@windows @packages @software 

@@ -3,6 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-25T13:16:18-04:00
 
 ====== File and Text manipulation ======
+See: [[:Knowledgebase:Operating Systems:Windows:File and Text Manipulation|Windows File and Text Manipulation]]
 
 * __cat <file>__ - view contents of document
 * __less <file>__- similar to windows **more **- better functionality than cat

@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-28T14:06:08-04:00
+
+====== Filesystems ======
+See: [[:Knowledgebase:Operating Systems:Linux:Filesystems|Filesystems for Linux]]
+
+The filesystem instructs the os in how to organize files.
+
+NTFS is the default Windows filestyles. Cross compatibility is often very minimal.
+
+Some Filesystems are cross-compatible, like FAt32. Drawback is files can't be more than 4gb and filesystem can't be more than 32gb.
+
+Disks are divided into pieces, or partitions
+
+Partition table tells the OS how the disk is partitioned.
+	* MBR - master boot record, mostly used in Windows, volume sizes 2tb or less. Uses primary partitions, 4 per disk. If you want more, you make a primary partition into an extended partition. 
+		* Slowly fazing out in favor of GPT
+	* GPT - GUID Partition Table - newer, only 1 type of partition, greater than 2tb.
+
+Use Disk Management tool to partition and format disks.
+
+Allocation unit size - block size, size of the chunks the partition is chopped into. Saved data is spread scross chunks. If you have lots of small files, smaller blocks waste less space. Larger files with a larger block size means less blocks have to be read to assemble the file.
+
+You can use [[https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart|Diskpart]] on command line to manage disks
+	* __list disk__
+	* __select <disk>__
+	* __clean__ - removes all partitions and volume info
+
+Virtual memory - os provides physical memory to applications by mapping virtual addresses to physical. Gives ability to use more virtual memory than we physically have by creating pages. windows automatically creates page files and uses memory manager to copy pages of memory to be read as needed.
+	* Store currently used data in RAM for faster access than hard drive
+	* Data not being used is stored in page file as virtual memory
+
+NTFS uses the Master File Table, MFT. Every file on a volume has at least one entry in the MFT.
+	* MFT entry contains attributes like name, timestamp, permissions, compression, location
+	* When files are deleted, entries are marked as Free
+	* File Record Number - index of file entry, identifier
+
+Symbolic links are like shortcuts at filesystem level. Creates an entry in the MFT that points to the name of another entry
+	* __mklink <symbolic link> <file to link to>__
+Can also create hardlinks, which points to record number instead of name. Can change file name and link will still work
+	* __mklink /H <link name> <file>__
+
+Check disk usage in Disk Management. Right click on partition, select properties.
+
+__Cleanmgr.exe__ can be used to free up space by deleting temp files, cleaning up logs, etc.
+
+Disk Defragmentation - takes files and reorganizes them into neighboring locations. Not very useful for SSDs because no physical read/write head.
+	* Can use Trim on SSDs to reclaim unused portions.
+
+When data is copied to a drive, it is first put in RAM in a data buffer.
+
+Windows logs changes to file metadata, 'journalling'. Then can use the journal in cases of corruption to see what state the filesystem should be in.
+
+NTFS includes a self-healing mechanism to fix minor corruptions in the background.
+	* check status of self-heal with __fsutil repair query <disk>__
+
+__Chkdsk__ tool can be used in serious emergencies.
+	* Chkdsk runs in read-only mode, prints status of disk
+	* use /F flag to have chkdsk repair errors
+	* __chkdsk /F C:__
+
+If the os detects corruption, it will set a bit in the metadata and the system will run chkdsk on next boot to try and repair corruption
+
+
+@windows @filesystem 

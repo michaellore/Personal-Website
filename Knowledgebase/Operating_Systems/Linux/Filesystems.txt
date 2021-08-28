@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-28T14:06:37-04:00
+
+====== Filesystems ======
+See:[[:Knowledgebase:Operating Systems:Windows:Filesystems| Filesystems for Windows]]
+
+Instructs the os in how to organize files.
+
+ex4 is the default Linux filesystem.
+
+Linux has several tools for disk management.
+	* Parted - interactive and command line modes
+		* __parted -l__ - lists disks, with partitions, size, filesystem etc
+		* __sudo parted /dev/sdb__ - launches parted tool for this disk
+		* mkpart command - partition a disk
+			* __mkpart <partition type> <filesystem> start size__
+			* {{.\pasted_image.png}}
+		* mkfs command - format a partition
+			* __sudo mkfs -t <type> <partition>__
+			* {{.\pasted_image001.png}}
+			* {{.\pasted_image002.png}}
+
+Filesystems must be mounted to a directory
+	* __sudo mount /dev/sdb1 /my_usb/__
+	* __sudo umount my_usb__ or __sudo umount /dev/sdb1__
+	* manually mounted disks are unmounted on shutdown
+
+Permanently mount devices in __/etc/fstab__:
+	* UUID of usb drive - get with __sudo blkid__
+
+Dedicated area of hard drive for virtual memory is swap space. Can partition swap space with __parted__ tool.
+	* __mkpart primary linux-swap 5GiB 100% __- 100% for rest of space
+		* __mkswap /dev/sdb2/__
+			* __sudo swapon /dev/sbd2/__
+	* can automatically add swap space by adding to the __/etc/fstab__ file.
+
+Metadata and files are orgnanized into a structure called an inode in an inode table, similar to Windows MFT. 
+	* Softlinks work similar to symbolic links in windows - point to another file
+		* __ln -s <file> <softlink>__
+		* {{.\pasted_image003.png}}
+	* Hardlinks point to an inode, similar to windows
+		* __ln <file><hardlink>__
+		* {{.\pasted_image004.png}}
+
+See disk usage with __du -h__ command, shows disk usage of a directory. __df -h__ command shows amount of free space. Linux does not really need defragmentation.
+
+Repair file system in linux with __fsck__ command - make sure file system is not mounted
+	* __sudo fsck /dev/sda__
+	* if you run it on a mounted system there is a chance it will damage the filesystem
+	* fsck runs on boot in some distros to check for and fix errors
+
+@linux @filesystem 

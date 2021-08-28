@@ -3,6 +3,8 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-26T12:57:16-04:00
 
 ====== Users and Groups ======
+See: [[:Knowledgebase:Operating Systems:Linux:Users|Users and Groups in Linux]]
+
 View user and group info with Computer Management
 
 Windows domain - network of computers, users, files that are added to a central database
