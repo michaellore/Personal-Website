@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-29T13:36:48-04:00
+
+====== Processes ======
+See: [[:Knowledgebase:Operating Systems:Windows:Processes|Processes in Windows]]
+
+Processes have a parent-child relationship. Initial process is init, which has a process id (PID) of 1. Init starts other startup processes.
+
+Find process info with __ps__ .
+https://man7.org/linux/man-pages/man1/ps.1.html
+
+Can pipe input from ps into grep to search for process.
+{{.\pasted_image.png}}
+
+Linux has many signals that can be sent to processes, including SIGINT, sent with CTRL+C.
+
+Terminate process with the __kill__ command, which sends a SIGTERM.
+
+Check system resource utilization with __top__ command. __uptime__ command shows some system info. __lsof__ command lists open files with what processes are using them.
+
+@linux @processes 

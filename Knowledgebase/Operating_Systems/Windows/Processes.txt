@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-29T13:36:03-04:00
+
+====== Processes ======
+See: [[:Knowledgebase:Operating Systems:Linux:Processes|Processes in Linux]]
+
+Programs are applications like Chrome. Processes are programs that are running, you cna have lots of processes for the same program - many Chrome windows.
+
+All processes are assigned a unique process ID, PID.
+
+Background/daemon processes run in the background, like logging and network processes.
+
+First user mode process is the Session Manager Subsystem, whih kicks off the login process, winlogin.exe, and the Clent/Server runtime subsystem, csrss.exe, which starts the GUI.
+
+Stop a process in command line with __taskkill__.
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill
+
+Each process has a parent that it inherits some attributes and variables from, but processes can operate independently.
+
+Find process info in Task Manager. Find the PID of a process in the Details tab.
+	* In CMD - use __tasklist__
+	* In Powershell, use __Get-Process__
+
+A signal is used to tell a process that something has happened. A common signal is SIGINT, sent with CTRL+C in command line, to interrupt the process.
+https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/signal?view=msvc-160
+
+A tool to manage processes is the Process Explorer that gives many more details about processes, including files it is active on, parent processes, and suspending, killing, and restarting.
+
+Monitor how many resources a process is using with the Resource Monitor.
+	* In Powershell, use __Get-Process__
+	* __Get-Process | Sort CPU -descending | Select -first 3 -Property ID, ProcessName, CPU__ - shows top 3 processes by CPU usage
+
+@windows @processes 

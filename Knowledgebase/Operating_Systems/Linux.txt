@@ -12,6 +12,7 @@ Creation-Date: 2021-08-25T11:45:42-04:00
 * [[+Permissions|Permissions]]
 * [[+Software Packages|Software Packages]]
 * [[+Filesystems|Filesystems]]
+* [[+Processes|Processes]]
 
 Root directory denoted with a /
 Subdirectories separated by a forward slash. /
