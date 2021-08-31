@@ -12,6 +12,9 @@ Personal knowledgebase for IT.
 
 ==== • [[+Operating Systems|Operating Systems]] ====
 
+==== • [[+Troubleshooting|Troubleshooting]] ====
+
+
 
 
 

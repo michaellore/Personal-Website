@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-30T20:03:52-04:00
+
+====== System Monitoring ======
+In Windows, events are logged in the Event Viewer. Use custom views to filter info you are looking for, like only looking for error events within the last hour.
+
+Logs in Linux are stored in __/var/log. __Systems clean out old log files uses log rotation. Sometimes timestaps in Linux are long strings of numbers - Unix or Epoch time.
+
+Effective use of logs:
+	* Search for terms like "error"
+	* Search for specific apps you are having issues with
+	* Check logs in realtime
+
+@logs @monitoring 
+

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-30T19:21:34-04:00
+
+====== Remote Connections ======
+
+Common protocol to remotely access a computer is SSH. To use SSH, you must have an SSH client on your computer, and an SSH server on the computer you are connecting to.
+
+* Linux - OpenSSH
+* Windows - PuTTY
+
+To login, you need an account on the remote machine and the remote hostname or IP address.
+	__ssh mike@104.132.155.223__
+After logging in, it will be saved as a "known host". You can then send commands securely and even launch programs to work in a GUI.
+
+Log in more securely with SSH public and private keys.
+
+A VPN is another way to connect remotely.
+
+Another remote client is the RDP, Remote Desktop Protocol.
+
+Transferring files:
+	* In linux, you can use SCP (secure copy), uses SSH to copy a file to remote.
+		* __scp <file to copy> <remote computer>__
+		* __scp myfile.txt mike@104.132.155.223__
+		* Same command on Windows with Putty using the Putty Secure Copy Client, pscp.exe
+	* Easier way to transfer files is the Shared Folder concept
+
+
+@remote @ssh 

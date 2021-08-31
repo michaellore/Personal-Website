@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-30T20:19:11-04:00
+
+====== Deployment ======
+Imaging - format a machine with an image of another machine
+
+Disk cloning tools - makes a copy of an entire disk for backup, allows you to copy settings and folders, Clonezilla
+	disk-to-disk - connect external hard drive to computer you want to clone
+
+In linux, you can use __dd__ to clone folders and discs.
+https://linuxhint.com/dd_command_linux/
+
+OS vendors also often offer network deployments.
+
+@imaging @os 
