@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T15:21:55-04:00
+
+====== Software Services ======
+Communication services - enable employees to talk to to one another
+	* Instant communication - IRC Internet Relay Chat, uses a client/server model, free
+		* Paid apps like Slack
+	* XMPP - Extensible Messaging and Presence Protocol - open source use din IM apps and social networking
+
+Email services:
+	* Run your own service on a server, then create a DNS record for the mail server, an MX record
+	* Or use a email service provider like Google G Suite for a monthly fee 
+
+Email protocols
+	* POP3 - post office protocol downloads email to local device then deletes it from the server
+		* good for storage limitations or privacy, assumes only one user using the account
+		* stores files on local machine
+	* IMAP - internet message access protocol - keeps emails on the server
+	* SMTP - simple message transfer protocol - used for sending emails
+
+@sysadmin @software @email 

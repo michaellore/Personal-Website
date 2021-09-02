@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-08-31T12:49:08-04:00
+
+====== System Administration ======
+Maintains company IT infratstructure - email servers, SSH server, web server, etc.
+Useful to have a KVM switch on hand - keyboard, video, and mouse, a hub you cna connect multiple computers to.
+
+infrastructure as a service IaaS - cloud service offering storage, networking, and computing
+Platform as a Service Paas - complete deployment in the cloud, IaaS plus middleware, supports complete webapp lifecycle
+Software as a Service SaaS - cloud-based access to software
+
+* [[+Physical Infrastucture|Physical Infrastucture]]
+* [[+Network Services|Network Services]]
+* [[+Software Services|Software Services]]
+* [[+File Services|File Services]]
+* [[+Print Services|Print Services]]
+* [[+Platform Services|Platform Services]]
+* [[+Cloud Resources|Cloud Resources]]
+
+@sysadmin 

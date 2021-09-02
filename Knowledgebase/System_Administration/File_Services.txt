@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T15:49:53-04:00
+
+====== File Services ======
+Allow users to centrally store and share files and folders. 
+
+Network file system - NFS, protovol to allow files to be shared over network. Easiest on Linux. Set a config to note which folders are shareable, then mount the server on each client
+
+In Windows, Samba is the best option, which also includes printer services. Uses the SMB protocol.
+
+An affordable solution instead of setting up a dedicated server, you can use Network Attached Storage, NAS - computer optimized for file storage with a stripped down OS.
+
+@sysadmin @files 

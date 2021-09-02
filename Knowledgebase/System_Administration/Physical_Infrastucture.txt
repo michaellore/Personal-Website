@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T12:40:55-04:00
+
+====== Physical Infrastucture ======
+Typically servers will use a specific server OS, like Windows Server, which is generally more secure, allows for more RAM and network connections, and has some server specific processes built in.
+
+A service running on dedicated hardware will generally perform better than on virtual hardware. However, the cost is usually more expenisve because on virtual hardware you can run many services on one physical machine.
+
+Physical hardware also requires more maintenance, and it is easier to deal with points of failure on virtual hardware.
+
+@sysadmin @infrastructure 

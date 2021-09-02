@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T16:16:21-04:00
+
+====== Platform Services ======
+A complete platform to build and deploy software.
+A web server both stores and serves content to the client.
+Databases allow you to store and filter large amounts of data.
+	* MySQL, PostgreSQL
+
+Diagnose a web server error with HTTP status codes
+	* 404 - URL doesn't point to anything
+	* 4xx - client side errors
+	* 5xx - server side errors
+	* 2xx - successful
+	* https://moz.com/learn/seo/http-status-codes
+
+View HTTP response in Developer tools -> Network tab
+
+@sysadmin @platform 

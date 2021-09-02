@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T15:59:20-04:00
+
+====== Print Services ======
+When you have many printers, you need a place to centrally manage them by installing a printer service on a server.
+
+Most OSes have a print service already installed.
+	* Linux - CUPS - manage from a simple URL
+	* Windows - print and document service
+	* Can also use a cloud-based solution
+		* allows users to point ot a web browser so no setup is involved on their machine
+Print queue or spool - order multiple print jobs will be executed.
+
+A computer can share its printer with another computer on the network
+* https://support.microsoft.com/en-us/windows/share-your-network-printer-c9a152b5-59f3-b6f3-c99f-f39e5bf664c3
+
+@sysadmin @print 

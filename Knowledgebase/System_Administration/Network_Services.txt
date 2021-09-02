@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-02T13:33:11-04:00
+
+====== Network Services ======
+FTP - similar to SSH, not very secure, mostly for web content
+SFTP - secure version of FTP, data is sent through SSH and encrypted
+TFTP - no authentication or encryption, common to host installation files
+PXE or PXE boot - preboot execution, can boot into software available over the network
+NTP - network time protocol - keeps clocks synchronized across a network
+
+To troubleshoot a DNS issue, you can use __nslookup. __Nslookup can verify that a host name points to a name server.
+
+Check status of service on Linux with __service <service name> status__
+	* service ntp status - will show status of the ntp service
+	* sudo service ntp stop - stop the service
+	* sudo service ntp start - restart the service
+	* sudo service ntp restart - available for most services, stops then starts
+	* if you change the config of a service, you usually need to restart it to refresh with __sudo service <service name> reload__
+
+In Windows, check on a status with __Get-Service <service>__
+	* __Get-Service <service> | Format-List *__ - provides more info
+	* Stop-Service <service> - stops service
+	* Start-Service <service> - start service
+	* can always use Services Management GUI
+
+@sysadmin @networks 
