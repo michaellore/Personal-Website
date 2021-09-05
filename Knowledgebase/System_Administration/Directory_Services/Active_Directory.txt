@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-03T15:09:46-04:00
+
+====== Active Directory ======
+See: [[+Group Policy|Group Policy]]
+
+Active Directory is the native directory service for windows., working on hierarchal structure of containers and entries.
+
+Domain controllers provide several services on the network. They host a replica of the Active Directory database and group policy objects. DCs also serve as DNS servers to provide name resolution and service discovery to clients. 
+
+Domain controllers control logins and access to shared resources. A compluter must be joined or bound to Active Directory so that AD knows about the computer and has an account for it, and also so the computer can authenticate with AD.
+
+Managing AD:
+	* Domain admins have control over the entire domain.
+	* Enterprise admins can make changes that also affect other domains
+	* Domain Users group contains all user accounts
+	* Domain Compuers contains all computers joined to domain except Domain Controllers
+Only use domain and enterprise admin account when necessary - day to day account should be a regular user with specific perms.
+Security Account Manager SAM - stores usernames and passwords
+
+Can do everything in Powershell - command history in bottom left - Windows Powershell History
+Types of groups:
+	* Security group - most common, user accounts, computers, manage access toIT resources
+	* Distribution group  - design to group accounts and contacts for email, useful for creating email lists
+Group scope
+	* Domain local - used to assign permission to a resource
+	* Global - used to group accounts in a role
+	* Universal - used to group global roles in a forest
+
+You should never know another user's password.
+
+A computer not on a domain is a Workgroup computer. Workgroups aren't centrally managed. Join domain in System Properties, or in powershell:
+	* __Add-Computer -DomainName <domain> -Server <server name>__
+
+Different versions of AD have Functional Levels that define featureset.
+
+@sysadmin @activedirectory 

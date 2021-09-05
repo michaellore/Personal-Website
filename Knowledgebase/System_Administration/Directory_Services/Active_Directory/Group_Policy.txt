@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-05T11:22:16-04:00
+
+====== Group Policy ======
+GPO - group policy object. Set of policies and prefs than can be applied to a group of objects. Ex - different settings for sales vs devs.
+{{.\pasted_image.png?width=380}}
+
+Policy - reapplied every few minutes, aren't meant to be change deven by local admins
+Preferences - meant to be a template, the default, but users can change.
+Many policies and prefs are represented in the Registry.
+
+Create group policies in the Group Policy Management Console.
+{{.\pasted_image001.png}}
+WMI Filters - Windows Management Instrumentation - powerful filters to define targeting rules for GPOs
+Group policy Result - troubleshooting tool to figure out which policies already apply to specific computers and users
+Group Policy Modelling - tool to determine which policies would apply to a computer or user, used for testing changes
+
+Default domain policy - default policy linked to the domain, applies to all computers and users in domain
+Default domain controller policy - default policy for domain controllers
+
+Group Policy Settings Reference - spreadsheet defines all GPO policies and prefs, released by Microsoft
+Make a backup before making any changes.
+
+To test GPOs, you can create a Test OU and test changes on a copy of the GPO on test machines.
+
+When a computer has multiple policies, they will be applied in precedence rules. GPOs linked to the largest/least specific container are applied first, and will be overwritten by more specific.
+
+Policies with precedence rules applied are a Resultant Set of Policy - RSoP, RSoP Report.
+
+
+@sysadmin @activedirectory @grouppolicy 

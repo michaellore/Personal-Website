@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-05T14:28:24-04:00
+
+====== Data Recovery ======
+Process of trying to recover lost data from unexpected data loss or corruption. Should always have a disaster plan in place involving regular backups.
+Postmortem - documentation detailing what happened and steps to fix the issue.
+
+Only crucial necessary data that is not available from another source should be backed up regularly, because storage is not free. Backups can be stored locally or offsite. Local storage is closeby, but offsite provides security in case of physical damage like a fire.
+
+Data can be archived on magnetic tape, best for long term archives, slow.
+
+__rsync__ is a command line utility to transfer and synchronize files between locations and computers.
+
+Apple has a proprietary system called Time Machine. Windows has Backup and Restore.
+
+Disaster recovery testing should happen at least once a year to test recovery plans.
+
+Good policy is having full backups more infrequently, like once a week, and differential backups daily. This way only 24 hours of data is lost max. Incremental backups backup only the data that has been changed since the last incremental backup. Recover with incremental backups may be more time consuming because you may need to use multiple incremental backups and a full backups.
+
+Backups can be compressed to save space, but must be decompressed to recover.
+
+Help combat disk faiure with a RAID Array - Redundant Array of Independent Disks. Combines multiple physical disks into one virtual disk. Raid is a data storage solution, not a backup solution - RAID does not replace backups.
+	* RAID 0 - built for speed, no redundancy, data split evenly across disks. if one drive fails the whole array fails
+	* RAID 1 - exact copy (mirror) on two or more disks, array will work as long as one drive is functional
+	* [[https://en.wikipedia.org/wiki/Standard_RAID_levels|More levels]]
+
+Post-mortem
+{{.\pasted_image.png}}
+
+@sysadmin @datarecovery 

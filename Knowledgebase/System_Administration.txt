@@ -16,6 +16,8 @@ Software as a Service SaaS - cloud-based access to software
 * [[+File Services|File Services]]
 * [[+Print Services|Print Services]]
 * [[+Platform Services|Platform Services]]
+* [[+Directory Services|Directory Services]]
 * [[+Cloud Resources|Cloud Resources]]
+* [[+Data Recovery|Data Recovery]]
 
 @sysadmin 

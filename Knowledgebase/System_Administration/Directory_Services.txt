@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-03T12:24:49-04:00
+
+====== Directory Services ======
+See: [[+Active Directory|Active Directory]], [[+OpenLDAP|OpenLDAP]]
+
+A directory server contains lookup service that provides mapping between network resources and their network addresses. Used to organize and manage user accounts, phone numbers, and network drives.
+
+Ideal directory server supports replication - data is copied and distributed across multiple physical servers but appears as one unified datastore for administration. Replication provides redundancy.
+
+Data is organized in a hierarchal system of objects and containers. Containers = organizational units OUs. OUs are kind of like folders which contain other folders or files for the directory service. Directory services provide centralized authentication, authorization, and accounting, AAA
+{{.\pasted_image.png}}
+
+Directory services are an open network standard, multiple protocols
+	* DAP - Directory Access Protocol
+	* LDAP - Lightweight Directory Access Protocol - OpenLDAP, Microsofts Active Directory (AD)
+		* Supports wide range of platforms
+
+Client tools for accessing and configuring directory server - Microsoft Office Active Directory Users and Computers, ADUC.
+
+It is smart to give people access based on what they do vs who they are - role-based access control RBAC
+
+LDAP notation:
+{{.\pasted_image001.png}}
+dn - distinguished name
+cn - common name
+ou - organizational unit
+dc - domain component 
+
+LDAP authentication - Bind operation authenticates clinets to directory server
+{{.\pasted_image002.png}}
+Three common ways to authenticate
+	* Anonymous - not actually authenticating, anyone could access
+	* Simple -need directory name and password, usually sent in plaintext, not secure
+	* SASL, Simple Authentication & Security Layer - requires both client and server to authenticate, Kerberos protocol
+
+
+@sysadmin @directory 
