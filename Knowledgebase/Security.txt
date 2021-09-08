@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-08T15:12:42-04:00
+
+====== Security ======
+
+* [[+Cryptography|Cryptography]]
+
+Computer security works on 3 basic principles - the CIA - confidentiality, integrity, availability.
+Essential terms:
+	* Risk - possibility of suffering a lodd in the event of an attack
+	* Vulnerability - a flaw in the system that could be exploited to compromise the system
+	* 0-day vulnerability - a vulnerability unknown to the developer but known to an attacker
+	* Exploit - software used to take advantage of a bug or vulnerability
+	* Threat - the possibility of danger that could exploit a vulnerability
+	* Hacker - person who tries to break into system
+		* Black hat - tries to break in maliciously
+		* White hat - tries to find weaknesses to alert owner before it can be exploited
+	* Attack - actual attempt at causing harm
+Common forms of malware
+	* Virus - virus attaches to an executable and infects other files, replicating itself
+	* Worms - can "live" on their own and spread through channels like the network
+	* Adware - softwware displaying ads and collecting data
+	* Trojan - malware that disguises itself, "trojan horse"
+	* Spyware - malware that spies on you
+	* Keylogger - records keystrokes
+	* Randomware - holds your system hostage until you pay a ransom
+	* Botnet - malware utilizing a group of machines controlled by an attacker
+	* Backdoor - a secret entryway, commonly installed after an attacker has access and wants to maintain
+	* Rootkits - provide access and elevated credentials, but not inherently dangerous
+
+Network attacks
+	* DNS Cache Poisoning attack - tricks dns server into accepting a fake record to feed you fake addresses when you try to access legitimate websites
+	* Man in the middle - attacker is in the middle of two hosts that think they are communicating with each other. Can intercept and modify info in transit - session/cookie hijacking. Rogue access points, installed without knowledge. 
+	* Evil twin - identical network to the real one, but controlled by an attacker
+	* Denial of Service DoS - tries to prevent access to a service for legitimate users by overwhelming the network. 
+		* Ping of death - sends a malformed ping causing buffer overflow
+		* Ping flood - sends tons of pings, ICMP echo requests, and server can't keep up
+		* SYN flood - sends tons of SYN packets, "half-open" attacks
+	* Distributed Denial of Service DDoS - a DoS attack using multiple systems, usually botnets
+Injection attacks
+	* Cross-site Scripting XSS - can insert code into a service to target user, ex - stealing cookies to get login info
+	* SQL injection - target's the website's SQL database to delete or copy data
+Password attacks
+	* Brute force - trying different combos to guess
+	* Dictionary - tries commonly used words and combinations
+Social engineering - attacks rely on humans instead of computers
+	* Phishing - usually a malicious email disguised a something legit, like a fake bank reset email
+	* Spear phihing - specifically targeting an individual or group to seem trustworthy
+	* Spoofing - source masquerading as something else, ex - a spoofed email
+	* Baiting - enticing a video to do something, like leaving a malware USB around
+	* Tailgating - gaining access to restricted area by following a real employee in
+
+@security
+
