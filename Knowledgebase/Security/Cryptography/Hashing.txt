@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-09T12:35:29-04:00
+
+====== Hashing ======
+a function or operation that takes arbitrary data input and maps it to an output of a fixed size, called a hash. Output is unique to the input.
+Hashing can be used to identify duplicate sin databases or archives to speed up lookups
+Cryptographic hashing - different from encryption, one-directional
+Same input should always return same hash value. Two different inputs should never output to the same output.
+
+MD5 - 512bit blocks, 128bit hash digests. Susceptible to hash collisions, recommended to use SHA2, SHA3
+SHA1 - part of Secure Hash Algorithm suite of functions 512bit blocks, 160bit hash digest
+MIC - message integrity check, a hash digest of the message, like a checksum
+
+Hashs often used for authentacation - passwords are often hashed and are checked on login.
+
+Rainbow table - precomputed table of passwrods and corresponding hashes used to speed up password attacks
+
+Salt - additional random data added in hashing function to generate a hash thats unique to password and salt combo
+
+@security @hashing 

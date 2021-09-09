@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-09T10:58:14-04:00
+
+====== Cryptography ======
+Hiding a message from potential attackers.
+
+Key terms:
+	Encryption - taking a plaintext message, applying an operation called a cipher, so you receive garbled unreadable text as output - ciphertext
+	Decryption - translating ciphertext back into readable text.
+	Encryption Algorithm - underlying logic used to convert plaintext to ciphertext
+	Key - introduces a unique element into your cipher to make it unique from others using same algorithm
+	Security through obscurity - keeping your algorithm secret
+	Cryptosystem, Kerchoff's Principle - a collection of algorithms for key generation and encryption/decryption should remain secure, even if everything except the key is known. Even if enemy knows exactly what kind of system, system is secure as long as keys remain secure. Shannon's maxim.
+	Cryptology - study of crytography, practice of coding and hiding messages
+	Cryptanalysis - trying to decipher coded messages
+	Frequency Analysis - practice of studying frequency with which letters appear in a ciphertext
+	Steganography - hiding information, but not encrypting it
+
+Public key infrastructure - defines creation, storage, and distribution of digital certificates
+Digital certificate - file that proves an entity owns a certain public key
+Certificate authority - entity responsible for storing, issuing, and signing certificates
+Code signing available for software to verify author
+
+PHP - pretty good privacy - authentication of data with privacy relying on asymmetric encryption. widely used in email encryption
+
+Securing Network traffic
+	VPNs, encrypted tunnel
+	IPSec - vpn protocol encrypts an IP packet and sends it with the inside an IPsec packet
+	Layer 2 Tunneling Protocol - L2TP, supports VPNs, tunnelling protocol that allows for encapsulation of other protocols that may not be otherwise supported
+	
+Hardware Cryptography
+	TPM - Trusted Platform Module - hardware device that is a dedicated crypto processor, offers generation of secure keys, random numbers, etc
+	TEE - Trusted Execution Environment - isolated execution environment that isolates processes from the main OS
+	FDE - Full Disk Encryption - encryption of the entire disk
+
+* [[+Symmetric Cryptography|Symmetric Cryptography]]
+* [[+Asymmetric Cryptography|Asymmetric Cryptography]]
+* [[+Hashing|Hashing]]
+
+
+@security @cryptography 

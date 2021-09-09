@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-09T11:34:54-04:00
+
+====== Asymmetric Cryptography ======
+Different keys used for encryption and decryption. Public key ciphers.
+Both generate a private key, which a public key is derived from. After generating public/private pairs, exhange public keys.
+Use public key to encrypt and send messge, and private key to decrypt it.
+
+Public key signatures - signing a message with private key to create a digital signature, other person can verify using public key 
+MAC - bit of information that allows authentication of a received message, ensuring it came from the alleged sender and message was not modified
+	* HMAC - keyed-has MAC, uses a hash function along with a secret key
+	* CMAC - cipher-based MAC. uses a symmetric cipher with shared keys
+	* CBC-Mac - cipher block chaining MAC, encrypts a message with block cipher in CBC mode, that incorprates a previously encrypted block into the next block's plaintext to make a chain of encrypted blocks, and the full encrypted chain is needed to decrypt
+
+RSA - one of the first asymmetric systems, key generation depends on pairs of large prime numbers
+DSA - similar to RSA, used for signing and verifying data
+ECC - elliptic curve cryptography - uses algebraic structure of elliptic curves over finite fields to generate keys
+	* allows generation of smaller keys that are secure
+
+Benefits
+	Grants confidentiality, authenticity, and non-repudiation
+	Allows secure comms over an unsecure channel
+
+Downsides
+	more complex, slower
+
+Often companies will use asymmetric encryption to send a shared secret, and then data can be sent using symmetric encryption
+
+@security @crytography 

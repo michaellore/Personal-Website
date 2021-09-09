@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-09T11:13:44-04:00
+
+====== Symmetric Cryptography ======
+Symmetric-key algorithm - use the same key to encrypt and decrypt messages
+Substitution cipher - replaces parts of your plaintext with ciphertext
+	* Caesar cipher - replacing letters and numbers by shifting or rotating, the offset is the key 
+	* ROT13 - alphabet rotated 13 places, Caesar cipher with a key of 13.
+Stream cipher - takes a stream of input and encrypts one character at a time, outputting one encrypted character at a time
+Block cipher - takes data in, places it in a bucket or block of fixed size, then encodes that block as one unit
+	* Stream ciphers generally faster and easier, but can be less secure
+Initialization vector - a bit of random data inserted into key to prevent key reuse
+	* Have a master key + IV combo to have a unique key
+Key size - total number of bits that comprizes the key. Upper limit for total possible keys in a given algorithm.
+
+DES - data encryption standard, Symmetric block cipher with 64-bit key sizes, 8-bits used for parity checking, blocks 64-bits. 
+AES - advanced encryption standard - similar to DES, uses 128-bit blocks and 128, 192, or 256 bit key length.
+
+Benefits 
+	relatively easy to implement and maintain
+	very fast and efficient
+
+Downsides
+	Key must be shared with every device
+	
+@security @cryptography 
