@@ -1,0 +1,61 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-10T12:25:57-04:00
+
+====== Network Security ======
+Network hardening - securing a network by reducing potential vulnerabilities through config changes
+Implicit deny - anything not explicitly allowed should be denied
+Network monitoring allows you to establish a baseline for what your traffic looks like so you can notice atypical behavior.
+Logs analysis systems - configured using user-defined rules to match atypical or interesting log entries
+	* It is important to normalize log data to format data from different devices in a common way
+Correlation analysis - taking log data from different systems and matching events across systems
+Network separation/segmentation - using VLANs to create dedicated networks for different device types
+Splunk - a tool for analyzing many different types of logs
+Flood guards - protection against DoS attacks
+	* fail2ban - popular open source flood protection tool
+
+Rogue DHCP server attack - rogue attacker that can hand out DHCP leases to devices containing whatever the attacker wants
+	DHCP snooping - feature that monitors dhcp traffic to build a map of ip assignments and map them to hosts connected to switch ports
+
+Dynamic ARP Inspection - prevents ip forwarding, detects forged gratuitous ARP packets and discards them
+
+IP Source Guard - prevents ip spoofing by working with DHCP snooping to create dynamic ACLs for each switchboard, dropping packets that don't match the IP address for the port base don the DHCP snooping table
+
+802.1X - IEE standard for encapsulating Extensible Authentication Protocol traffic over 802 networks. EAP over LAN or EAPOL.
+	EAP-TLS - clinet (supplicant) communicates with authenticator before they can communicate with the network. Authenticator forwards request to the authentication server
+	
+Firewalls can be hardware on an entire network, or software that are host-based for individual devices. VPNs and proxies should also be used.
+
+Wireless Security:
+	* WEP Encryption - old, shouldn't be used anymore especially for wireless networks, uses a shared key. Plaintext and Ciphertext are transmitted in a way that exposes both to potential eavesdropping, so the encryption key can potentially be discovered. Attacker only has to keep track of Initialization vector, because there only about 17 million unique with WEP, only 24 bits. IV transmitted in plaintext. After roughly 5000 packets, IV is reused, which means encryption key is reused. 64 and 128 bit keys. RC4 encryption.
+
+	* WPA - Wifi Protected Access - new protocol TKIP, temporal key integrity protocol. 
+		* more secure key derivation to incorporate IV into key
+		* Sequence counter added to reject out of order packets
+		* 64 bit MIC added to prevent forging
+		* 256-bit long keys
+		* Wifi password used as a factor to derive encryption key, run through a salt function to get the encryption key
+		* WPA2-AES - updated version using Advanced Encryption Standard, most secure common wifi security
+
+	* WPS - several methods of allowing client on network without entering a pre-shared key. PIN auth, NFC, USB, or push button.
+
+Packet sniffing or Packet capture - intercepting network packets in their entirety for analysis.
+Promiscuous mode - network mode where all data packets can be access and viewed by all network adapters operating in this mode
+Port mirroring - allws switch to take all packets from a specified port, port range, or entire VLAN and mirror them to a specified switch port, letting you gain access to all packets going through switch
+Monitor mode - scan across channels to see all wireless traffic being sent by Access Points APs and clients
+
+tcpdump - command line utility to capture and analyze packets, can write captures to a file. Converts info into a human readable format from layers 3 and up.
+Wireshark - GUI utility, more powerful than tcpdump, can decrypt packets if encryption key is known
+Traffic analysis - understanding which types of traffic are flowing across network
+
+Intrusion Detection and Prevention Systems (IDS/IPS) - monitoring and analyzing network traffic for potentially malicious behavior.
+	* IDS is only a detection system, only logs alerts
+	* IPS can adjust firewall rules on the fly
+	* Network Intrusion Detection System (NIDS) - deployed on network where it can monitor traffic for a network segment or subnet 
+		* Can be host-based or network-wide
+		* Snort, Suricata, Zeek Network Security Monitor are some popular solutions
+		* Network Intrusion Prevention System NIPS must be place din line with traffic flow to be able to take action
+
+
+@security @networks 
+

@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-10T11:03:01-04:00
+
+====== Authentication, Authorization, Accounting ======
+Identification - describing an identity uniquely
+Authentication - providing a password or some other info to prove it is you
+Authorization - the resources an identity has access to
+There is often a tradeoff between security and usability - risk mitigation
+Multifactor Authentication - using an additional security factor besides a password, like biometrics or a physical token, or a one time password on an app or device, or through SMS
+
+Servers can authenticate and verify clients with client certificates. The CA has a signed list, certificate revocation list, that defines certificates that have been explicitly revoked.
+
+Directory services used as a backend for authentication of user accounts.
+
+Kerberos - network auth protocol that uses tickets to allow entities to prove their identity over potentially insecure channels using symmetric encryption.
+
+Single Sign-On SSO - auth concept that allows users to authenticate once and access multiple services through a central server - logging into Google account allows access to gmail, youtube, adsense, etc.
+
+OAuth - open standard that allows users to grant third party apps and websites access to their info without providing credentials. Lists specific permissions you are granting.
+
+Access Control List - way of defining permissions for objects
+
+Accounting - recording access and usage
+Auditing - Reviewing records of access and ausage
+
+@security 
