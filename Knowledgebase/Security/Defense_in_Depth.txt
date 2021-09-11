@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-09-11T11:57:53-04:00
+
+====== Defense in Depth ======
+The concept of having multiple overlapping systems of defense to protect IT systems.
+Attack Vector - method or mechanism by which an attacker gains access to a system
+Attack surface - the sum of all attack vectors in a system
+
+Key is keeping attack surfaces as small as possible by making systems less complex, by disabling unnecessary services or protocols.
+Host-based firewalls are important for keeping hosts protected in addition to a network firewall by permitting only specific connections. Users with admin rights have the abiliy to change firewall rules, so keeping logs is important.
+
+Antivirus protections depend on vendors discovering malware and writing new signatures, but it protects against the most common attacks.
+
+Fully-encrypted disks are useless to an attacker if the attacker does not have the encryption key. The secret key used for encryption of FDE is usually password protected. If the password is forgotten, many solutions use key escrow, where the key can be retreived by a sysadmin with a recovery password
+
+File-based or home directory encryption - more convenient than FDE, system files are usually not encrypted, but is less protected against attacks because the system can be rebooted remotely without being locked out, unlike with FDE.
+
+It is smart to have policies for software updates, browser updates, and browser extension updates. 
+
+Penetration Testing - trying to break into a system to test its protection for weak points or blind spots
+
+@security 
