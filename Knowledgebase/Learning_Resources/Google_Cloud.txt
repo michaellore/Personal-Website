@@ -11,5 +11,3 @@ Resources for learning the Google Cloud Platform
 	* Associate Cloud Engineer Learning Path - https://is.gd/e6rgnI
 	* Professional Cloud Network Engineer Path - https://is.gd/NCWnJn
 	* Professional Security Engineer Path - https://is.gd/QM3ViK
-
-@learning @googlecloud

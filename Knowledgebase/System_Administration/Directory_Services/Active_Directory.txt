@@ -34,5 +34,3 @@ A computer not on a domain is a Workgroup computer. Workgroups aren't centrally 
 	* __Add-Computer -DomainName <domain> -Server <server name>__
 
 Different versions of AD have Functional Levels that define featureset.
-
-@sysadmin @activedirectory 

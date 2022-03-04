@@ -17,5 +17,3 @@ Hashs often used for authentacation - passwords are often hashed and are checked
 Rainbow table - precomputed table of passwrods and corresponding hashes used to speed up password attacks
 
 Salt - additional random data added in hashing function to generate a hash thats unique to password and salt combo
-
-@security @hashing 

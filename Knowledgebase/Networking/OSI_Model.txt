@@ -17,5 +17,3 @@ Bottom - physical, connects entity to transmission media
 {{.\pasted_image001.png?width=700}}
 
 {{.\pasted_image.png}}
-
-@networking @osi @tcpip 

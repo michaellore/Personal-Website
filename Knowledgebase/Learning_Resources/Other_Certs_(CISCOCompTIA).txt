@@ -10,5 +10,3 @@ Resources for other IT certs (Cisco, Comptia Specialty)
 	* Cisco CCNA - https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ | https://is.gd/K3hx28
 	* Cisco CyberOps Associate - https://www.youtube.com/playlist?list=PLTVaTVde43FcI7qzxn4-YYbwAeqDd6H9z
 	* Cisco CCNP Enterprise - core -  https://is.gd/q0HV3M | ENARSI concentration - https://is.gd/GE5hgx
-
-@learning @comptia @cisco

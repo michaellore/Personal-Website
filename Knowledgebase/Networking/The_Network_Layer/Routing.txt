@@ -33,6 +33,3 @@ Non-routable address space - IP addresses set aside for anyone that cannot be ro
 		* appropriate for use within autonomous system, external gateway will not route 
 
 RFC - request for comments
-
-@networking @routing 
-

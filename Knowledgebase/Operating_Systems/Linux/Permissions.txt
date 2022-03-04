@@ -58,5 +58,3 @@ Special permissions - if we want users to be able to change certain files withou
 	* Sticky bit - anyone can write, only owner or root can delete, 't', or 1
 		* __sudo chmod +t my_file.txt__
 		* __sudo chmod 1755 my_file.txt__
-
-@linux @permissions 

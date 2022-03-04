@@ -25,5 +25,3 @@ IANA assigns address blocks to the 5 regional internet registries RIRs
 	* APNIC - Asia, Aus, NZ, pacific islands
 	* LACNIC - central and south america, other parts of caribbean
 	* RIPE - Euro, russia, middle east, parts of central asia
-
-@networking @nat 

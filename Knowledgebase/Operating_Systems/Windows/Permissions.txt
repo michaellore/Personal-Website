@@ -43,5 +43,3 @@ Let's say we want to allow users to create files on C:\windows\temp
 	* S - synchronize
 	* WD - create files/write data
 	* AD - create folders/append data
-
-@windows @permissions 

@@ -18,5 +18,3 @@ Linux has many signals that can be sent to processes, including SIGINT, sent wit
 Terminate process with the __kill__ command, which sends a SIGTERM.
 
 Check system resource utilization with __top__ command. __uptime__ command shows some system info. __lsof__ command lists open files with what processes are using them.
-
-@linux @processes 

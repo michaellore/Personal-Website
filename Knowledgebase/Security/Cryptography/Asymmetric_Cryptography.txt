@@ -26,5 +26,3 @@ Downsides
 	more complex, slower
 
 Often companies will use asymmetric encryption to send a shared secret, and then data can be sent using symmetric encryption
-
-@security @crytography 

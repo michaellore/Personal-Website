@@ -18,5 +18,3 @@ Root directory denoted with a /
 Subdirectories separated by a forward slash. /
 
 /home/mike/Desktop
-
-@os @linux 

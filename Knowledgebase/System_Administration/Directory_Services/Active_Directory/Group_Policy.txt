@@ -27,6 +27,3 @@ To test GPOs, you can create a Test OU and test changes on a copy of the GPO on 
 When a computer has multiple policies, they will be applied in precedence rules. GPOs linked to the largest/least specific container are applied first, and will be overwritten by more specific.
 
 Policies with precedence rules applied are a Resultant Set of Policy - RSoP, RSoP Report.
-
-
-@sysadmin @activedirectory @grouppolicy 

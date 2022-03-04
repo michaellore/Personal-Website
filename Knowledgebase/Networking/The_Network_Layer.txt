@@ -50,5 +50,3 @@ Address Resolution protocol (ARP) - discover hardware address of a node with a c
 transmitting device needs a destination MAC address to complete the Ethernet frame header. Almost all network connected devices will retain a local ARP table. An ARP table - list of IP addresses an the MAC addresses associated with them.
 
 ARP table entries usually expire quickly to account for network changes
-
-@networking @ipaddress @tcpip @osi 

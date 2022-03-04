@@ -19,5 +19,3 @@ Bottom layer - physical layer cables, specs describe how signals are sent
 {{.\pasted_image001.png}}
 
 See [[OSI Model]]
-
-@networking @tcpip 

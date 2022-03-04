@@ -28,5 +28,3 @@ Two command line interfaces, CMD and Powershell. Powershell is newer and support
 	* can also move documents - mv <file to move> <new directory> - mv yellow.txt ~\Documents
 		* move multiples with * wildcards
 * __rm or remove <file or directory>__ - removes a file, bypasses recycle bin
-
-@os @windows @cli 

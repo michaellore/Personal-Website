@@ -18,5 +18,3 @@ Creation-Date: 2021-08-25T11:41:54-04:00
 Subdirectories separated by backslashes \
 
 Absolute path starts from the main directory. Relative starts from current directory.
-
-@os @windows 

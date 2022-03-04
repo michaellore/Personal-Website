@@ -55,5 +55,3 @@ NS record - other name servers that might also be responsible for this zone
 
 Reverse lookup zone file - let dns resolvers ask for an IP and get the FQDN associated with it
 	same as zone file, but instead have Pointer resource record (PTR) - resolves ip to a name
-
-@networking @dns 

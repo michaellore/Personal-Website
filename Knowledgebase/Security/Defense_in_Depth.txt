@@ -19,5 +19,3 @@ File-based or home directory encryption - more convenient than FDE, system files
 It is smart to have policies for software updates, browser updates, and browser extension updates. 
 
 Penetration Testing - trying to break into a system to test its protection for weak points or blind spots
-
-@security 

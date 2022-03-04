@@ -62,5 +62,3 @@ connection-oriented protocol - establishes a connection and uses this to ensure 
 connectionless protocol - udp - doesn't rely on acknowledgements - just set destination port and go. removes overhead of tcp
 
 firewall - device that blocks traffic based on set criteria, operate at multiple layers, most common at transport layer. can block and allow traffic at different ports
-
-@networking @tcp @port 

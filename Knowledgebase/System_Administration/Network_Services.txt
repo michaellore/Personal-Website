@@ -23,5 +23,3 @@ In Windows, check on a status with __Get-Service <service>__
 	* Stop-Service <service> - stops service
 	* Start-Service <service> - start service
 	* can always use Services Management GUI
-
-@sysadmin @networks 

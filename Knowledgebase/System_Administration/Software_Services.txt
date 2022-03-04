@@ -18,5 +18,3 @@ Email protocols
 		* stores files on local machine
 	* IMAP - internet message access protocol - keeps emails on the server
 	* SMTP - simple message transfer protocol - used for sending emails
-
-@sysadmin @software @email 

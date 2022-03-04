@@ -23,5 +23,3 @@ Twisted pair cables temrinate at an endpoint where they are exposed in a plug. M
 most ports have 2 LEDs, link and activity.
 
 Sometimes network ports are in a wall, whichare connected to a patch panel. Patch panels contains many ports, and connects to a switch or routers
-
-@networking @tcpip @osi 

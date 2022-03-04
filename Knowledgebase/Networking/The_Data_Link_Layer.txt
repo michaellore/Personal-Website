@@ -39,5 +39,3 @@ Payload - the actual data
 
 Frame Check Sequence - 4byte (32 bit) number that is a checksum for entire frame. Calculated by performing a cyclical redundancy check against frame (CRC)
 	* CRC - verifies integrity of data. if receiving checksum is not the same as sender, data is thrown out. Highler layers determines retransmission
-
-@networking @ethernet @MACaddress @tcpip @osi 

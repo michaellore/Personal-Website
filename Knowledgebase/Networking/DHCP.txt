@@ -29,5 +29,3 @@ DHCP discovery - process by which a client configured to use dhcp attempts to ge
 	4. server responds with DHCPACK or acknowledgement message
 Process known as DHCP lease because it has an expire time, after expiration client must negotiate a new lease. client can also release its lease on the server, allowing IP address to return to available pool
 
-@networking @dhcp 
-

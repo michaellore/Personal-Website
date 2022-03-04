@@ -25,6 +25,3 @@ __-<flag>__ adds options to commands like wndows parameters
 	* wildcards to move multiple
 * __rm or remove <file to remove>__ - remove files
 	* -r flag to recursively remove directories
-
-
-@os @linux @shell 

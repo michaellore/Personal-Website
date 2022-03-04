@@ -22,6 +22,4 @@ OAuth - open standard that allows users to grant third party apps and websites a
 Access Control List - way of defining permissions for objects
 
 Accounting - recording access and usage
-Auditing - Reviewing records of access and ausage
-
-@security 
+Auditing - Reviewing records of access and usage

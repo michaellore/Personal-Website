@@ -16,5 +16,3 @@ Diagnose a web server error with HTTP status codes
 	* https://moz.com/learn/seo/http-status-codes
 
 View HTTP response in Developer tools -> Network tab
-
-@sysadmin @platform 

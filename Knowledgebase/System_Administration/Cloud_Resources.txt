@@ -9,5 +9,3 @@ Different types of cloud services, see [[:Knowledgebase:Networking:Troubleshooti
 
 Typical setup:
 A web server provides a website, multiple virtual machines serve it, and are configured to spin up more and shut down as needed for load balancing. Autoscaling. Vms usually connected to a cloud database
-
-@sysadmin @cloud 

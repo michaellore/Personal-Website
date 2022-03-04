@@ -15,5 +15,3 @@ Learning Resources for IT, all free w/ paid option
 	* [[+Other Certs (CISCO/CompTIA)|Other Certs (CISCO/CompTIA)]]
 	* [[+Cybersecurity|Cybersecurity]]
 
-@learning @comptia @cisco @googlecloud @aws @azure @office365 @helpdesk @cybersecurity
-

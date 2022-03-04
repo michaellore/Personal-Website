@@ -49,5 +49,3 @@ Repair file system in linux with __fsck__ command - make sure file system is not
 	* __sudo fsck /dev/sda__
 	* if you run it on a mounted system there is a chance it will damage the filesystem
 	* fsck runs on boot in some distros to check for and fix errors
-
-@linux @filesystem 

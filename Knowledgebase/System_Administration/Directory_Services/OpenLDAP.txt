@@ -8,5 +8,3 @@ phpLDAPAdmin - web interface
 
 https://www.openldap.org/
 http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page
-
-@sysadmin @openldap 

@@ -33,5 +33,3 @@ Fiber - used by core of internet, higher speeds and longer cables. starting to b
 		FTTB - fiber to the building, basement, building - fiber to an individual building (aka FTTP, fiber to the premises)
 		FTTH - fiber to the home (aka FTTP)
 		Optical network terminator ONT - converts data from fiber network protocols to more traditional twisted pair copper networks
-
-@networking @internet 

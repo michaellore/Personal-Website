@@ -34,6 +34,3 @@ Three common ways to authenticate
 	* Anonymous - not actually authenticating, anyone could access
 	* Simple -need directory name and password, usually sent in plaintext, not secure
 	* SASL, Simple Authentication & Security Layer - requires both client and server to authenticate, Kerberos protocol
-
-
-@sysadmin @directory 

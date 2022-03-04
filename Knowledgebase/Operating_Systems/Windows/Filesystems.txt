@@ -61,6 +61,3 @@ __Chkdsk__ tool can be used in serious emergencies.
 	* __chkdsk /F C:__
 
 If the os detects corruption, it will set a bit in the metadata and the system will run chkdsk on next boot to try and repair corruption
-
-
-@windows @filesystem 

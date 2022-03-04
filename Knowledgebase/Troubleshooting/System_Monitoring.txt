@@ -11,6 +11,3 @@ Effective use of logs:
 	* Search for terms like "error"
 	* Search for specific apps you are having issues with
 	* Check logs in realtime
-
-@logs @monitoring 
-

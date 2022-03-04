@@ -32,6 +32,3 @@ Ipv4 mapped address space - space reserved for addresses that directly correlate
 
 Ipv6 tunnels - take incoming ipv6 taffic and encapsulate it within ipv4 datagrams
 	* tunnel broker - company provides ipv6 endpoints so you don't need additional equipment on your network
-
-
-@networking @ipv6 

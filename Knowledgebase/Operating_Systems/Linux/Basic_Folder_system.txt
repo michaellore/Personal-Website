@@ -10,5 +10,3 @@ Creation-Date: 2021-08-25T12:05:03-04:00
 * /proc - info about currently running programs
 * /usr - user installed software
 * /var - system logs
-
-@os @linux 

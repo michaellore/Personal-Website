@@ -16,5 +16,3 @@ EdX:
 Other:
 	* https://tryhackme.com/
 	* https://www.hackthebox.eu/
-
-@learning @cybersecurity

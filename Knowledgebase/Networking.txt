@@ -20,7 +20,3 @@ Creation-Date: 2021-08-14T10:04:51-04:00
 	* [[+Connecting to the Internet|Connecting to the Internet]]
 		* [[+Connecting to the Internet:WANs and Wireless Networks|WANs and Wireless Networks]]
 	* [[+Troubleshooting|Troubleshooting]]
-
-
-
-@networking 

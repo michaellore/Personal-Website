@@ -28,4 +28,3 @@ Help combat disk faiure with a RAID Array - Redundant Array of Independent Disks
 Post-mortem
 {{.\pasted_image.png}}
 
-@sysadmin @datarecovery 

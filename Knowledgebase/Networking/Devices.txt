@@ -33,5 +33,3 @@ Hubs and switches connect devices on a LAN.
 		* routers share data via BGP - border gateway protocol - learn most optimal path to forward traffic
 
 **Servers** provide data to requesting devices. The device receiving data is the **client**. Devices on a network are **nodes**. Apllications can also be clients and servers or both.
-
-@networking @cables @hub @switch @router @server @client 

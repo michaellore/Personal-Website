@@ -17,5 +17,3 @@ Instead of logging in as root, you can run specfic commands as superuser with 's
 Adding/deleting users:
 	* __sudo useradd <name> __ - can combine with password command to force a password change
 	* __sudo userdel <name>__
-
-@linux @users @groups 

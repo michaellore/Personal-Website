@@ -39,5 +39,3 @@ Writing files:
 
 		* if we don't care about error msg, can redirect to null
 			* __rm my_secure_file 2> $null__
-
-@os @windows @powershell 

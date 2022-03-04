@@ -25,6 +25,3 @@ Transferring files:
 		* __scp myfile.txt mike@104.132.155.223__
 		* Same command on Windows with Putty using the Putty Secure Copy Client, pscp.exe
 	* Easier way to transfer files is the Shared Folder concept
-
-
-@remote @ssh 

@@ -53,6 +53,3 @@ Social engineering - attacks rely on humans instead of computers
 	* Spoofing - source masquerading as something else, ex - a spoofed email
 	* Baiting - enticing a video to do something, like leaving a malware USB around
 	* Tailgating - gaining access to restricted area by following a real employee in
-
-@security
-

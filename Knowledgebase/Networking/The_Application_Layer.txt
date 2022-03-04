@@ -8,5 +8,3 @@ many different protocols in use, standardized by type. for example, all web brow
 
 In the [[:Knowledgebase:Networking:OSI Model|OSI model]], 5th layer is the session layer. Facilitates comms between actual applications and transport layer.
 	6th layer - presentation layer - repsonsible for making sure unencapsulated application layer data is able to be understood by application in question
-
-@networking @osi @tcpip 

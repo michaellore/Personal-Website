@@ -55,7 +55,3 @@ Intrusion Detection and Prevention Systems (IDS/IPS) - monitoring and analyzing 
 		* Can be host-based or network-wide
 		* Snort, Suricata, Zeek Network Security Monitor are some popular solutions
 		* Network Intrusion Prevention System NIPS must be place din line with traffic flow to be able to take action
-
-
-@security @networks 
-

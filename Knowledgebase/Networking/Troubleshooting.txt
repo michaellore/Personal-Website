@@ -53,5 +53,3 @@ X as a Service
 	IaaS - infrastructure, don't have to worry about building your own network
 	PaaS - platform, platform provided for customers to run services, ex - web dev needs a server to run web app
 	SaaS - software, licensing use of software while keeping software centrally hosted,  ex - gmail for business
-	
-@networking @cloud @dns @troubleshooting 

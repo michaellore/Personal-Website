@@ -35,6 +35,3 @@ Same 3 output streams as in [[:Knowledgebase:Operating Systems:Windows:Powershel
 
 	* pipe | to redirect input - search for 'bluetooth' in /etc directory
 		* __ls -la /etc | grep bluetooth__
-
-
-@os @linux @shell

@@ -23,5 +23,3 @@ Benefits
 
 Downsides
 	Key must be shared with every device
-	
-@security @cryptography 

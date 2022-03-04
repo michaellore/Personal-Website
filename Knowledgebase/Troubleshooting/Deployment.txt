@@ -12,5 +12,3 @@ In linux, you can use __dd__ to clone folders and discs.
 https://linuxhint.com/dd_command_linux/
 
 OS vendors also often offer network deployments.
-
-@imaging @os 

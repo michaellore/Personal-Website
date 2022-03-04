@@ -38,5 +38,3 @@ Windows groups all devices and drivers together in Device Manager.
 Windows Update client service runs in the background to download and install OS updates.
 	* Windows 10 uses cumulative updates, theoretically saving space instead of having to install hundreds of updates
 		* Downside is that updates aren't optional
-
-@windows @packages @software 

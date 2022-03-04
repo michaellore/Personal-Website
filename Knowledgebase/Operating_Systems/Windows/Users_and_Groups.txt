@@ -35,6 +35,3 @@ Some groups:
 	* Everyone - all users and local accounts
 	* Guests - special user allowed to use computer without an account, disabled by default
 	* Authenticated users - all users with a password
-
-
-@windows @groups @users 

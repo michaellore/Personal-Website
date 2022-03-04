@@ -30,5 +30,3 @@ A tool to manage processes is the Process Explorer that gives many more details 
 Monitor how many resources a process is using with the Resource Monitor.
 	* In Powershell, use __Get-Process__
 	* __Get-Process | Sort CPU -descending | Select -first 3 -Property ID, ProcessName, CPU__ - shows top 3 processes by CPU usage
-
-@windows @processes 

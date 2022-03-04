@@ -9,5 +9,3 @@ IT Helpdesk and support resources
 	* Helpdesk Lab Setup - https://www.youtube.com/playlist?list=PLdh13bXVc6-k_u2RPqYAp8R8HtYT_ONht
 	* Desktop Support Lab - https://www.youtube.com/playlist?list=PLdh13bXVc6-nSbOyRyoD1O_Q3RWNgXVMa
 	* Example Support/Helpdesk Tickets - https://www.youtube.com/playlist?list=PLdh13bXVc6-mjvXjY25U-1eF63ZH6CeX8
-
-@learning @helpdesk

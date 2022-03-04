@@ -45,5 +45,3 @@ In Linux you update the kernel as if it is any other package.
 	* __uname -r__ - see kernel version
 	* __sudo apt update__ - update application sources
 	* __sudo apt full-upgrade__ - update kernel, will install new packages or uninstall if needed, use caution
-
-@linux @packages 
