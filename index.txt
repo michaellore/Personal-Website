@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-08-05T18:29:46-04:00
 
-====== Michael Lore ======
+====== Welcome ======
 
 I'm an Interactive Multimedia graduate from The College of New Jersey looking to break into the IT field.
 
 This is my personal website and serves as a repository for my [[Knowledgebase|Personal Knowledgebase]].
 
 
-
+--------------------
 Built with [[https://www.zim-wiki.org/|Zim]] | [[https://github.com/michaellore/knowledgebase|Github]]
