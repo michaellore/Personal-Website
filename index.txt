@@ -7,7 +7,7 @@ I'm Michael Lore.
 
 I'm an Interactive Multimedia graduate from The College of New Jersey looking to break into the IT field.
 
-This is my personal website and serves as a repository for my [[Knowledgebase|Personal Knowledgebase]].
+This is my personal website and serves as a repository for my [[Knowledgebase|Personal Knowledgebase]], other projects, random musings, and anything else I find interesting.
 
 [[https://www.linkedin.com/in/mlore/|LinkedIn]] | [[https://github.com/michaellore|Github]]
 
