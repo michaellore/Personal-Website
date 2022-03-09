@@ -1,11 +1,15 @@
 [Notebook]
 version=0.4
-name=IT Notes
+name=Michael Lore
 interwiki=
 home=Home
 icon=
 document_root=D:\IT Stuff\IT Notes
+short_links=False
 shared=True
 endofline=dos
 disable_trash=False
+default_file_format=zim-wiki
+default_file_extension=.txt
+notebook_layout=files
 
