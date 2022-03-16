@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T15:24:51-04:00
+
+====== Azure DevOps ======
+Combining philosophies and practices of technical teams to achieve common goals. Automating development, deployment, and maintenance. Azure has several tools to help achieve devops goals.
+
+Azure DevOps Services
+	* Azure Repos - centralized source code repositories
+	* Azure Boards - agile project management suite, kanban boards, reporting, and tracking
+	* Azure Pipelines - continuous integration and deployment automation tool
+	* Azure Artifacts - repository for hosting artifacts such as compiled source code
+	* Azure test plans - automated test tool used in a CI/CD pipeline to ensure quality before software release
+
+Also available are github and github actions - github actions enables workflow automation with triggers for events. Github is a more lightweight tool than Azure Devops with more focus on individual developers. Azure devops has more granualar permission rules and excels at project management
+
+Azure DevTest labs - automated means of building, setting up, and tearing down the VMs that contain builds of your software

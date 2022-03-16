@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T11:59:01-04:00
+
+====== Azure Databases ======
+Azure can work with several database and analytic technologies.
+
+* Azure Cosmos DB
+	* globally distrubted multi-model database service. You can independently scale throughput and storage in individual regions and access data through various APIs. Supports schema-less data that support constantly changing data.
+	* Data stored in Atom-record-sequence (ARS) format and then abstracted as an API when you create database. SQL, MongoDB, Cassandra, Tables, Gremlin.
+* Azure SQL Database
+	* latest stable version of Microsoft SQL Server
+	* Existing databases can be migrated to Azure service
+* Azure SQL Managed Instance
+	* scalable cloud service with broadest SQL server database engine compatibility
+	* similar to AQL database but with some additional features such as support for using foreign characters for collation.
+
+* Azure Database for MySQL
+	* scale as needed
+	* automated backups
+	* enterprise security
+* Azure Database for PostgreSQL
+	* single server
+		* built in high availability, scaling, sensitive data protection
+	* hyperscale (Citus)
+		* horizontally scales queries across multiple machines using sharding
+		* serves apps that require greater scaling and performance
+* Azure Synapse Analytics
+	* limitless analytics service for business intelligence and machine learning
+* Azure HDInsight
+	* open source analytics service for enterprise. 
+* Azure Databricks
+	* unlock insights from data and build AI solutions
+* Azure Data Lake Analytics
+	* on-demand analytics service that simplifies big data

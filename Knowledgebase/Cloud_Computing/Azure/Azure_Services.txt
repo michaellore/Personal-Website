@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-12T13:39:35-05:00
+
+====== Azure Services ======
+* [[+Azure Compute|Compute]]
+	* VMs, Kubernetes, Containerized apps
+* [[+Azure Networking|Networking]]
+	* Load balancing, DNS, firewall, VPN services, traffic management
+* [[+Azure Storage|Storage]]
+	* large file storage, structured data storage
+* Mobile
+	* backend services for mobile apps, push notifications
+* [[+Azure Databases|Databases]]
+	* wide variety of data types, database migration services
+* Web
+	* cloud web-apps, push notifications, api management
+* [[+Azure Internet of Things (IoT)|Internet of Things (IoT)]]
+	* IoT management at scale
+* Big Data
+	* massive scale analytics
+* [[+Azure AI|AI]]
+	* machine learning assets, vision, speech rec. knowledge mapping
+* [[+Azure DevOps|DevOps]]
+	* build and release pipelines for delivery integrating repositories and tests
+* [[+Azure Identity Services|Azure Identity Services]] - manage access to systems and data
+

@@ -6,6 +6,6 @@ Creation-Date: 2021-08-05T17:56:16-04:00
 
 IT Helpdesk and support resources
 
-	* Helpdesk Lab Setup - https://www.youtube.com/playlist?list=PLdh13bXVc6-k_u2RPqYAp8R8HtYT_ONht
-	* Desktop Support Lab - https://www.youtube.com/playlist?list=PLdh13bXVc6-nSbOyRyoD1O_Q3RWNgXVMa
-	* Example Support/Helpdesk Tickets - https://www.youtube.com/playlist?list=PLdh13bXVc6-mjvXjY25U-1eF63ZH6CeX8
+	* Helpdesk Lab Setup - https://is.gd/ecazuy
+	* Desktop Support Lab - https://is.gd/ucy58K
+	* Example Support/Helpdesk Tickets - https://is.gd/Cbuzr8

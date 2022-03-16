@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-15T16:02:05-04:00
+
+====== Secure network connectivity on Azure ======
+Use a defense-in-depth strategy made up of layers with security in mind. Azure provides several tools for network defense, Azure Firewall, network security groups, and Azure DDoS Protection.
+
+Defense in depth is a set of layers with the data at the center
+{{.\pasted_image.png}}
+* physical - first line, securing access to buildings and hardware
+* identity and access - controlling access by ensuring identities are verified and logged
+* perimeter - DDoS protection and firewalls to protect from network-based attacks
+* network - limit comms between resources, deny by default, restrict inbound access and limit outbound access, allow only what is required
+* compute - secure access to VMs, endpoint protection, keep systems updated
+* application - ensure all apps are secure and updated, store secrets in a secure medium
+* data - secure databases 
+
+Security posture - org's ability to protect and respond to threats
+	* confidentiality -principle of least privilege - info granted on a need to know basis
+	* integrity - prevent unauthorized changes to info
+	* availability - ensure services are available and accesible only to authorized users
+
+Azure firewall - security service that protects your Azure resources. 
+	* stateful - anaylzes complete context of a network connection and not just indivudual network packets
+	* built in availability
+	* cloud scalability
+	* inbound and outbound rules
+	* Inbound destination network address translation (DNAT) support
+
+you can configure
+	* application rules defining fully qualified domain names
+	* network rules that define source addr, protocol, destination port & address
+	* network address translation rules that define destination IP addresses and ports to translate inbound requests
+
+Azure DDoS Protection helps protect from DDoS attacks by idenitfying and block DDoS traffic while allowing legit traffic to flow. 
+Comes in tiers
+	Basic
+		* automatically enabled for free
+		* always on traffic monitoring, real time mitigation of common attack
+
+	Standard
+		* additional mitigation compared to Basic
+		* protection policies tuned through traffic monitoring and machine learning
+
+	Types of attacks:
+		* volumetric - flood the network with huge amounts of seemingly legit traffic
+		* protocol - exploit weakness in the level 3 and level 4 protocol stack
+		* resource-layer (only with web app firewall) - target wbe app packets to disrupt transmission of data between hosts
+Network security group - allows you to filter traffic between Azure resources within Azure virtual network. Like an internal firewall.

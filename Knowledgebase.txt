@@ -8,6 +8,8 @@ Personal knowledgebase for IT.
 
 ==== • [[+Learning Resources|Learning Resources]] ====
 
+==== • [[+Cloud Computing|Cloud Computing]] ====
+
 ==== • [[+Networking|Networking]] ====
 
 ==== • [[+Operating Systems|Operating Systems]] ====
@@ -17,7 +19,5 @@ Personal knowledgebase for IT.
 ==== • [[+System Administration|System Administration]] ====
 
 ==== • [[+Security|Security]] ====
-
-
 
 

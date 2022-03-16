@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-12T14:49:49-05:00
+
+====== Cloud Service Types ======
+See [[Knowledgebase:Networking:Troubleshooting|Network Troubleshooting]]
+X as a service
+Infrastructure as a Service IaaS - rented hardware, no CapEx, low skill needed, highly agile and flexible
+Platform as a service PaaS - no CapEx, users don't need to configure servers, productivity-focused, however may have platform limitations
+Software as a service SaaS - Centrally hosted, pay as you go, limited by software provider
+
+{{.\pasted_image.png?width=800}}
+
+Serverless computing - company handles no infrastructure management, those tasks ar einvisible to the developer.
+

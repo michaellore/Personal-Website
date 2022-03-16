@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-15T14:39:17-04:00
+
+====== Protect Against Security Threats on Azure ======
+Azure provides several services for secuirty.
+
+Azure Security Center - mointoring center that provides visibility of your security posture across all your services. Security posture is cybersecurity policies and controls as well as your ability to predict and respond to threats
+	* monitor security settings
+	* automatically apply required security settings to new resources
+	* provide security reocmmendations
+	* continuously monitor your resources and perform automatic assessments
+	* use machine learning to detect and block malware
+	* detect and analyze potential inbound attacks
+	* just-in-time access control for network ports ensuring the network only allows required traffic when you need it.
+
+Secure score is a score based on groups of security recommendations and the percentage of those controls that you satisfy
+
+	* just in time vm access - blocks traffic to VMs by default, allows traffic at specified times
+	* adaptive app controls - control which apps are allowed to run on VMs
+	* adaptive network hardening - monitor internet traffic patterns of VMs and compare with company network security group settings
+	* file integrity monitoring - monitoring of changes to important files
+
+Azure Sentinel - security information and event management (SIEM) system, aggregates security data from many sources to detect and investigate threats
+	* can connect with many data sources including Microsoft 365 sources and non-MS sources
+	* both built-in templates for analytics and custom
+	* investigation graphs can be used to investigate alerta and incidents and see what resources they are attached to
+{{.\pasted_image.png?width=800}}
+
+Azure Key Vault - centralized service for storing an apps secrets with secure access control
+	* secure access to tokens, passwords, api keys, etc
+	* manage encryption keys
+	* manage ssl/tls certs
+	* store secrets backed by hardware security modules (HSMs)
+
+Azure Dedicated Hosts - physical dedicated servers to host Azue VMs, some industries have regulations where they must be the only customer on a physical machine

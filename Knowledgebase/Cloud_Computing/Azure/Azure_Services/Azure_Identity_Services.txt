@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-15T17:05:25-04:00
+
+====== Azure Identity Services ======
+Two fundamental concepts - authorization and authentication.
+	* Authentication establishes the idenitity of a person requesting access
+	* authorization establishes what level of access an authenticated person has
+
+Azure Active Directory provides identity services that enable users to sign in and access Microsoft cloud apps well as cloud apps you develop. Similar to [[Knowledgebase:System Administration:Directory Services:Active Directory|Active Directory,]] Azure AD ensures the service is available globally. 
+Provides:
+	* Authentication - verifying identity, self-service password reset, multifactor auth
+	* Single sign-on (SSO) - one username and password for multiple apps, identity tied to user
+	* App management - manage cloud and on-site apps with Application proxy, My Apps portal, for better UI
+	* Device management - register devices to be managed using conditional access policies
+	* Can manage external resources like office 365 and internal resources
+
+You can connect Azure AD to Active Directory in multiple ways but the easiest is Azure AD Connect, which synchronizes identities between the on-premises Active Directory and Azure AD. 
+
+Multifactor auth - user is prompted for an additional form of identity beyond a password
+	* something the user knows - email and password
+	* something the user has - a code sent to a phone
+	* something the user is - biometric, like a fingerprint or face scan
+
+Conditional Access - allow or deny access based on identity signals. For example, a user might not be challenged for a second factor if they are at a known location on a known device.
+	* require multifactor for all users or only certain users
+	* allow access to services only through approved apps or approved devices
+	* block access from unapproved sources, such as unkown devices or unexpected locations
+

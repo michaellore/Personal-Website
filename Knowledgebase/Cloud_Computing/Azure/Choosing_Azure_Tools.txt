@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T15:51:10-04:00
+
+====== Choosing Azure Tools ======
+Broadly, there are two categories of management tools, visual and code based. Visual tools are easy to use, but can provide less granular function compared to code-based tools. Code-based tools have a higher barrier to entry, but are generally quicker to use once you learn commands and parameters.
+
+Imperative code - details each step to achieve the desired outcome
+Declarative code - details the outcome and allows the interpreter to decide how to achieve the outcome.
+
+Azure portal provides a friendly graphical UI
+
+Azure mobile app provides access to Azure resources on the go
+
+Azure Powershell is a shell where you can execute cmdlets to perform tasks in Azure, making the process repeatable and automatable compared to doing everything individually in a GUI
+
+Azure CLI - command line interface similar to Powershell where you can execute commands in Bash
+
+ARM Templates - describe the resources you want to use in JSON, template gets verified before code is executed and then orchestrates creation of resources.

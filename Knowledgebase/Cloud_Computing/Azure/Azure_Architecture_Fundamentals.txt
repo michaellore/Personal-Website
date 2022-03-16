@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-12T15:18:25-05:00
+
+====== Azure Architecture Fundamentals ======
+Organizational Structure
+{{.\pasted_image.png}}
+* Resources - instance sof services like VMs
+* Resource groups - containers that hold resources
+* Subscriptions - groups together user accounts and the resources created by them. can set limits or quoatas to manage costs
+* Management groups - manage access, policy, and compliance for multiple subscriptions
+
+Multiple Azure subscriptions can be used to manage environments, departments, and billing. Test and Deployment, limiting teams to certain resources, tracking costs. Subscriptions are sorted into management groups
+{{.\pasted_image002.png}}
+
+Azure regions - geographical areas that host at least one physical data center. There are specia US Gov and China regions
+Availability zones - physical data centers within the region that are separate and independent and privde protection against downtime
+
+Some Azure services work with availability zones, 3 categories
+	* zonal services - resource pined to a specific zone
+	* zone - redundant - platform replicates across multiple zones
+	* non-regional - resilient to region and zone outages
+
+Regions are always paired with a region at least 300 miles away
+
+Azure Resource Manager - management layer for Azure resources
+	* use templates rather than scripts to manage resources
+	* manage resources as a group instead of individually
+	* apply tags to resources 
+	* clarify billing by viewing costs sorted by tag
+{{.\pasted_image001.png}}
+

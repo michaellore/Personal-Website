@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-12T13:28:17-05:00
+
+====== Azure ======
+
+Azure is Microsoft's Cloud Platform, providing cloud resources for businesses. Many businesses move their existing apps to virtual machines, but Azure also provides AI and machine learning, speech recognition.
+
+Azure Portal - graphical portal interface as a substitute for the command line. Let you mana ge all your Azure resources
+
+Azure Marketplace - connects you with software vendors that provide solutions that run on Azure
+
+* [[+Azure Services|Azure Services]]
+* [[+Azure Architecture Fundamentals|Azure Architecture Fundamentals]]
+* [[+Choosing Azure Tools|Choosing Azure Tools]]
+* [[+Tools for Monitoring Azure|Tools for Monitoring Azure]]
+* [[Protect Against Security Threats on Azure]]
+* [[+Secure network connectivity on Azure|Secure network connectivity on Azure]]

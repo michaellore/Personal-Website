@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T13:23:29-04:00
+
+====== Azure Internet of Things (IoT) ======
+IoT enables devices to gather and relay data using sensors
+Some types of sensors include:
+* Enviornmental - temp and humidity levels
+* Barcode and QR scanners
+* Geo-location sensors
+* light, color, infrared sensors
+* sound sensors
+* motion and touch
+* accelerometer and tilt
+* smoke, gas, and alcohol
+* error sensors
+* mechanical sensors ot detect anomalies
+* flow, level, and pressure
+
+Sensors can collect data and send it to Azure where it can be analyzed. Device updates can be sent to devices from Azure IoT.
+
+Azure IoT hub is the managed service that acts as the central hub for IoT devices with bi-directional communication. Supports multiple messaging patterns, file upload from devices, and reques-reply methods. 
+
+Azure IoT Central is a dashboard that builds on top of IoT hub with a visual UI for managing devices. Provides several starter templates for various industries such as retail, energy, healthcare, govt. 
+
+Azure Sphere - end to end highly secure IoT solution for customers. Micro controller unit processing the OS and signals from sensors, custom Linux OS handling  communication with the security service, and the security service that handles the security of the device and ensures it has not been compromised.
+
+Not all devices are created equally - not every device needs Azure Sphere, washing machine vs an ATM for example. Likewise, a Dashboar dis not always necessary depending on how light your needs are.

@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-13T12:04:07-04:00
+
+====== Azure Compute ======
+On-demand computing service for cloud apps. 
+* virtual machines
+* virtual machine scale sets - sets of identical VMs for scaling
+* Containers and Kubernetes to manage app environments
+* App service - build, deploy, and scale apps
+* Functions - for when you are concerned about only the code and not the platform
+
+Can create VMs in minutes with preconfigured images. VMs are useful for testing, running apps in the cloud, extending your datacenter into the cloud, and in disaster recovery.
+
+Azure Batch enables large scale high-performance computing. 
+* Start a pool of VMs
+* Install apps and data
+* Run the job
+* Identify any failures
+* requeue jobs
+* scale downt he vms as work completes
+
+Containers are designed to be started and stopped quickly while VMs are an instance of an entire operating system. Managing a large number of containers is called orchestration.
+
+Serverless computing - Azure handles server infrastructure, you just handle the code that runs. Event-driven; you write a function instead of an entire app and the platform triggers your function and scales accordingly. Microbilling, pay only for time the server is in use. Serverless computing ensures you don't pay for idle time.
+
+Functions can be stateless (behave as if restarted every time they are triggered) or stateful (Durable) - context is passed through to track prior activity. Functions execute code.
+
+Logic apps - similar to functions, but they execute workflows built from logic blocks in a visual designer often without writing any code.
+Example logic app:
+	* a ticket arrives in zendesk
+	* detect intent of the ticket with AI
+	* create a sharepoint item to track ticket
+	* add customer to office 365 database if they aren't already in
+	* send an acknowledgement email to the customer
+
+Functions vs Logic Apps
+{{.\pasted_image.png}}
+
+Azure Virtual Desktop - cloud-hosted version of Windows that can run on any internet device that can help speed up delpoyment processes for remote workers.

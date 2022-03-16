@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-15T11:58:23-04:00
+
+====== Tools for Monitoring Azure ======
+Azure has several monitoring tools for keeping track of performance, security, downtime, and diagnosing and fixing issues.
+
+Azure Advisor - evaluates your resources and makes recommendations 
+	5 categories:
+		* Reliability
+		* Security
+		* Performance
+		* Cost
+		* Operational Excellence
+
+Azure Monitor - platform for collecting, analyzing, and visualizing data to potentially take action
+
+Azure Service Health - personalized view of the health of the Azure services, regions, etc. that you rely on
+	* service issues such as outages
+	* planned maintenance 
+	* health advisories - issues that require you to act to avoid service interruptions
+
+

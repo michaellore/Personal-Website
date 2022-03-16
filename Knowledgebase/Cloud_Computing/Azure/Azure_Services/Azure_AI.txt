@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-14T14:37:48-04:00
+
+====== Azure AI ======
+Two approaches to AI - deep learning, modeled on the neural network of the human brain, and machine learning, where existing data is used to train a model and then the model is used on new data.
+
+Azure offers 3 distinct product options for AI solutions.
+
+Azure machine learning - platform for making predictions. tools that connect to data to train and test models. and then deploy them in real time.
+	* create a process to define how data is obtain, handled, and split into tests
+	* train and evaluate models
+	* create pipelines defining when and where experiements are run on algorithms
+	* deploy best-performing algorithm as an API to be used in real time by apps
+
+Azure cognitive services - prebuilt machine learning models that enable apps to see, hear, speak, understand, and begin to reason. Solve problems, analyze text for emotion, analyze images to recognize faces
+	* language services - natural language processing to evaluate sentiment
+	* speech - speech to text and text to natural speech, translation and speaker verification
+	* vision - analysis of pictures, video, other visuals
+	* decision - personal recommendations for users that automatically improve with use, content moderation.
+
+Azure bot service and bot framework - platforms for creating virtual agents that understand and reply to questions like a human. uses other Azure AI services to understand what human users are asking for
+	* simple repetitive tasks
+	* quick q&a or sophisticated conversations
+

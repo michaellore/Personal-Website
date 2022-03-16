@@ -6,10 +6,10 @@ Creation-Date: 2021-08-05T16:43:03-04:00
 
 Training for Microsoft 365/Office/Teams - Enterprise Admin Expert
 
-	* Microsoft 365 Fundamentals - https://is.gd/OodjcV  /  https://www.youtube.com/playlist?list=PLhLKc18P9YOBtDKWHVr1TwUq6_smRdCjo
-	* Modern Desktop Admin Associate - https://is.gd/R9v9Bo  / https://is.gd/9qEUAA
-	* Security Admin Associate - https://is.gd/rcWUnT / https://www.youtube.com/playlist?list=PLhLKc18P9YOAEO9F15YFe7WCIrW1VzJjD
-	* Teams Admin Associate - https://is.gd/VTSNdf  /  https://www.youtube.com/playlist?list=PLhLKc18P9YOCTGOlpREltpZ6ZIElHA7lN
+	* Microsoft 365 Fundamentals - https://is.gd/OodjcV
+	* Modern Desktop Admin Associate - https://is.gd/R9v9Bo
+	* Security Admin Associate - https://is.gd/rcWUnT
+	* Teams Admin Associate - https://is.gd/VTSNdf
 	* Messaging Admin Associate - https://is.gd/MXoPzE
 	* Identity & Access Admin Associate - https://is.gd/Jkt8U9
 	* Enterprise Admin Expert - https://is.gd/pSt1L9

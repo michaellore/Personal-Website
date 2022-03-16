@@ -8,5 +8,5 @@ Training for Microsoft's Azure cloud program
 
 	* Azure Fundamentals - https://is.gd/DuQ8n0
 	* Azure Administrator Associate - https://is.gd/wKiz2e  /  https://is.gd/y2DkXe
-	* Identity and Access Admin Associate - https://is.gd/u9hRJo  /  https://www.youtube.com/playlist?list=PLVY1cokqlbC7uejA2EsdED4FmKxBh8xTk
-	* Security Operations Analyst Associate - https://is.gd/73nS1Y  /  https://www.youtube.com/playlist?list=PLVY1cokqlbC7KDYRNm8FwGK3cCJWbpvmg
+	* Identity and Access Admin Associate - https://is.gd/u9hRJo  /  https://is.gd/jXcsAx
+	* Security Operations Analyst Associate - https://is.gd/73nS1Y  /  https://is.gd/LofMX9

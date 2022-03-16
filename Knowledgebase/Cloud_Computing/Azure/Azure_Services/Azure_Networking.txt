@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-13T13:01:52-04:00
+
+====== Azure Networking ======
+Azure networking services allow Azure resources to communicate with each other, your on-premises devices, and clients on the internet.
+
+* isolation and segmentation - multiple isolated networks with defined IP address spaces
+* internet communications
+* communication between Azure resources - virtual networks and service endpoints
+* communication with on-premises devices - point to point vpns, site to site vpns, Azure Expressroute for greater bandwith and security
+* Route network traffic
+	* route tables - define rules about traffic direction
+	* border gateway protocol 
+* Filter network traffic
+	* network security groups - azure resource with inbound and outbound rules
+	* network virtual appliances - special VM resource compared to a hardened network appliance, carries out specific function such as running a firewall
+* Connect virtual networks through peering, allowing resources in each virtual network to communicate
+
+When creating a virtual network, you define the network name, address space, subnet, endpoints, nat gateway, BastionHost, DDoS Protection, and Firewall service. You can also define the network security group with custom traffic rules, the route table, and subnet delegation.
+
+Azure VPN Gateways - all data is inside a private tunnel - 2 types
+		* policy-based - specifies IP address of packets encrypted through each tunnel
+			* static routing - source and destination of tunneled networks are declare din the policy
+		* route-based - modelled as a network interface, can use dynamic routing protocols, source and destination networks do not have to be statically defined.
+
+	Configurations
+		* Active/standby - by default deployed as two instances to account for planned maintenance or disruption, the standby automatically takes over without user intervention
+		* Active/active - unique public ip for each instance, separate tunnels from on-premises device to each ip address
+ExpressRoute - extend on-premises networks into the cloud over a private connection that doesn't go over the public internet. More reliable, faster, and more secure than a typical connection. 
+
+	Focus on 2 layers of the [[:Knowledgebase:Networking:OSI Model|Osi Model]]. 
+		* Layer 2 - data link, node-to-node comms on the same network
+		* Layer 3 - network layer 0 address and routing between nodes on a multi-node network
+	
+	Layer 3 connectivity between on-premises network and MS Cloud.
+	Global connectivity, dynamic routing, built-in redundancy.
+	Expressroute connectibility models
+	{{.\pasted_image.png?width=800}}
+	

@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-13T13:59:08-04:00
+
+====== Azure Storage ======
+Azure storage is used to store files, messages, tables, and other info. Azure Storage account holds all data objects, like blobs, files, and disks.
+{{.\pasted_image.png}}
+Disks come in many sizes and performances, SSDs to traditional spinning HDDs for less critical ops, premium SDs for production apps, ultra disks for data-intensive workloads.
+
+Azure Blob is object storage solution - can store massive amounts of text or binary data, huge video files, mass simultaneous uploads. Does not require devs to manage disks at all
+
+Azure Files - fully managed file shares, access files from anywhere in the world. store config files in the share and access form multiple VMs.
+
+Blob Storage tiers:
+	* Hot - storing data used frequently - website images
+	* cool - infrequently access, stored for at least 30 days - customer invoices
+	* archive - rare access, stored at least 100 days - long-term backups
+
+Hot and cool tiers can be set at account level. All tiers can be set at blob level
+Archive data stores offline and has lowest storage cost, but higher cost to rehydrate and access that data
