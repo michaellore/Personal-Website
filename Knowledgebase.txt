@@ -6,18 +6,15 @@ Creation-Date: 2021-08-05T13:21:05-04:00
 
 Personal knowledgebase for IT.
 
-==== • [[+Learning Resources|Learning Resources]] ====
-
-==== • [[+Cloud Computing|Cloud Computing]] ====
-
-==== • [[+Networking|Networking]] ====
-
-==== • [[+Operating Systems|Operating Systems]] ====
-
-==== • [[+Troubleshooting|Troubleshooting]] ====
-
-==== • [[+System Administration|System Administration]] ====
-
-==== • [[+Security|Security]] ====
+General Knowledge:
+	* [[+Learning Resources|Learning Resources]]
+	* [[+Cloud Computing|Cloud Computing]]
+	* [[+Networking|Networking]]
+	* [[+Operating Systems|Operating Systems]]
+	* [[+Troubleshooting|Troubleshooting]]
+	* [[+System Administration|System Administration]]
+	* [[+Security|Security]]
 
 
+Specific Certifications:
+	* [[+CompTIA A+ 220-1001|CompTIA A+ 220-1001]]

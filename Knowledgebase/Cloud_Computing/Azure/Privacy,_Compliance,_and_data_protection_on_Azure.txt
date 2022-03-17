@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-16T14:06:52-04:00
+
+====== Privacy, Compliance, and data protection on Azure ======
+Compliance offerings are grouped under four categories: Global, US Govt, Industry, and Regional.
+Any state or local agency that wants access to the FBI Criminal Justice Information Services database must comply with the CJIS policy. 
+
+Azure has STAR certification which involves a rigorous third party assesment of Azure's security. 
+
+Azure offers  EU Standard contractual clauses that provide guarantees around personal data in the EU.
+
+HIPAA agreements helping businesses stay compliant with HIPAA
+
+Microsoft privacy statement describes how MS collects, uses, and secures customer data
+
+The Microsoft Trust Center provides information about security, privacy, and data integrity with many in-depth resources. The Azure compliance documentation provides information about legal and regulatory standards specifically for Azure.
+
+Azure Government is a separate Azure instance that addresses security and compliance needs of US Govt agencies. Offers physical isolation from non-US Govt Azure deployments
+
+Azure China 21Vianet is operated by 21Vianet and provides physically separated services located in China. Only cloud service providers that are locally registed with less than 50% foreign investment can qualify. Supports mose of the same Azure services. If you want to operate in China you may have to rehost some or all of your services.

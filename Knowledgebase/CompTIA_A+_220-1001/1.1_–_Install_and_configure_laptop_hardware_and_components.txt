@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T11:15:54-04:00
+
+====== 1.1 – Install and configure laptop hardware and components ======
+Laptop keyboards are often more compact and missing the extra keys of a desktop keyboard
+laptop drives are often smaller, often use solid state drives, 2.5 and 1.8 inch size, desktop HDDs are often 3.5, or hybrid drives, SSHD
+Access by removing a cover on the back or the entire back, usually just a few screws, designed to be easy to replace
+
+laptop RAM is often smaller, SO-DIMM and micro DIMM - small outline dual in line memory
+
+sometimes have a smart card reader or an external USB reader
+
+CD optical drives are disappearing, left out to save space
+
+Usually contain wireless cards for Wifi and bluetooth in different form factors, mini PCI and mini PCIExpress
+
+video card usually built into the processor and not upgradable
+
+LCD Display are light and high-res but very fragile, resolutions are fixed on the screen so changing from native can be blurry
+
+Power supply is usually external, converts AC from wall into DC direct current for the laptop
+
+Batteries are lithium-ion, no "memory effect", battery must not be completely depleted, but every time you charge capacity is diminished slightly, each laptop different form factor
+
+Usually have touchpad, sometimes pointing stick or nub in middle of keyboard.
+
+selfcontained audio speakers
+
+motherboards are proprietary to fit each laptop, cpu designed for mobility, low-power to keep cool and use less battery

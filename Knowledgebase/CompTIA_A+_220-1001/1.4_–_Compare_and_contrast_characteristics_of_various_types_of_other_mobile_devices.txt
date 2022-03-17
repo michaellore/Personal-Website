@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T11:43:50-04:00
+
+====== 1.4 – Compare and contrast characteristics of various types of other mobile devices ======
+Tablets - single screen touch computer - iOS/android, usually 7" or larger, no kb&m, often has a stylus
+supports games, apps, media
+
+Cell phones - mobile comms, 3." to 6", media viewer, maps
+
+Wearables - smart watch, integrates with phone, fitness monitor
+
+Virtual Reality - worn display, input devices give input to virtual world
+
+Augmented reality - combo of real and virtual, usually with eyeglasses or looking through screen, computer augments real world with more detail
+
+e-Reader - specifically for reading books, electronic paper e-ink screen, black and well, does well in direct light, huge battery life, only uses battery when screen changes
+
+GPS - device for directing you around, relies on satellites and street updates

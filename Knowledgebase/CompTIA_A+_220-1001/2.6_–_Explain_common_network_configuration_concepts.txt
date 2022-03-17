@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T15:05:40-04:00
+
+====== 2.6 – Explain common network configuration concepts ======
+Ipv4 is the primary protocol, Ipv6 is also becoming popular
+ipv4 is 4 bytes long, 32 bits.
+4 number separated by a . 0-255
+192.168.0.1
+
+IPv6 is 128bit, many many more addresses available.. 16byte, represented in hexadecimal with : separated, leading zeroes can be omitted.
+	2001:0db8:85a3:0000:0000:8a2e:0370:7334
+	first half, 64bits, is known as the netowrok prefix
+	last 64 bits are host network address
+
+Ipv4 - every device needs a unique address, 
+	subnet mask is used by local device to determine subnet - 255.255.255.0
+	default gateway - ip address of router, allows you to communicate outside of local subnet
+	dns server must be configured, can configure two
+	
+DHCP handles assigning IP addresses for all addresses - discover, offer, request, acknowledge
+	client sends out a request for an ip address
+	dhcp server will offer an ip address
+	dhcp server will choose from a set of available ip addresses, meaning the device ip address will sometimes change
+	you can set a static ip address on a device by disabling dhcp for that device, or by associating the mac address with a specific ip address, useful for servers, printers, etc.
+	if your computer doesnt receive a response from dhcp, you can be assigned a local automatic private ip address (APIPA) 169.254.0.1 through 169.254.255.254 allowing you to communicate on the subnet but not the internet.
+
+SSL Vpn - secure sockets layer vpn / client to site vpn, remote access vpn
+	uses tcp 443, avoids most firewall issues
+	no big vpn client
+	easy authentication
+	can run from a browser or a light client
+
+LAN - local area network, group of devices share the same broadcast domain
+	virtual LAN, single switch where devices are logically instead of physically separated
+{{.\pasted_image.png?width=800}}
+
+NAT - network address translation
+	ipv4 addresses are exhausted, so this use of NAT helps
+	Many local devices get their local ips translated into one public one that gets sent out to the internet, and then handles translatingit back into the original source IP
+

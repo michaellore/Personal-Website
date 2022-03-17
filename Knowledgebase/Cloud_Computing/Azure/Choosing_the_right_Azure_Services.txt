@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-16T14:59:25-04:00
+
+====== Choosing the right Azure Services ======
+It's important to examine your SLAs and service lifecycle to choose the right Azure services.
+SLA - service-level agreement, an agreement between the service company and the customer. For Azure, it is Microsoft's agreement with you.
+Each Azure service has its own SLA. SLA gneerally broken down into 3 components
+	* Intro - scope of SLA
+	* General terms - defines vocabulary use din SLA so both parties understand the terms of the agreement
+	* SLA details - specific service guarantees, generally focused on guaranteed uptime
+Downtime refers to the time a service is unavailable. 
+{{.\pasted_image.png}}
+A service credit is the percentage of fees paid that you are credited back whenever a service does not comply with its SLA.
+Credits typically increase as uptime decreases.
+{{.\pasted_image001.png}}
+Free services do not typically have an SLA. The Azure status page provides updates on service status. 
+
+You typically need to file a claim with MS to receive a service credit.
+
+An application SLA defines the SLA for a specific application that you build on Azure. To help define your SLA, consider the following:
+	* business impact - what happens if the app goes down
+	* effec ton other business operations 
+	* usage patterns - how and when users access your app
+
+A workload is a capability or task that is logically separated from all other tasks. For your app, assume you will need
+	* two VMs
+	* one Azure SQL database
+	* one Azure load balancer
+
+Identify the SLA for each individual workload in your app, and then combine them to get your composite SLA.
+{{.\pasted_image002.png}}
+
+{{.\pasted_image003.png}}
+If your composite SLA does not meet your requirements, say of 99.99% uptime, there are several options you can take. You can deploy your VMs across different availability zones to remove single points of failure, or you can increase redundancy. Performance above 88.88% is very hard to achieve.
+
+The service lifecycle defines how every Azure service is released. Every features starts in the development phase, then is released for public preview to gather real-world feedback. Finally it is released to all customers as production-ready, called general-availability (GA).

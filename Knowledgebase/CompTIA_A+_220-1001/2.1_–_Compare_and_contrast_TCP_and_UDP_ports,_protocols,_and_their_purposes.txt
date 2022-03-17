@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T12:51:40-04:00
+
+====== 2.1 – Compare and contrast TCP and UDP ports, protocols, and their purposes ======
+Moving data can be thought of as moving along a road. The moving truck is the Internet protocol, the road (cables, ethernet, DSL) has been designed for it.
+The truck contains data, boxes of TCP and udp. Inside the boxes are your application data.
+Client sends ethernet data to the server.
+Inside ethernet payload is the ip payload
+Inside IP payload is the tcp/udp payload which contains application data such as http data being sent to a web server.
+This nesting is called encapsulation. TCP/UDP operates on OSI layer 4, transport layer.
+
+TCP - transmission control protocol, connection-oriented, formal connection start and close, like a phone call
+	reliable, error recovery, can retransmit
+	flow control, receiver can manage data 
+
+UDP - user datagram protocol, 
+	no formal open and close
+	unreliable, no error recovery
+	no data reordering
+	sender controls data flow
+	
+IP delivery truck delivers from one IP address to another. Each "box" has a room (port) label so the receiver knows which service receives the data
+
+IPv4 sockets - server ip, protocol, server app port, client ip, protocol, client port
+
+non-ephermeral port - permanent port number, 0 through 1023 usually on server or service, like web server on 80
+
+ephemeral ports - temporary - 1024 through 65535 detemrined in real time by client, discarded after session
+
+most servers (services) use non-ephemeral port numbers
+
+port numbers used for communication, not security
+
+client must know which port to use
+
+tcp and udp port numbers are not the same
+
+**__Common Network ports__**
+FTP - file transfer tcp/20 active mode data, tcp/21 controls comms
+SSH - secure shell tcp/22
+telnet - telecommunication network - tcp/23, unencrypted, not used in production
+smtp - tcp/25 sending mail
+DNS - domain name system, converts names to ip - udp/53
+http - browser comes tcp/80, https uses tcp/443
+pop3 uses tcp/110
+imap uses tcp/143
+remote desktop RDP - tcp/3389
+smb server message block, windows file and printer sharing - modern direct SMB over tcp/445 does not use netbios
+	older devices might use netbios - udp/137 for netbios name services
+	udp/138 - netbios datagram service
+	tcp/139 netbios session service
+Apple Filing protocol - file service in macOS - tcp and udp 427
+DHCP - dynamic host configuration - udp 67 and 68 - automated configuration of ip addresses, addresses can be reserved by MAC address
+LDAP - lightweight directory access tcp/389 - store and receive info in network
+simple network management - queries udp 161 traps over udp 162
+
+

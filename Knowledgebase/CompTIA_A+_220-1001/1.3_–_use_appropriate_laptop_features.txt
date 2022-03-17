@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T11:36:29-04:00
+
+====== 1.3 – use appropriate laptop features ======
+laptop function keys - not enough room for keys, so use function keys - FN + key
+	toggles - secondary functions, toggle displays for dual displays
+	turn wireless signal on and off
+	control audio / mute
+	control strength of backlight
+	keyboard backlight
+	enable/disable the touchpad
+	rotate the screen
+
+some have dedicated keys for controlling media
+
+Docking station - use external kb&m, avoid cable issues, interface with office printers, etc
+
+physical laptop locks that connect to a solid object
+
+rotating/removable screen

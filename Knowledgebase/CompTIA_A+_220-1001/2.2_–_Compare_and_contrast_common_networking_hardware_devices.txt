@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T13:17:32-04:00
+
+====== 2.2 – Compare and contrast common networking hardware devices ======
+Network interface card - fundamental network device, in every device that connects to a network, specific to network type, often built into the motherboard
+
+Repeater - receivers signal, regenerates, and resends it, boosting cooper network or wifi reach
+
+Hub - multiport repeater - goes in one port and repeated to the others, half-duplex, devies don't communicate at the same time, becomes less efficient as network speeds increase
+
+Bridge - makes forwarding decisions for a hub, similar to a modern switch, distributes traffic based on mac address, example of a bridge is a wireless access point
+
+Switch - bridging done in hardware, can support hundreds of devices, based on data link address, mulitlayer switch includes routing function
+
+Unmanaged switch - plug and play, little config, low price point
+
+managed switch - vlan support, interconnect with other switches, traffic prioritzation, redundancy support, external management, packet capturing to analyze traffic
+
+router - forward decisions based on ip address, "layer 3 switches"
+
+wireless access point - not a router, extends wired network to wireless
+
+wireless lan controllers - management of WAPS, "single pane of glass", can be cloud based
+
+firewall - filters traffic by port number or by application, can encrypt your traffic and act as a proxy, some firewalls can be used as a layer 3 device (router)
+
+cable modem - broadband network - data on cable network - docsis - data over cable service interface specification, data, voice, video
+
+DSL modem - uses telephone lines, often assymetric, download faster than upload, must be close to the central office, speeds degrade as you get farther
+
+patch panel - large group of jacks to gather together an offices cables, easily managed and moved, only have to run cables once
+
+power over ethernet - one wire for network and electric, useful to power WAPs in hard to power areas. POE switch usually has it marked on the switch
+
+ethernet over power - often called power-line communication, connects devices not normally connected ot ethernet

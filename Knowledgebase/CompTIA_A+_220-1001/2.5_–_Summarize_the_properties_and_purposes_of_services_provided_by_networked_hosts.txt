@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T14:50:36-04:00
+
+====== 2.5 – Summarize the properties and purposes of services provided by networked hosts ======
+Web server - responds to browser requests, web pages stored on them
+File server - centralized storage of documents, videos, etc. - front end hides protocol 
+Print server - provides printer services for all network devices - can be software or built into printer
+DHCP server - dynamic host config protocol - configures ip addresses, available on most home routers
+DNS server - converts names to ip addresses and vice versa
+Proxy server - intermediate server between client and the tird party, performs requests and sends results back to the client
+Mail server - stores and sends your emails
+authentication server - login authentication for resources, centralized management
+SIEM, security information and event management - logging of security events, logs, real time info
+Syslog - standard for message logging, integrates with SIEM, WORM, write once, read many
+IDS/IPS - intrusion detection/prevention systems, protects against attacks. alarm/alert or stop the attack
+All-in-one security appliance - next-gen firewall, Unified threat management/web security gateway
+Endpoint management server - manage all devices from one place - updates, installs, troubleshooting
+embedded system - purpose-built device for specific functions - time card clocks, etc

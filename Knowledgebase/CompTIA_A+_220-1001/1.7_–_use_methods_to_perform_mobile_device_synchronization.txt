@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T12:48:02-04:00
+
+====== 1.7 – use methods to perform mobile device synchronization ======
+synchronize in the cloud is hands off, no physical cables, iCloud, Google Drive
+You can also sync to your desktop with various apps if you want to avoid the cloud. Apple iTunes for Apple, third party apps for Android. Need disk space on your pc to hold data
+
+Sync to your car with bluetooth or a wired connection. iOS carplay, android auto, syncs contact info, music, info in real time

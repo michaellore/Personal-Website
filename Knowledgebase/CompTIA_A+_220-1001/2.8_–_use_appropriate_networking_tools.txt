@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T16:30:29-04:00
+
+====== 2.8 – use appropriate networking tools ======
+you'll often have to troubleshoot issues
+
+cable crimper - pinches the connector onto the wire - metal prongs pushed through insulation of wire for copper-to-copper connection
+	good scissors/cable snips, wire stripper can be helpful
+	
+Multimeter - checks AC voltage from outlets, and DC voltage for pc power supply and checking wires and fuses
+
+tone generator - follow and track wires by playing a tone. generator and probe. connect generator to wire and use probe to find sound
+
+cable tester - tests continuity, find missing pins and crossed wires, doesn't test quality
+
+loopback plug - testing physical ports and fooling apps that expect a connection
+
+punch-down tool - punch a wire into a wiring block, 66 block, 110 block. every wire must be individual punched. good for cable management
+
+wifi analyzer - sees all communication over wifi network, indentify errors, interference

@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T11:58:57-04:00
+
+====== 1.5 – connect and configure accessories and ports of other mobile devices ======
+Connecting devices to computers
+Micro and mini USB
+USB C plug - double sided, can also act as audio output
+
+Apple devices use Lightning - higher power output, double sided, simpler design
+
+Connect mobile phone to PC and use phone for internet connection - tethering or wireless as a hotspot
+
+Early mobile cables were proprietary - many different types, EU helped standardize
+
+NFC - near field communication - use phone to transfer small data wireless over limited area - payment systems, transport, identity card
+
+Bluetooth - PAN personal area network - headsets, health monitors, car integration, smartwatch, speakers
+
+IR Infrared - usually for controlling entertainment center.
+
+Headsets - hands free audio - wired headsets use a 3.5mm connector, apple can use lightning
+
+Speakers - battery powered, bluetooth
+
+Battery packs, either swappable or usb external
+
+Screen and device protectors, may be waterproof, may conflict with docks or wireless charging
+
+Credit card readers can turn phone into payment terminal
+
+SG/microSD card for expanded storage, not available on iOS

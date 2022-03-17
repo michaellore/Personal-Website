@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-16T11:33:33-04:00
+
+====== Building a cloud governance strategy on Azure ======
+Orgs can use Azure service to create a governance strategy - all the rules and policies that maintain control over your apps and their permissions and resources.
+
+Can use role-based access control - applied to scopes (reosurces or sets of resources)
+{{.\pasted_image.png}}
+Granting access to a parent scope also gives access to its child scopes.
+* assigning a user to the Owner role at the management group scope allows that user to manage all subscriptions in that group
+* assigning the Reader role to a group at the subscription scope allows viewing all resources and resource groups in that subscription
+* Assigning Contributor role to an application at the reosurce group scope, the app can manage all resources in that specific group
+
+Use cases:
+	* allow one user to manage VMs and another to manage networks
+	* allow a DB admin to manage SQL databases 
+
+Policies are enforced on all access that pass through the Azure Resource Manager. Manage access permissions on the Access contral (IAM) pane in Azure portal.
+
+You can apply locks to subscriptions, groups, and resources. 
+	* CanNotDelete - authorized people can read and modify but can't delete
+	* ReadOnly - authorized people can read a resource but not make any changes
+
+Resource locks apply regardless of permissions. You can combine resource locks using Azure lueprints to help prevent accidental lock removals.
+
+You can add tags to resources to provide extra info and metadata to keep them organized. Resource tags contain a name and a value.
+	Examples:
+		* AppName
+		* CostCenter
+		* Owner
+		* Environment
+		* Impact
+	{{.\pasted_image001.png}}
+
+Azure Policy is a service allowing you to create and manage policies that control and audit resources. Policies enforce rules to help stay compliant.
+	* create policy definition
+	* assign definition to resources
+	* review evaluation results
+
+Azure policy initiative is a way of grouping related policies together. For example, the Enable Monitoring in Azure Security Center initative includes the policies:
+	* monitor unencrypted SQL database
+	* monitor os vulnerabilities
+	* monitor missing endpoint protection
+
+Azure Blueprints can be used to definie repeatable sets of governing policies and role assignments, so everything does not need to be set for each new subscription. Every component of a blueprint is a blueprint artifact.
+
+ISO 27001 is a standard applying to the security of IT systems and azure has several built in blueprints for it.

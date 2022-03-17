@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T15:59:42-04:00
+
+====== 2.7 – Compare and contrast Internet connection types, network types, and their features ======
+Broadband - very common home internet connection, cable modem, multiple frequencies and traffic types
+	docsis - data over cable service interfact specification
+	high speed networking
+	
+DSL Modems - uses phone lines
+	adsl - asymmetric, download faster than upload
+	must be close to central office
+
+dialup - uses analog voice telephone lines, very slow, still used in some legacy systems
+
+Fiber - high speed networkingvery fast, HD channels, Gigabit internet, etc
+
+Satellite - non-terrestrial communication, generally high cost, decent speed, good for remote sites, high latency, poor performance in weather
+
+ISDN - integrated services digital network
+	BRI - basic rate interface, 2B+D two 64 kbit channels, 1 16kbit signalling channel
+	PRI - primary rate interface
+		T1 or E1, commonly used by telephone companies to connect to phone systems
+
+Line-of-sight service - visual path between antennas, common in metro areas,covers many homes
+	WiMax networking - worldwide interoperability for microwave access, wireless high speed internet, antenna outside your house
+
+LAN - local network, building or group of buildings, high speed
+
+WAN - wide area network - spans the globe, generally slower than the LAN
+
+PAN - perosnal area network - your own private network, bluetooth, IR, NFC
+
+MAN - metropolitan area network - larger than lan, smaller than wan, network in a city, often run by local govt
+
+WMN - wireless mesh network, devices connected together in a mesh 'cloud' - all you IoT devices, self forming and healing
+

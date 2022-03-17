@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T13:33:23-04:00
+
+====== 2.3 – install and configure a basic wired / wireless SOHO network ======
+SOHO router, small office/home office - all in one device
+modem, router, switch, wap, firewall, all in one
+provides routing to the outside network, has a switch built in, not much to configure.
+Often includes 2.4ghz and 5ghz frequencies and channel bandwidth
+Can configure ssid name and security mode, usually WPA2
+Automatically assign ip addreses by dhcp
+
+Configuring SOHO firewall
+	no external device can directly access internal network
+	dmz ports cna be configured to allow access - usually a bad idea
+	network address translation can translate all internal devices to a single external address to free up ip addresses
+	port forwarding - access a service hosted internally, gaming server, security system
+		-external ip/port maps to internal ip/port 
+		-destination nat / static nat
+	UpnP - universal plug and play - devices can find each other on network - used for peer to peer apps
+	whitelist/blacklist - filter ocntent/ip addresses
+		whitelist - implicit deny, only added items allowed
+		blacklist - items added are not allowed
+	mac filtering - media access control "hardware" address
+	wireless encryption - wpa2-aes preferred, WEP not preferred
+	QoS Quality of service - prioritize traffic, ports, apps
+	

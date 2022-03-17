@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T11:30:15-04:00
+
+====== 1.2 – install components within the display of a laptop ======
+Most laptops use LCD display, backlight shines thru liquid crystals
+	low power, light, inexpensive
+	poor black levels, difficult to replace
+
+other displays like OLED - organic light emitting diode - lights up when hit with current
+	very flexible and mobile, no backlight
+	decay over time, burn-in, more expensive and power hungry
+
+usually multiple antennas in display, wifi and bluetooth wrap around top of screen
+
+usually webcam embedded with video and audio
+
+microphone built in but low quality
+
+LED-backlit LCD display - LEDs around edge of screen or an array behind the screen, most newer laptop
+
+CCFL - cold cathode flourescent lamp - older laptop, higher voltage and power, more thickness
+
+some laptops have inverters to convert dc to ac for lcd displays
+
+some displays are digitizers that let you draw with a stylus or have a touchscreen
+
+

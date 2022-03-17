@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T14:26:55-04:00
+
+====== 2.4 – Compare and contrast wireless networking protocols ======
+Wireless networking 802.11 managed by IEEE standards committee
+	802.11a original, operates in 5Gh range, 54Mb/s
+	smaller range than 802.11b
+	uncommon today
+	20Mhz bandwidth
+	
+	802.11b also original, 2.4 ghz range, 11Mb/s
+	better range than a
+	frequency conflict with cordless phones, microwaves, etc
+	20 Mhz bandwidth
+	
+	802.11g upgrade 2 B, 2.4GH, 54Mb/s, back compat with B, 20 Mhz bandwidth
+	
+	802.11n, update to all, both channels 600Mbit/s, MIMO multiple input/output, multiple antennas for simultaneous traffic, 20 or 40Mhz bandwidth (2 contiguous bonded channels)
+	
+	802.11ac - upgrades over N, 5Ghz band, much larger set of channels with bonding, eight MIMO streams, 866Mbit, 40 mhz bandwidth for 802.11n stations, 80 for 802.11ac stations, 160 optional for bonded channels
+	
+Frequency - 2.4Ghz, 5Ghz 
+Channels - groups of frequencies, some channels overlap
+Bandwidth - amount of frequency to use, 20, 40, 60, 80 Mhz
+
+RFID - radio-frequency identification - small tags, access badges, pet chips, anything that needs to be tracked.
+	radio energy powers the tag, tag sends back the info
+NFC builds on RFID for two way comms
+
+Zigbee - Internet of things networking standard, alternative to wifi and bluetooth, longer distance than bluetooth, less power than wifi
+
+Z-Wave - proprietary home networking, internet of things, garage doors, lights, ISM band
+
+Cellular networks separates land into "cells"
+	2G - GSM and CDMA, poor data support
+	3G - allowed new function, GPS, videos, much more data
+	4G and LTE - long term evolution, much faster downloads up to 150 Mbit/s
+	LTE-A - even faste,r up to 300Mbit
+	5G - significant performance improvements at higher frequencies

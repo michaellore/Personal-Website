@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-16T14:38:54-04:00
+
+====== Plan and manage Azure costs ======
+You can use the Total Cost of Ownership (TCO) Calculator to estimate your costs running on Azure vs running on your on-premises datacenter. The TCO Calculator generates reports based on your workloads, including servers, DBs, Storage, networking, and your associated costs such as wages and electricity costs.
+{{.\pasted_image.png}}
+Azure Advisor can make suggestions to help minimize costs to match your actual workload.
+
+Spending limits can be implemented to stop services at cost limits.
+
+Azure reservations  can help you get discounted prices by reserving services by paying in advance. For example, you can prepay for a year of VM use.
+
+Azure Cost Management + Billing is a tool to help break down your costs by resource, and can generate reports and budgets and set appropriate alerts.
+
+Tags cna be applied to resources to help group together costs by department.
+
+VMs can be resized or deallocatted when idle or not needed. This preserves data but shuts down VMs when not needed.
+
+Remember to turn off and delete any unused resources.
+
+Some licenses can be repurposed on Azure VMs through Azure Hybrid Benefit.

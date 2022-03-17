@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-17T12:19:43-04:00
+
+====== 1.6 – configure basic mobile device network connectivity and application support ======
+wireless cellular/data network - through mobile carrier
+
+Hotspot - turn phone into a wifi router - data managed by service provider
+Tethering - physical hotspot with a cable phone to pc
+Airplane mode turns off all the radios, can be individually reenabled, helps conserve battery
+
+Bluetooth range about 10 meters, devices are paired, turn bluetooth on and devices will be discovered
+
+phones have a baseband radio to connect to cell providers network
+
+PRL updates - preferred roaming lists, tells your phone which cell tower to connect to
+
+PRI - product release instructions, new radio settings
+
+IMEI - international mobile station equipment identity, unique, identifies mobile phone
+
+IMSI - international mobile subscriber identity - identifies user of a mobile network, provisioned on SIM card, can be swapped between phones
+
+vpn - secure communication, phone can be used as endpoint
+
+Email on mobile devices 
+	retrieving mail - pop3 and imap
+	sending - smtp
+	corporate - microsoft exchange
+	integrated providers - icloud, google, yahoo
+
+pop3 - post office protocol - downloads mail locally, can delete from server, good for one device - port tcp/110, over ssl it is tcp/995
+IMAP internet message access protocol - access mail on central server and leave smail stored there, can create folders, tcp/145 and tcp/993 over ssl
+
+Sending mail - smtp - simple mail transfer - sends email from device to isp smpt server
+	smpt no auth (rare) tcp/25
+	smpt with auth tcp/587
+
+Enterprise email integrates contacts, calendars, reminder, syncs with mobiles. Integrates message encryption with S/MIME, secure multipurpose internet mail extensions
+
