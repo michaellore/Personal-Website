@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal website for Michael Lore, hosting my personal IT Knowledgebase, random thoughts, and other projects.">
+	<meta name="theme-color" content="#fff6eb" />
+	<!--[% FOR page IN pages %]-->
+	<title>[% page.heading %] | Michael Lore</title>
+	<!--[% END %]-->
+	<meta name="generator" content="Zim 0.74.3">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://mhlore.com/styles.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="navigation">
+			<ul>
+				<li><a href="https://mhlore.com/">Home</a></li>
+				<li><a href="https://mhlore.com/Knowledgebase.html" title="Knowledgebase" class="page">Knowledgebase</a></li>
+				<li><a href="https://mhlore.com/sitemap.html" title="sitemap" class="page">sitemap</a></li>
+			</ul>
+			<form method="get" action="/cgi-bin/perlfect/search/search.pl" id="sidebar-search">
+				<input type="hidden" name="p" value="1">
+				<input type="hidden" name="lang" value="en">
+				<input type="hidden" name="include" value="">
+				<input type="hidden" name="exclude" value="">
+				<input type="hidden" name="penalty" value="0">
+				<input type="text" name="q" id="sidebar-searchbox">
+				<br>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+		<div id="nav-mobile">
+			<h3>Michael Lore</h3>
+			<a href="https://mhlore.com">Home</a> - 
+			<a href="https://mhlore.com/Knowledgebase.html">Knowledgebase</a> -
+			<a href="https://mhlore.com/sitemap.html">Sitemap</a>
+			<form method="get" action="/cgi-bin/perlfect/search/search.pl">
+				<input type="hidden" name="p" value="1">
+				<input type="hidden" name="lang" value="en">
+				<input type="hidden" name="include" value="">
+				<input type="hidden" name="exclude" value="">
+				<input type="hidden" name="penalty" value="0">
+				<input type="text" name="q" id="sidebar-searchbox">
+				<br>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+
+		<div id="content">
+			<!--[% FOR page IN pages %]-->
+			<div id="breadcrumbs"></div>
+			<h1>[% page.heading %] <a name='[% anchor(page) %]'></a></h1>
+			[% page.body %]
+
+
+
+			[% IF not loop.last %]
+			<hr class='pageseparator' />[% END %]
+			<!--[% END %]-->
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var path = "";
+		var href = document.location.href;
+		var s = href.split("/");
+
+		for (var i = 3; i < (s.length - 1); i++) {
+			path += "<A HREF=\"" + href.substring(0, href.indexOf("/" + s[i]) + s[i].length + 1) + ".html\">" + s[i] +
+				"</A> / ";
+		}
+
+		i = s.length - 1;
+		path += "<A HREF=\"" + href.substring(0, href.indexOf(s[i]) + s[i].length) + "\">" + s[i] + "</A>";
+		var url = path;
+
+		var targetDiv = document.getElementById("breadcrumbs").innerHTML = url;
+	</script>
+
+</body>
+
+</html>
