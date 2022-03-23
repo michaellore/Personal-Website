@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T13:05:10-04:00
+
+====== 4.2 – set up and configure client-side virtualization ======
+One computer running many operating systems
+
+Each VM has all its own resources, independent. host-based - your normal desktop + others
+
+At enterprise level, it's common to have one single large server running many VMs
+
+Hypervisor - software that manages the VMs - Virtual Machine Manager
+	may require a supporting CPU
+	Intel  - VT
+	AMD - AMD-V
+	need enough memory to support all if you are running multiple VMs
+
+Virtualization is a native operating system, performing native OS processes
+
+Emulation is one device running processes designed for a different architecture
+	one device is pretending to be another
+	original code used, but software interprets it to run the code 
+	slower than virtualization
+
+Hypervisor is a key security point.
+	VM escaping - malware realizes it is on a VM, compromises the hypervisor to get to other VMs
+	malware on one server can get info from another
+	very rare
+
+Every guest is self-contained, normal security controls should be used like any other computer.
+
+Most VM managers have their own virtual internal networks
+	shared network address - VM has same IP as physical host
+	Uses a private IP internally
+	uses NAT to convert to the physical host IP
+	
+Bridged network address - VM is a device on the physical network
+
+Private address - VM does not communicate outside of the virtual network
+

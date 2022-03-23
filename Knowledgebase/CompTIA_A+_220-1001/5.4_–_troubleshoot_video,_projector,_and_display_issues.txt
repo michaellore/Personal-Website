@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T14:42:53-04:00
+
+====== 5.4 – troubleshoot video, projector, and display issues ======
+
+No video image - is it connected? check power and cable connection
+	check correct input on device - hdmi, vga etc
+	try on different computer
+
+image dim - check brightness
+
+No video after windows load - use VGA mode (F8)
+
+Flickering/incorrect color patterns - check cable pins
+
+Distorted image/blurriness - check os resolution and refresh rate settings
+	check hardware acceleration - may have to disable
+	
+Icons too big = resolution too low
+
+Burn-in - image locked in place even when not displayed "ghosting"
+	some displays will pixel shift to combat - you won't notice
+	some LCDs will have image sticking - fix by displaying pure white for extended period
+
+stuck pixel - constantly bright
+dead pixel - always black
+
+artifact - odd or strange graphics, motion trails - check video card settings
+
+BSOD and overheating - check hardware temps
+

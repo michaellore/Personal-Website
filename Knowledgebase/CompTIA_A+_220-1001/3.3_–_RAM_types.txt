@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-18T12:54:38-04:00
+
+====== 3.3 – RAM types ======
+RAM - random access memory, most common but not only type of memory
+Data and programs are used when moved to ram, very important component
+
+DIMM - dual in line memory module
+	SO-DIMM - small outline, usually in laptops, about half the size
+	
+DRAM - dynamic random access, memory on the dimm, needs constant refreshing, any storage location access directly
+
+SDRAM - synchronous DRAM, synced with common system clock of pc, can queue up processes
+
+SDR vs DDR - single vs double data rate
+	DDR2 - twice as fast as DDR, not backwards compat
+	DDR3 - twice rate of DDR - 16GB per dimm, not backwards compat
+	DDR4 - can be 64GB per DIMM, not backwards compat
+	newer DDR cannot fit into older slots
+	
+Multi-channel memory - dual, triple, and quad channel - performanc eincrease by installing multiple modules vs one large one
+	memory combos should match, exact match is best
+	often color coded
+	
+parity memory - adds a parity bit, can determine when errors occur but not correct them
+	even parity - the bit makes an even number
+
+error correcting code (ECC) - detects and corrects errors on the fly

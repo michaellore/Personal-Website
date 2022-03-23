@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T14:37:20-04:00
+
+====== 5.3 – troubleshoot hard drives and RAID arrays ======
+Red/Write failure - "cannot read from source disk"
+
+Slow performance - constant light flashing
+
+Loud clicking noise - the click of death
+
+First thing to do is get a backup - a bad drive is bad
+
+Check for loose or damaged cables and overheating
+
+Also make sure power supply is supplying power, especially if its a new device
+
+Run diagnostics form manufacturer or third party
+
+Boot failure - lights, beeps, errors, "no os found" message
+	- check boot sequence
+	-try driv ein a different pc
+	
+RAID not found - missing or faulty raid controller
+	every raid is different - check the console to see which disk is going wrong
+	depenidng on raid type you may have to manually restore data
+	
+sometimes hard drive error can result in blue screen
+
+SMART Error - self monitoring, analysis, and reporting technology
+	can tell you what the error is and give you warning signs
+	scheduled disk checks
+	

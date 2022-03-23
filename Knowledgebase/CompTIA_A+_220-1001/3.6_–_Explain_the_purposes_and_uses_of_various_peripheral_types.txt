@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T12:16:23-04:00
+
+====== 3.6 – Explain the purposes and uses of various peripheral types ======
+Printers - color or B&W, some can scan and fax
+Scanners - digitize a printed document
+Barcode/QR code readers - serial/usb/wireless connection, built into phone
+VR headsets - 3d motion tracking
+DVD/CD drives
+Mice/keyboards, mice are usually optical nowadays
+Signature pad - small digitizer with stylus for signing 
+Gamepad/joystick - usually USB
+Digital projectors - LCD, but not always, metal-halide lamp, very bright and hot, measured in lumens
+KVM - keyboard, video, and mouse - use many computers with a single kb&m and display
+Chip reader - point of sale terminal for credit cards
+Smart card reader - useful for of authentication, used for payment cards and ID

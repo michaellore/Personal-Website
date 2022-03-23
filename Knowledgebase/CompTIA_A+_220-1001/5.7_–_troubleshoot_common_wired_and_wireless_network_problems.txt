@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T15:45:33-04:00
+
+====== 5.7 – troubleshoot common wired and wireless network problems ======
+No connectivity on wired network - check for link light and if cable is plugged in
+	ping loopback - 127.0.0.1 - is protocol stack working
+	ping local ip - tells you if local config and adapter is working
+	ping default gateway - check connectivity with local network
+	ping outside of local network - 8.8.8.8 
+	
+If no DHCP server found - computer is assigned a automatic private address APIPA address
+	not forwarded by routers
+	169.254.1.0 through 169.254.254.255
+	169.254.0.0/24 through 169.254.255.0/24 are reserved
+	computer is assigned one of these addresses
+
+If Share is not available
+	server unavailable
+	share permissions modified
+	DNS unavailable
+
+Printers unavailable
+	device sharing the printer is unavailable
+	permissions modified to deny access
+
+Email
+	server may be down
+
+Limited or no connectivity - alerted in windows taskbar
+	check if you have a connectable local ip address or an APIPA address
+		APIPA addresses can only connect locally
+		if you do have a DHCP address - do ping tests to find where issue is
+
+Internet working intermittently
+	check system tray
+	check for bad cables
+	check network interface card
+	check for hardware problems - switch or router may need a reboot
+
+IP conflicts - DHCP usually resolves it, but static addresses may conflict
+	windows will usually identify duplicates
+	two identixal devices will conflict, work intermittently
+
+Slow speeds - router may be overwhelmed
+	check speed and duplex you are set at, may be limiting yourself
+	Check adapter card and cables
+	Malware
+
+Low RF signal - interference, bad channel, far from signal. locate access point close to user
+
+SSID not found - too far away, or wireless router has disabled SSID advertising - can manually connect
+

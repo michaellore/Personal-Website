@@ -1,0 +1,77 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T11:50:59-04:00
+
+====== 4.1 – Compare and contrast cloud computing concepts ======
+There are multiple models for cloud computing
+
+Infrastructure as a Service (IaaS) / Hardware as a Service (HaaS)
+	outsource your equipment - you rent the hardware 
+	you are responsible for the software, management, updates, and security
+	common usage is web server provider
+		you rent the physical server but everything else is up to you
+
+Software as a Service (SaaS) 
+	on-demand software, no local installation - log into a website to access
+		email, payroll
+	central management of apps and data by the provider
+	a complete offering, like Google Mail, no dev work needed
+
+Platform as a Service (PaaS) - a good middle ground between IaaS and SaaS
+	no need to worry about servers, software, or maintenance
+	you only need to handle the development of your own software
+	develop your app from whats available on the platform - like building blocks
+	Salesforce.com - you can buy and configure your app from their modules
+	
+{{.\pasted_image.png}}
+
+Cloud deployment models
+	Private - you own your own virtualized local data center
+	
+	Public - available to everyone - like AWS or Azure
+	
+	Hybrid - mix, some of your services local, some on public cloud
+	
+	Community - several organizations sharing the same resources
+	
+	Multi - combination of two or more public or private clouds depending on what you need from specific providers or regulatory compliance
+	
+Internal cloud - no reosurces shared, build it yourself so pay for everything upfront, no ongoing costs
+
+External cloud - share resources with public, so no large upfront cost of hardware. Infrastructure owned by third party, costs may be metered or upfront
+
+Metered service - pay for what you use, uploading/downloading/storing all have associated costs
+
+Non-metered - you pay a flat fee for a block of storage/service, no additional cost for use
+
+Rapid elasticity - scale up and down as needed seamlessly, if you are busier at the start or middle of month, you can add more resources then and delete them when not needed
+
+On demand self-service - add additional software, networks, servers, etc as needed easily and instantly
+
+Resource pooling - all computing power in one spot, one big resource instead of many
+
+Measured service - detailed cost and resource usage reports, can more eaily plan for costs 
+
+**Cloud services** - always adding new ones
+	Email - a company staple, cloud email allows offsite communication
+		no need to host your own email servers or have a dedicated email support team
+		flat cost per month - personal options may be free
+		Microsoft office 365, google mail
+	
+	File storage - access, edit and share from anywhere
+		easy collaboration
+		often has a synchronization app for automatic syncing with pc and phones to cloud
+		dorpbox, google drive, onedrive
+	
+	Virtual app streaming - on demand applications with no installing
+		only needed components are downloaded
+		user data stored in cloud
+		easy to update, no need for each individual to update the app
+		new apps can be added to the cloud simply
+	
+	Cloud-hosted virtual desktops - VDI - users connect to a pre-built desktop
+		access from anywhere or any OS
+		virtual network - all communications are local to the virtual desktop
+			no sensitive info is sent from the local computer
+		Amazon Workspaces is a providers
+

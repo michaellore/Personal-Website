@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-18T12:36:27-04:00
+
+====== 3.2 – Identify common connector types ======
+RJ11 - 6 position, 2 conductor (6P2C) telephone connection. RJ14 has 4 conductors, often used for dual lines
+
+RJ45 - 8P8C, often used for ethernet
+
+RS-232 - old, used for many serial connections, modems, printers, mice, commonly used as a configuration port. common DB-25, DE-9 or DB-9
+
+BNC - bayonet neill-concelman, coax connector, rigid and bulky, twists and locks
+
+F-connector - cable tv and modem, RG-6 or RG-59 cable, threaded connector must be twisted
+
+USB 1-3.2, A, B, C
+
+Lightning - apple, 8pin
+
+SCSI - many interfaces
+{{.\pasted_image.png?height=300}}
+
+eSata - external sata devices
+
+Molex - 4pin peripheral power connector, 12v and 5v, powers many things inside pc case

@@ -1,0 +1,113 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T15:34:43-04:00
+
+====== 3.11 – Install and maintain various print technologies ======
+**Laser printer** - combines a laser, high voltage. ions, powdered ink, and heat. prints fast and high quality. very complex, many moving parts, has memory on-board, can be more expensive
+	imaging drum - image is drawn onto photosensitive drum 'painted with the laser', then picks up toner to transfer to page
+		can be separate or combined into toner cartridge
+	user heat and pressure to melt and bind toner to page
+	cyan, magenta, yellow, black - four separate cartridges
+	pickup roller, picks up the paper one page at a time
+		should be cleaned to prevent jams
+	separation pad - helps pick up only the top sheet of paper
+	duplex - prints one side, then turns paper around to print the other
+
+	Laser printing process:
+		job is processed into memory
+		charging photosensitive drum with negative ions - primary charging roller
+		exposing by laser to write out the image that should appear on page
+		developing toner from the cartridges to the areas of the drum that are marked out
+		transfer toner from drum to passing paper
+		use heat and pressure to fuse toner to paper - this is why printed papers are warm
+		clean leftover toner off of drum to make ready for next print job
+{{.\pasted_image.png?width=800}}
+	
+	**Laser printer maintenance**
+	replacing the toner - look for messages - low does not mean empty
+	toner may also contain the OPC drum- organic photoconductor drum
+		sensitive to light, keep it in the bag
+	power off and disconnect the printer before working
+	
+	most manufactures provide a maintenance kit with common parts.
+	maintenance is based on page print count
+	after maintenance, reset the page counter
+	
+	after replacing toner, you can calibrate for better output, might be automated or manual
+	
+	laser printers get dusty, manufacturers recommend different cleaning methods
+		use damp cloth, isopropyl alcohol to clean rollers
+
+**Inkjet printers **- ink-dispersion, relatively inexpensive, very quiet. Ink is expensive and proprietary. ink can fade over time and can clog.
+	Ink cartridges drop the ink onto the page
+	CMYK - cyan magenta yellow, key (black)
+	some cartridges integrate the print head, sometimes they are separate
+	use a feed roller to pull paper through printer
+	some can do duplexing
+	Ink cartridges move back and forth across page along a belt
+	sometimes cartridges may need to be calibrated and realigned
+	
+	**Inkjet Maintenance**
+	clogged print heads is a big issue - streaky, missing colors. cleaning is automatic or can be started manually
+	sometimes print heads can be removed for cleaning
+	when cartridges are empty they must be rpelaced, sometimes 4 different, sometimes just color and black
+		after replacement the printer will calibrate
+	paper can jam, remove jam fromt he path - be firm, but don't rip
+	
+**Thermal printers** - no ink or toner - special paper is sent through the printer that turns black when heated.
+	often used for receipts
+	very quiet, almost silent
+	paper is very sensitive to light and heat
+	paper fades over time
+	similar feed to an inkjet printer - paper is feed through by a roller
+	uses a heating element - there is no moving print head
+	
+	**Thermal printer maintenance**
+	exact paper must be used - pretty cheap but you have to use the right paper
+	heating element can be cleaned with isopropyl alcohol
+	usually not much debris
+	you can use compressed air but should avoid a vacuum
+	
+**Impact printers** - aka Dot Matrix - print head with a pin matrix presses against a ribbon to mark the paper
+	good for carbon/multiple copies
+	low cost per page
+	noisy from the impact of pins hitting paper
+	poor quality output resolution - not good for images
+	useful in places like airports and car rentals where multple copies need to be made
+	print head moves back and forth to make pins hit ribbon and paper
+	one long ribbon that is easy to replace
+		proprietary size specific to printer model
+	use a tractor feed - paper is pulled through with holes on side of paper - continuous feed, perforations between pages
+	
+	**Impact printer maintenance**
+	one single self contained ribbon that can be replaced
+		replace when ink becomes too light
+		designed to be modular - but specific to printer model
+	print head takes a lot of abuse from impact - may need replacing eventually
+		gets hot, be careful
+		modular, look for a release lever or bar
+		good time to replace the ribbon too
+	paper must feed perfectly into the holes
+	forms must be positioned exactly to make text fit the predefined space
+	very long sheet of paper must feed continuously, so look out for obstruction
+
+**Virtual printers** - no physical output, prints to a 'digital document'
+	no physical printer, ink, paper
+	good for sending docs electronically
+	'print to file' option in print dialog
+		prints to file type specific to the printer you have selected
+		then when you are at the printer you can copy that file to the printer
+			command line - copy filename LPT:
+	
+	Print to PDF - prints to standard pdf, proprietary to Adobe but almost all ocmputers have software to read them, built into many browsers
+		Virtual pdf printer shows up as a different printer in Windows that you can configure
+	
+	Print to XPS - similar to print to PDF, but Microsoft XPS format, XML paper specification
+	
+	Print to image - prints to an image for editing or viewing in any image application
+		not commonly integrated in os, just specific applications
+
+**3D printers** - creates a physical 3D item based on an electronic model file.
+	melt plastic filament by layers to create the object
+	rapid prototyping
+	designs are electronic and can be sent anywhere

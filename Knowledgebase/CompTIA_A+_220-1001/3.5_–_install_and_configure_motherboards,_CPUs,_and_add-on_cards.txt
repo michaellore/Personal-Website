@@ -1,0 +1,168 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-18T14:06:36-04:00
+
+====== 3.5 – install and configure motherboards, CPUs, and add-on cards ======
+Motherboards come in several form factors with diffrent sizes and layouts - important for exam to pick right mb for situation
+
+Standard ATX -> Micro ATX -> Mini ATX
+
+ATX - Advanced Technology Extended, still popular 20 or 24 pin connector types, larger ATX has more slots
+
+MicroATX (uATX) - smaller, with less expansion slots, has backward compat with full size, same power connector
+
+MINI ITX - small form factor, but screw compatible with ATX and micro ATX, low power, good for single purpose PCs like media streaming
+
+Motherboard expansion slots
+	Expansion bus - described in bandwidth and clock speed
+	1Mhz = 1 million cycles per second
+	clock speed does not always eequal transfer rate
+	
+	PCI - peripheral component interconnect - common expansion interface
+		32 and 64 bit width - 64 bit is larger slot
+		133,266,533 MB/s throughput based on version (32 bit vs 64, 33Mhz vs 66)
+		devices usually get power directly from the slot
+			3.3 and 5v notches
+				64 bit card also has a 64bit notch
+
+	PCIe - express, has mostly replaced PCI and other expansion types
+		communicates seirally, so slower devices dont slow donw everyone
+		x1, 2, 4, 8, 16, and 32 lanes, pronounced "by"
+		has had multiple versions with increasing speed support
+		v1 - 250MB/s
+		v2 500MB
+		v3 ~1GB
+		v4 ~2GB
+		v5 ~4GB
+		Riser cards can plug into motherboards to help PCIe cards fir into smaller form facotrs like data center servers
+
+**Connectors**
+	CPU socket is usually the largest thing on the board and central, can be hard to upgrade
+	
+	Zero insertion force (ZIF) socket - place cpu in then lower arm, install cpu without applying pressure. the pins match up with the pin grid array (PGA)
+	
+	Land Grid Array (LGA)  - reverse of PGA, pins are on motherboard. no need to worry about bending cpu pins but easier to damage mb
+	
+	SATA and PATA connectors
+	
+	Smaller connectors for front panel items like buttons, usually labeled on the end
+
+**BIOS - basic input output system**
+	software used to start the computer - initializes cpu and memory
+	POST - power on self-test, diagnostics to see if hardware is ok
+	then looks for a boot loader to start the OS
+	
+	Legacy BIOS - original/traditional BIOS, used by older OSs, limited hardware support
+	
+	UEFI BIOS - unified extensible firmware interface
+		defined standard, designed to replace legacy
+		more graphical, easy to use
+		supports large hard drives 
+		includes pre-boot environment with shell and drivers, rmeote diagnostics
+	
+	bios configs stored in non-volatile memory on the mb.
+		used to use CMOS memory, often had a battery
+	
+	CMOS battery is often not needed in today's computers, and may be used just to maintain date and time
+		bad battery will require bios / datetime config on every boot
+
+**BIOS Options**
+	To enter bios, press a key at system start, usually DEL or F1, F2, etc.
+	MS and VMWare provide software for BIOS configs in VMs, but VirtualBox does not.
+	
+	Windows 8 and 10 have Fast Boot to start up very quickly, making it harder to access the BIOS
+	
+	Can configure and view RAM modules, boot order, hard drive settings, electrical settings, and enabling and disabling CD drives.
+	
+	BIOS provides always-available diagnostics, focused on hardware checks, not OS checking. 
+	
+	Always have a backup of BIOS settings
+
+**BIOS Security**
+	common secuirty feature is a BIOS password - system wont start without it
+	Supervisor password - no bios changes without it
+	
+	Full disk encryption (FDE) - system is ocmpletely encrypted
+		BitLocker on Windows - integrates with TPM - Trusted Platform Module, hardware, sometimes built-in, adds advanced crptographic functions
+	
+	LoJack for Laptops -originally called CompuTrace, built into BIOS, automatically reinstalled if disabled
+		provides tracking, allowd remote access to lock the system/delete files or force a startup password
+	
+	Secure Boot - Part of UEFI spec, only runs software with correct signature - known good software
+		system will not boot if software has been modified
+
+**BIOS Upgrades**
+	In older systems, upgrades would be done by physically replacing a chip.
+	
+	These days you upgrade through software, fix bugs and increase performance.
+	You normally only upgrade BIOS for a reason, not willy nilly.
+	Identify current bios version in System Information (msinfo32)
+	
+	Before upgrading, make sure you read the release notes and be connected to a very reliable power source, problems with upgrading can brick the whole system
+
+**CPU Features**
+	Dual/Quad/Octa/Multi - core
+		each core can have its own cache and the entire chip may have a shared cache
+		CPU cache is very small, very fast memory, holds data, instructions, and/or results. temp. holding space
+		Level 1 - first check, first storage
+		Level 2 - secondary storage
+	
+	Virtualization support - Run multiple OS on the same hardware
+		virtualization used to be software based but as time went on it was added to the cpu hardware
+			faster and easier to manage
+			Intel Virtualization technology (VT)
+			AMD Virtualization (AMD-V)
+	
+	Hyper-threading technology (HTT) - run multiple data transactions at the same time, CPU acts as multiple CPUs, keeps cpu from being idle.
+		Windows XP or later, any modern os
+		
+	Speed - CPU clock, measured in Mega or Giga hertz
+		Actual speed - clock speed, cache size, bus width and speed all factor in
+		CPU manufacturing have moved away from cpu clock speed as a measure of performance
+			two different 3.2 GHz cpus are not necessarily the same
+	
+	Overclocking - increasing clock speed past factory, creates more heat and uses more power, can be unstable
+		often voids cpu warranty
+	
+	Integrated GPU - many cpus have graphics integrated, removing the need for a standalone graphics card for basic tasks
+	
+	AMD tends to be cheaper than Intel while intel is slightly more performative, but this is always changing
+
+**CPU Cooling**
+	Case fans - cool air pulled through pc
+	
+	On-board fans - built onto card - usually on high end gpus, can be bulky
+	
+	Fan sizes are standard size - 80mm, 120mm, 200mm, connected to fan controller or directly to motherboard
+		run at variable speed based on temp
+		different noise levels
+		
+	heat sink - dissipate heat from processor, copper or aluminum alloy, fins/grid transfer heat
+		thermal paste creates contact between chip and heat sink
+	
+	fanless/passive cooling - no noise, no fans, silent
+		specialized services like tv set top boxes, saellite receivers
+		very controlled functions, low power components
+	
+	cpu fan - often on top of heat sink for even more cooling
+	
+	liquid cooling - coolant circulating through computer, good for high end systems
+		liquid passes through heat sink and captures heat
+		radiator in back of pc that cools down heated liquid for next flow
+
+**Expansion Cards**
+	relatively easy to add cards with more functionality, just install card and a driver
+	
+	motherboards often have onboard video, video cards may have more functions
+	
+	Sound cards can add support for sound systems
+	
+	Ethernet / wireless cards provide network functions
+	
+	USB expansions card with more ports
+	
+	SSD storage cards, common in servers
+	
+	eSata cards to plug in hard drives externally
+	
+

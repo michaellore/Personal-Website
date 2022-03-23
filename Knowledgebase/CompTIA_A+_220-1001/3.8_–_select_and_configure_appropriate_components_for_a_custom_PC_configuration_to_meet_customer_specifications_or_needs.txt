@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T13:10:52-04:00
+
+====== 3.8 – select and configure appropriate components for a custom PC configuration to meet customer specifications or needs ======
+Graphics workstations - Computer Aided Design (CAD) systems, uually have an SSD and high-end video card, large amounts of RAM
+
+Audio/Video editing workstation - high quality audio and video card, large hard drive, dual monitor
+
+Virtualization station - maximum RAM - every OS needs its own RAM, max CPU cores for constant processing
+
+Gaming PC - SSDs, high end graphics card, high end cooling
+
+NAS - network attached storage - media straming, file sharing, large hard drive capacity and fast network card, RAID Array
+
+Standard thick client - traditional desktop PC, runs applications
+
+thin client - applications run on a remote client, local device is mostly just a keyboard, mouse, and screen
+	VDI - virtual desktop infrastructure
+	minimal operating system, no huge needs
+
+{{.\pasted_image.png?width=800}}

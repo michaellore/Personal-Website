@@ -1,0 +1,71 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T14:05:53-04:00
+
+====== 5.2 – troubleshoot problems related to motherboards, RAM, CPUs, and power ======
+
+Unexpected shutdown - no warning black screen
+	often a heat-related issue, cpu or gpu
+	check your fans and heat sinks
+	could be failing hardware
+	
+Lockups - using system normally then it freezes
+	check for any activity, hard drive lights, use CTRL+ALT+DELETE
+	any updated drivers or patches?
+	Low resources - not enough RAM or storage
+	hardware diagnostics might help
+
+POST - power on self test
+	tests major hardware componnents - cpu, video, ram
+	failures noted with a test of beeps or codes
+	
+POST and boot - blank screen on boot, sometimes a video problem or bios config
+	motherboard bettery may fix datetime errors
+	Attempting to boot to incorrect device - check boot order
+
+Continuous reboots
+	how far is it getting - BIOS or OS flash screen?
+	Bad driver or config - F8 to boot form last known working config
+	Start in safe - loads a basic ocnfig
+	rmeove or replace bad hardware, check connections
+
+No power - at source or from power supply? use multimeter to check
+	some components get power but others don't - bad MB?
+	low power supply output - starting fans but not other parts?
+
+Overheating - check cooling systems, cable management, clean and clear
+
+Loud noises - should hum, not grind
+	scraping = hard drive problem
+	clicking - hard drive or fan
+	pop - blown capacitor
+	
+Intermittent failure - sometimes it works - bad adapter install, reseat. Bad hardware, poor connection
+
+Indicator lights - sometimes POST codes are lights on the mb. Network lights.
+
+Smoke and burning smell - electrical issue, immediately unplug and let cool down
+
+Crash screen - windows stop error, 'blue screen of death'. use the info on screen or in event log to troubleshoot
+	shows specific file and error messages 
+	
+Mac - spinning ball of death - mouse turns into a spinning ball - Spinning wait cursor
+	something is holding up the entire OS
+	Bug in app, bad hardware, slow paging
+	Restart computer, some info may be in logs
+
+Log entries
+	Windows
+		-Event Viewer
+		-Boot Logd - System Configuration
+		C:\Windows\ntbtlog.txt
+	
+	Linux
+		individual app logs
+		/var/log
+	
+	MacOs
+		-Utilities/Console.app
+
+Always write down error message for documentation even if it doesn't make any sense to you.
+

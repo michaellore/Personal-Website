@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T13:15:37-04:00
+
+====== 5.1 – use the best practice methodology to resolve problems ======
+Vasic troubleshooting flow:
+{{.\pasted_image.png?width=750}}
+
+Change control - a formal process for managing change
+	avoid downtime and confusion
+	follow corporate policy
+	nothing changes without the process
+	
+	Change must be planned:
+		estimate risk
+		have a recovery plan if change doesn't work
+		Test before making the change
+		Document and get approval
+		Finally make the change
+
+Identify the problem - get as many details as you can, try to replicate problem - question users, determine if anything has changed since problem started. Make backups. Check log files.
+
+Establish theory - start with the obvious. Occam's razor - simplest explanation is most likely. Consider everything. Make a list of causes, start with the easiest.
+
+Test theory - if it doesn't work, move on to the next theory or escalate the issue
+
+Create a plan - correct issue with minimum impact, sometimes must be during non-production times. Have multiple plans.
+
+Implement the plan - during change control window, escalate as necessary
+
+Verify system function - test the fix, by yourself or have users test. implement preventative measures
+
+Document your findings - build the knowledge base to prevent future similar issues. Document errors codes, reproduction steps, measures taken to fix
+
+
+

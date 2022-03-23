@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T14:25:17-04:00
+
+====== 3.10 – Configure SOHO multifunction devices / printers and settings ======
+small office / home office devices - multifunction devices. All in one printers.
+	Exactly correct drivers for your OS, 32 bit or 64, correct windows version
+
+Duplex mode - print on both sides with no manual flipping - not all can do this
+
+Collate - print multiple copies in proper order
+	EX - page 1, 2, 3, 4 then 1, 2, 3, 4 again - good for copies of large docs
+	not collated - 1,1,1,2,2,2,3,3,3,4,4,4
+
+orientation - portait or landscape
+
+Quality - resolution, color or greyscale, color saver mode
+
+Connection - printer port is commonly USB B, USB A on othe rend
+	older printers might use parallel - centronics on printer, DB-25 on pc
+	RJ 45 connector for ethernet, or wireless only bluetooth/wifi - all devices connected to access point
+		802.11 ad hoc mode - no access point, direct link between printer and devices
+
+Integrated print server - print directly to the printer, jobs queued and managed on th eprinter
+	web-based front end or desktop application
+	cloud printing from mobile devices 
+
+Sharing from the OS - sometimes have to give an IP address and ports
+	common ports - tcp/139, tcp/445, udp/137 and udp/138 - may have to be opned on firewall
+	Apple OS uses a protocol called Bonjour to share printer - also used on Windows with itunes
+	AirPrint - print from iOS devices
+
+You can set up permissions allowing users to print and other users to manage print jobs
+
+Print jobs:
+	click print
+	local system creates output file
+	output file sent to print spooler
+	printing is done from spool file
+	spool file is deleted when finished - but not always

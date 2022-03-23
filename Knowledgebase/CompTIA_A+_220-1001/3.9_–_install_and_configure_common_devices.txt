@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T14:20:44-04:00
+
+====== 3.9 – install and configure common devices ======
+thin client -  small, very little configs, work done on the remote server, just a keyboard, mouse, network, and video output
+
+thick client - traditional pc, requires ongoing support and configs
+
+Centralized account management - active directory
+	thin client - no local permission
+	thick - device added to microsoft domain, user authenticates to gain access
+	
+laptop - mobile thick client
+
+phone/tablet - centrlaized management - MDM mobile device manager - touchscreen config, lock codes, biometrics. app installs set by policy
+
+

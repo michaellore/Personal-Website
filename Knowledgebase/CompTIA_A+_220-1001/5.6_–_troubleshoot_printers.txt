@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T15:32:02-04:00
+
+====== 5.6 – troubleshoot printers ======
+Try printing a test page - built into Windows, not the app giving you an issue
+Use diagnostic tools on the printe ror in the web-based client
+
+Streaks and blurs
+	Inkjet - clean print heads
+	Laser - check for scratches on the drum
+
+Faded or blank - replace ink or toner
+
+Ghost images on laser - cleaning process not working very well
+
+Color prints in wrong color - one of your color cartridges might be empty or low
+
+Laser printer smudges - fusing issue, may not be getting hot
+
+Paper jam - be careful - do not rip and pull hard enough to damage internals
+
+Creased paper - check paper path, make sure paper is the correct weight
+
+No network connection  - make sure printer is on and on the correct netowrk
+
+Access denied? - Security tab in printer properties
+
+Garbled characters - wrong driver or wrong page description language (PCL vs PostScript), bad application
+	check with a test page
+
+Can't install printer - check driver is for correct OS
+
+Backed up print queue - check print server, restart print spooler service
+	check recovery options in print spooler service properties
+	
+Error codes on printer display
+	low memory - printer builds whole page in memory - lots of graphics on page
+	
+No output - check if printer is on, try to do a test print from the printer itself
+	if test on printer works try it from windows
+	try to connect directly with usb
+	test drivers and network connection
+	try from a different application
+
+Corrupted print jobs - print spooler will crash and usually automatically restart, can start looping
+	logged in event viewer under windows-printservice
+	can be one job causing the issue
+	

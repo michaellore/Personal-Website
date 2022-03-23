@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-08-30T19:20:22-04:00
 
-====== Troubleshooting ======
+====== Troubleshooting Tools ======
 Basic troubleshooting tools.
 
 * [[+Remote Connections|Remote Connection / SSH]]

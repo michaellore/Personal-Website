@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-18T13:18:10-04:00
+
+====== 3.4 – select, install and configure storage devices ======
+Optical formats - small bumps read with a laser beam
+	CDROM - 700MB capacity
+	DVDROM - 4.7GB on single layer 8.5GB on dual layer
+	Blu-ray - 25GB single, 50GB dual
+You can write to optical disks, doesn't create bumps but darkens photosensitive dye
+	CD-RW - compact disc re-writable
+	DVD read and rewritable DVD-R/RW
+	BD-R blu ray recordable / BD-RE (erasable)
+	
+Solid state drive - SSD no movable parts, very fast, no spinning hard drive delay
+	Sata  
+	M.2 - no sata cable, as fast or faster than sata, PCI Express bus connection, connects with B, M or B and M key
+		B key - PCIE x2
+		M key - PCIE x4
+
+Hard disk drive - rapid spinning disk, magnetic storage, moving parts can break, platter spends around spinder, actuator arm head reads data
+	{{.\pasted_image.png}}
+
+SSHD - solid state hybrid drive, SSD as cache, also has moving parts
+
+USB flash drive - flash memory, EEPROM (electrically erasable programmable read only memory), non-volatile, no power needed to keep data. limited number of writes. not designed for archiving
+
+Other flash memory include SD, micro SD, picture cards
+
+You can use an array of drives for data redundancy
+
+RAID - redundant array of independent disks - usually inexpensive disks.
+Multiple RAID levels
+	RAID 0 - striping
+		file blocks split between two or more drives
+		data written quickly
+		no redundancy, one drive fail breaks array
+	
+	RAID 1 - mirroring
+		file blocks are duplicated across drives
+		lots of space used
+		one drive failing does not break array
+	
+	RAID 5 - stirping with parity
+		file blocks are stirped along with a parity block
+		requires at least 3 disks
+		files aren't duplicated but parity block takes up space
+		high redundancy, but parity calculation may affect performance
+	
+	Nested RAID - RAID1+0 (RAID 10) - stirpe of mirrors
+		combines raid 0 and raid 1
+		need a t least 4 drives, files are striped across drives and then mirrored
+
+Software RAID - built into OS, doesn't require special hardware, usually lower performance than hardware.
+
+Hardware RAID - feature of the hard drive controller, usually invisible to the OS, high performance, designed for speed
+Hot swappable - can add and remove drives while system is running
+

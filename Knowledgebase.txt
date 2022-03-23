@@ -11,7 +11,7 @@ General Knowledge:
 	* [[+Cloud Computing|Cloud Computing]]
 	* [[+Networking|Networking]]
 	* [[+Operating Systems|Operating Systems]]
-	* [[+Troubleshooting|Troubleshooting]]
+	* [[+Troubleshooting Tools|Troubleshooting Tools]]
 	* [[+System Administration|System Administration]]
 	* [[+Security|Security]]
 

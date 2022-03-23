@@ -1,0 +1,76 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-21T15:00:03-04:00
+
+====== 5.5 – troubleshoot common mobile device issues while adhering to the appropriate procedures ======
+LCD Displays - no display or dim display - verify backlit is working, may have to replace inverter
+	confirm with an external display, video good but LCD bad
+	Flickering video - connector issue
+
+Laptop sticking keys - keycaps are difficult to clean
+
+Ghost cursor/pointer drift - check config for  "palm press", update drivers
+
+Check for num lock indicator lights - numpad is often integrated on letter keys
+
+Laptop has multiple antennas - make sure you don't accidentally disconnect while working inside. 
+
+Battery not charging - lose capacity over time or could be faulty
+
+No power - check power brick with multimeter or try a master reset
+
+External monitor issues - check Fn keys to control
+	default for many laptops is to use the external display only on boot
+
+**Mobile Devices**
+
+Touchscreen completely black or not responsive - try a reset
+	In iOS - hold power and home/volume for 10 seconds
+	
+	In Android - remove battery and replac eif you can
+		hold power and volume down, depends on device
+
+If apps aren't responding - force stop app and restart, or restart phone, update the app
+
+If email can't be decrypted - check configs
+	in Outlook - each user has a private key
+	Use a mobile device manager to install keys
+
+Short battery life
+	bad reception can be a cause by searching for signal
+		use airplane mode if you can
+	disable unnecessary features like gps and bluetooth while not in use
+	check battery use in settings to get a breakdown by app
+	Battery can only recharge so many times
+	
+Overheating - phone will automatically shut off
+	try to use less cpu power
+	turn down brightness
+	avoid direct sunlight
+
+Completely frozen - try soft reset by holding power, or hard reset as described above
+	if it is ongoing - try factory reset
+
+No sound in an app - check app settings
+	if it starts and stops - apps may be dueling
+
+no audio at all - try an update or factory reset
+
+GPS not working - make sure it is turned on
+	need a clear view of the sky
+
+Swollen battery - build up of gas
+	do not open or puncture - stop using and dispose
+	
+**Disassembly of mobile devices**
+not much room to work.
+
+very small pieces, easy to get apart but hard to put back together. Very delicate pieces. lots of cables. Tiny and hidden screws.
+
+Document the entire process. Check iFixIt.
+
+Laptops often disassemble in sections - outer shell, keyboard, video connector. use containers to separate pieces of sections
+
+Tools:
+	screwdrivers, tweezers, a magnification tool can help
+	big anti-static mat

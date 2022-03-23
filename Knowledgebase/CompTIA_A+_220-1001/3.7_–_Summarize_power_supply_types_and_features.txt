@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-20T12:26:31-04:00
+
+====== 3.7 – Summarize power supply types and features ======
+alwyas disconnect from the power source when wokring on a device, some devices can store charge in capacitors. Respect the electricity.
+Computer uses Direct Current DC. Power from wall is AC, the power supply converts it.
+	115V AC or 220V AC -> 3.5V DC, 5.5v DC, or 12V DC
+Ampere (amp) - the rate of electron flow past a point in one second - diameter of hose the water is flowing through
+Voltage (volt, V) - electrical 'pressure', how open the faucet is
+Watt (W) - measurement of real power use. Volts * Amps = Watts
+
+Alternating current is constantly reversing direction as it flows through the electrical lines, distributes electricity efficiently over distance
+	Frequency is important
+	US & Canada - 110 to 120 V, 60Hz
+	Europe - 220 to 240 V, 50Hz
+	
+Direct current moves in one direction with constant voltage
+
+Some power supplies have a switch to choose which type of voltage, many are auto-switching. Do not use the wrong voltage - it will cause damage.
+
+Main motherboard power is a 24 pin connector, provides + 3.3V, +- 5.5V and +- 12V
+	older MBs use 20 pin
+	you can use a 24 pin connector with a 20 pin connection, some cables allow you to disconnect the 4 extra pins
+	
+Power supply outputs different voltages for different components
+	positive and negative voltage
+		voltage is a different in electrical potential, electrical ground is a common reference point
+	+12 V for larger components
+	+5 - other components, many are now using 3.3V
+	+3.3V - M.2, RAM, mb logic circuits
+	-12V - integrated LAN, older serial ports
+	-5V - ISA adapter cards, not common today
+
+Power supplys are rated by supported Watts - large number for overall watts
+	bigger not always better, use what you need
+	more expensive, does not speed up computer
+	physical size mostly standard
+
+Calculate watts needed by all components - video card usually biggest draw
+	good rule of thumb is you should use 50% of supply, so if draw is 425W you should use a 850W supply to be safe
+	

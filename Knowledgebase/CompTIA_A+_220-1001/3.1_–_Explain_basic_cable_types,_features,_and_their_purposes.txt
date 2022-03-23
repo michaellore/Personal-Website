@@ -1,0 +1,109 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-18T11:20:03-04:00
+
+====== 3.1 – Explain basic cable types, features, and their purposes ======
+cabling is the foundation of the network.
+
+most ethernet is twisted pair copper cables - balanced pair operation, two wires with equal and opposite signals. the twist keeps a single wire always moving away from interference, opposite signals compared on the other end. pairs in the same cable have different twist rates.
+
+Cabling is standardized. by multiple orgs. EIA - electronic industries alliance - RS-# or EIA-# standard numbers. TIA - telecom industry association TIA/EIA-568 standard. International ISO/IEC 11801 cabling standard
+
+Copper cable categories
+{{.\pasted_image.png}}
+
+Plenum is the are aabove the drop ceiling where HVAC and cabling can be run. Cable jacket traditionally made of PVC, cable in plenum can be sheathed ina fire-rated jacket like flourinated ethylrnr polymer (FEP) or low-smoke polyvinyl chloride (PVC). Plenum-rated may not be as flexible as traditional cable
+
+UTP - unshielded twisted pair, no shielding under jacket, most common
+STP - shielded twiste dpair - additional shielding against interference, requires cable to be grounded
+U - unshielded, S - braided shielding, F - foil shielding
+
+(overall cable) / individual pairs) TP
+	S/FTP = braided around entire cable, foil around pairs
+	F/UTP - foil around cable, no shieldinng around pairs
+
+T568A and T568B termination - different pin assignments, T568A for horizontal cabling - on same floor, many orgs use T568B, do not terminate ends of cable with different standards
+
+{{.\pasted_image001.png?width=900}}
+
+Coaxial cable - two or more forms share common axis
+	RG-6 used in TV/digital cable and internet over cable
+	RG-59 used as patch cable
+
+Optic fiber - transmission by light, no RF signal, hard to monitor, signal is slow to degrade, good for long distance, immune to radio interference
+	multi mode- light goes into cable and bounces around into multiple modes, short-range communication - 2KM for 100Mbit, 500m for 10Gbit
+	singlemode - very long distance, 80km without more processing, expensive light source such as lasers
+
+**Video cables**
+
+VGA - Video graphics array - DB-15 connector (DE-15), blue color standard, analog signal, 5 to 10 meters, degrades at more distance. 15 pins in 3 rows
+
+HDMI - high def multimedia interface - digital, video and audio, 20 meter max, 19-pin type A. Mini-hdmi designed for smaller devices
+
+Displayport - VESA standard, royalty free standard, data sent in packets like internet, can use adapter with hdmi and dvi, U shaped, corner at angle
+
+DVI - digital video inerface - single and dual link, 
+	DVI-A - analog
+	DVI-D - digital
+	DVI-I  - both
+
+**Multipurpose Cables**
+
+Lightning - apple proprietary, 8 pin digital, high power output, inserted both ways, simple design.
+
+Thunderbolt - high speed serial connection, data and power. mini-displayport standard
+	V1 - two channel, 10Gbit/s per channel, 20Gbit/s total, mini DP connector
+	V2 - 20Gbit/S over aggregated channels
+	V3 - 40Gbit/s aggregated
+	USB-C connector
+	Max 3 meters copper, 60 meters optical, can daisy-chain 6 devices
+
+USB - universal serial bus, printers, sotrage, kb&m
+	USB 1.1
+		low speed - 1.5Mb/s, 3 meters
+		full speed - 12Mb/s, 5 meters
+	USB 2.0 -460Mb/s, 5m
+	{{.\pasted_image002.png?width=700}}
+	
+	USB 3.0 (superspeed) - 5Gbit/S, ~3m cable (no standard length)
+	{{.\pasted_image003.png?width=700}}
+	
+	USB 3.1 - superspeed+ - type a and USB C connectors - 10Gbit/S twice the speed of 3.0
+	USB 3.2 - new superspeed modes, 10Gbit and 20/Gbit speeds
+	
+	USB-C can be plugged in either way, but is not necessarily 3.1 standard.
+	It must:
+		have USB 3.1 speeds
+		> 7.5 watt power delivery
+		must support alternate mode
+	about the same size as micro-B
+	
+DB-9 serial cable - D-subminiature or D-sub
+	different sizes, A thru E
+	commonly used to send data over RS-232 connection
+	serial comms standard, used in consoles management port
+
+SATA cables - Serial AT attachment, connecting storage devices
+	Revision 1.0 - 1.5Gbit/s 1 meter
+	2.0 - 3.0Gbit/s 1 meter
+	3.0 - 6.0Gbit/s 1 m
+	3.2 - 16Gbit/s 1m
+	{{.\pasted_image004.png}}
+	Data connection runs to motherboard, power comes from power supply
+
+PATA cables - parallel AT attachment - originally called IDE or EIDE
+	much older and slower than SATA - 16 Mbit up to 133Mbit
+	uses ribbon cables, 40 wire or 80 wire, 40 pin connectors
+	molex usually provides power
+
+SCSI standard - small computer systems interface - not reallly "small" anymore - designed to connect many devices
+	has many different formats, was used before USB, easy to use, not much configuartion needed
+	each device assigned an ID number - logical unit defined inside of ID
+Serial attached SCSI increased throughput and flexiblility, no more daisy chains
+
+**Adapters and converters**
+convert between interfaces
+DVI-D to HDMI, no signal conversion or loss of quality
+DVI-A to VGA - only supports 640x480 officially
+VGA - DVI digital needs a converter
+USB to Ethernet
