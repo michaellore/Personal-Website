@@ -1,0 +1,116 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T13:24:55-04:00
+
+====== 2.5 – Compare and contrast social engineering, threats, and vulnerabilities ======
+
+Social engineering techniques always changing - may include multiple people and orgs, in person or electronic, phone calls/emails
+	Authority - social engineer poses as an authority figure 0 ceo/police
+	Intimidate - threaten bad things if no help - paychecks won't get sent out
+	Consensus/social proof - convince based on normal expectation - Jill did this for me last week
+	Scarcity - tight time frame
+	Urgency - act quickly, don't think
+	Familiarity/Likable - I am a friend
+	Trust - I'm in IT I am safe
+
+	Phishing - often done by spam or IM
+		looks legit, check the URL
+		usually something not quite right
+		Voice phishing - Vishing - done over the phone, fake IRS or bank
+	
+	Spear phishing - focus on the top - target accounts payable
+		"Whaling" - target the CEO
+		april 2011 epsilon - targetted email service staff
+	
+	Impersonation - use details from online, trash
+		impersonator will often pose as a higher rank and call a lower rank
+		use lots of technical babble
+	
+	Shoulder surfing - you have access to info, people just look over your shoulder
+	
+	Tailgating - use someone else to gain physical access
+		blend in with similar clothing
+		hang out in smoking section
+		most security stops at the door
+	
+	Dumpster diving - people throw away a lot of info
+		can then impersonate names, phone numbers, address
+		especially at end of month/quarter
+		usually legal in the US if it's not private property
+
+Denial of service - force a service to fail by overloading
+	takes advantage of a design failure or vulnerability
+	create a smokescreen for a different attack
+	doesn't have to be comlicated - turn off the power
+	"friendly" dos - not always a bag guy
+		Network DoS - switching plugged into each other making a loop
+		Bandwidth DoS - big downloads over a DSL line
+		Water main break
+
+Distributed denial of service - army of computers used to bring donw a service
+	often a botnet - many users don't even know it's happening
+	huge use of bandwith and resources overload the service
+	sometimes you can see a traffic pattern and filter it out
+		ISP may have more resources
+		third party tech - cloudflare
+
+Zero day attacks - vulnerability we don't know about yet
+	many people finding vulnerability - good guys share with devs, bad guys exploit or sell
+	increasingly common
+	Common vulnerabilities and exposure (CVE) list
+	Example - march 2017 cve-2017-0199 - ms office/wordpad remote code executed when a file was opened
+					May 2019 - windows error report service allowed elevated access to normal accounts
+
+Man-in-the-middle - intercepts and redirects your traffic - you never know
+	ARP poisoning - arp has no security
+		device asks router what its mac address is and caches it
+		MITM - attacker lies and says it is the correct router, your device updates the arp cache with the attacker's address
+	mitigate with secure protocols - https, ssh
+	use a vpn
+	avoid insecure public wireless networks
+	
+Brute force attacks - passwords are hashed and the hash is stored - passwords are hashed when entered and checked against stored hash
+	constantly trying hashes is a brute force attack
+		can be done online - very slow, often can get locked out
+		offline - get a list of users and hashes, calculate the password hash and compare it to stored
+			very intensive
+	
+	dictionary attack - people use common words as pass, use a list of these words
+		123456, password123
+		many common wordlists are on the internet - customized by language and industry
+	
+	rainbow table - optimized prebuilt set of hashes
+		calculations are already done, very fast
+		need different tables for different hash methods
+			windows different from MySQL
+		won't work with salted hashes - an additional random element added to hash
+
+Spoofing - pretend to be something you aren't - fake web server, fake dns server
+	email address spoofing - sender isn't really the sender
+	caller id spoofing
+	man in the middle attacks
+
+MAC spoofing 
+	ethernet device has a unique burned in mac address
+		most drivers allow you to change
+		changing can be legit
+		certain apps can require a certain mac
+		
+		if it's fake, it can be trying to circumvent an access control list
+			very hard to tell - how do you know?
+			
+IP spoofing - pretend to be somewhere you aren't
+	can be legit - load balancing/testing
+	may not be legit - arp poisoning/ddos
+	easier to identify than mac spoofing - you know what ip's to expect
+	
+Non-compliant systems
+	a constant challenge - changes and updates always made
+	standard operating envirnments (SOE)
+		set of tested/approved hardware and software
+			os and apps updates must be tested for compliance
+		apply policies to prevent non-compliant software
+		monitor the network traffic
+		perform routine compliance scans - can force compliance before giving access
+		
+

@@ -1,0 +1,130 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-28T12:40:48-04:00
+
+====== 1.2 – Compare and contrast features of Microsoft Windows versions ======
+
+**Windows 7**
+	Released Oct 22 2009 - main support ended jan 2015, extended support ended jan 14 2020
+	Similar to Vista - same look and feel with increased performance
+		New features - Libraries, HomeGroup, Pinned Taskbar
+	
+	6 versions - starter, home basic, home premium, ultimate, professional, enterprise
+	
+	Starter - built for netbooks 
+		no DVD playback or media center
+		No windows Aero theme
+		No Internet Connection Sharing (ICS)
+		No IIS Web Server
+		No enterprise tech - no bitlocker, Domain, or encrypted file storage
+		32 bit only, max 2GB ram
+	
+	Home Premium - consumer edition
+		DVD playback, aero, ICS, and IIS web server
+		No enterprise tech
+		x64 supports 16GB ram and 2 physical processors
+	
+	Ultimate - complete functionality
+		Domain support, remote desktop, EFS
+		All enterprise tech - bitlocker
+		x64 supports 192GB ram
+		Same features as enterprise - but for home user
+	
+	Professional - common in workplace
+		Same basic features as Home Premium
+		Can use Domain, Remote desktop, and EFS
+		Missing enterprise tech like Bitlocker
+		x64 supports 192GB ram
+	
+	Enterprise - sold only in volume license - large enterprises
+		multilingual UI support
+		Bitlocker support
+{{.\pasted_image001.png?width=800}}
+
+{{.\pasted_image.png?width=800}}
+
+
+**Windows 8 and 8.1**
+Windows 8 available Oct 26 2012
+	New UI
+	No traditional Start button
+Windows 8.1 released Oct 2013
+	Free update to 8
+	Mainstream support ended Jan 9 2018
+	Extended support ends Jan 10 2023
+	
+3 editions - Core, Pro, Enterprise
+	
+	Core - Basic version for home, 32 and 64 bit
+		Integrates MS accoun tinto OS
+		Windows defender - antivirus and antimalware
+		Media playback 
+	
+	Pro - Similar to Windows 7 Pro/Ultimate
+		Full bitlocker and EFS 
+		Join Domains
+		Group Policy support - centralized management of windows devices
+		
+	Enterprise - volume licensing "software assurance" customers
+		Fully featured, additional enterprise features
+			Applocker, Windows to go, direct access, BranchCache
+{{.\pasted_image003.png?width=800}}
+
+Hardware Reqs
+	PAE - physical address extension
+		32bit processor can use more than 4GB of mem
+	NX (NX processor Bit)
+		protects against malicious software
+	SSE2 (Streaming SIMD Extensions 2)
+		standard processor instruciton set
+		used by third party apps and drivers
+{{.\pasted_image002.png?width=800}}
+
+**Windows 10**
+Released July 29 2015
+Skipped Windows 9
+Single platform designed to run on every device that supports Windows - desktop, laptop, tablet, phones
+Upgrades form windows 7/8/8.1 free for first year - trying to get as many as possinle onto 10 - a "service"
+
+	Home - designed for home use
+		Integrates with MS account, onedrive backup
+		Windows defender
+		Cortana - talk to the OS
+	
+	Pro - deisgned for business
+		Remote desktop host
+		Bitlocker - full disk encryption
+		Join Windows Domain for Grup Policy
+	
+	Education and Enterprise - very similar features, volume licensing
+		Applocker - control what apps can run
+		BranchCache - remote site file caching
+		Granular UX
+			define user environment - useful for kisks and workstations
+{{.\pasted_image004.png?width=800}}
+	
+	Same hardware reqs as Windows 8 - PAE, NX, SSE2
+	
+**Windows in Enterprise**
+Large scale support - many many devices
+Security concerns - mobile devices with important data
+Wide geographic area
+
+Active Directory Domain Services - large database of your whole network
+	distributed architecture - many servers, not suitable for home use
+	Everything in one place - user accounts, servers, printers, drives
+	Used for authentication and mangement
+
+Bitlocker and EFS
+	Data confidentiality and encryption
+	Encrypting file system - protect individual files and folders - built into NTFS file system
+	Bitlocker - full disk encryption (FDE) entire drive including the os is encrypted
+
+Media Center - vidoe, music, and TV portal
+	record shows from a tv tuner, play music, watch dvds
+	the cente rof your home entertainment
+	Discontinued with windows 10
+
+Desktop styles 
+	Work - standard desktop, limited customization
+	Home - complete flexibility

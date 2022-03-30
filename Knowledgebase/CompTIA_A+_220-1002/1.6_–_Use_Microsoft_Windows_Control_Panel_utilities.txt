@@ -1,0 +1,95 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-29T10:45:37-04:00
+
+====== 1.6 – Use Microsoft Windows Control Panel utilities ======
+
+Default view contains several categories - can change into icon view with more options
+
+Internet options
+	General Tab - display features, change homepage, some colors and fonts
+	Security - Different access based on where site is. Local, Internet, Trusted, Restricted
+	Privacy - Cookies, pop-up blocker, inblocker (private)
+	Content - security certs, autocomplete
+	Connection - VPN and proxy settings
+	Programs - default browser, plugins
+	Advanced - granular control, reset to default
+	
+Display (Settings/display in W10)
+	Resolution options
+	Color Depth, refresh rate
+	Multi-monitor
+
+User Accounts
+	Local user accounts (not domain accounts)
+	Account name and type - admin, standard
+	passwords and picture
+	Certificate info
+
+Folder options / File explorer options
+	privacy settings, single vs double click
+	hidden files and extensions
+	Indexing, search options
+
+System - computer info, Windows version and edition
+	performance info
+	Turn on and off protection and remote access options
+	Change visual options
+	Data Execution prevention options 
+	Startup and recovery
+
+Windows Firewall / Windows Defender firewall
+	protects from attacks
+	change fiewall behavior based on what network you are on
+
+Power options
+	customize power usage
+	Sleep (standby) settings - switch to hibernate on low power
+		Hibernate - everything in memory saved to disk, shuts down completely - used on laptops
+
+Credential manager - central management of web and windows credential
+	manage usernames and pass for different sites
+
+Programs and features - see all installed apps, uninstall
+	Also turn Windows features on and off
+
+HomeGroup - not in windows 10
+	share docs, pictures, music, video across your devices
+	Network must be set to "Home"
+	single password for everyone to access
+
+Devices and Printers
+	Everything on network - all computers, multimedia, game controllers, printers
+	less complex than device manager
+	access to properties
+
+Sound
+	Output and input options - speakers, microphones, headphones
+
+Troubleshooter
+	Easily automate easy fixes
+	Some require elevated access
+	Suggestions for fixes that aren't automated
+
+Network and Sharing Center
+	All network adapters and configs
+	Homegroup
+	Adapter settings - change ip address, dns, etc
+	Network addressing
+	
+Device manager
+	All hardware with advanced configs
+	Configure drivers
+
+BitLocker
+	Full disk encryption of os and all files
+	TPM recommended - trusted platform module, piece of hardware on motherboard
+		can use a flash drive and password if no TPM
+	Seamless to user
+
+Sync Center
+	Make files available even if you are offline
+	Automatically sync when you get back online
+	Not available in Home editions
+	Mark file as "always available offline"
+	

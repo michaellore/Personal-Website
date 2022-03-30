@@ -41,15 +41,15 @@ Multiple RAID levels
 		lots of space used
 		one drive failing does not break array
 	
-	RAID 5 - stirping with parity
-		file blocks are stirped along with a parity block
+	RAID 5 - striping with parity
+		file blocks are striped along with a parity block
 		requires at least 3 disks
 		files aren't duplicated but parity block takes up space
 		high redundancy, but parity calculation may affect performance
 	
-	Nested RAID - RAID1+0 (RAID 10) - stirpe of mirrors
+	Nested RAID - RAID1+0 (RAID 10) - stripe of mirrors
 		combines raid 0 and raid 1
-		need a t least 4 drives, files are striped across drives and then mirrored
+		need at least 4 drives, files are striped across drives and then mirrored
 
 Software RAID - built into OS, doesn't require special hardware, usually lower performance than hardware.
 

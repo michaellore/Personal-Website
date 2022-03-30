@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T10:12:36-04:00
+
+====== 2.1 – Summarize the importance of physical security measures ======
+
+Mantrap - one at a time, controlled groups. managed control through an area. Small area with two doors - only one door can open at a time.
+
+Door access controls
+	Conventional lock and key, deadbolt
+	Electronic, pin
+	Swipe card, key fob
+	Biometric, fingerprint, retina
+	Multi-factor - fingerprint and pin, etc
+	
+Tokens and cards
+	smart card - integrates with devices, may need a PIN
+	usb token - certificate on usb device
+	Hardware and software devices tat generat eone time tokens
+	Your phone - sms with code
+
+Security guard - physical protection, validates ID, guest access
+
+ID badge - name, picture, employment info
+
+Access list - list of names allowed in
+
+Biometric - validating a physical part of you
+	usually a fingerprint
+	Difficult to change
+	used in very specific situations - not foolproof
+	
+Cable lock
+	temporary security, physical tether to a solid object
+	most devices have a standard notch connector
+	pretty thin, can be cut rather easily
+
+Locking cabinet
+	Data center hardware often managed by different groups
+	Racks installed side by side
+	
+USB locks
+	prevent access to usb port
+	secondary option after disabling in BIOS/OS
+	relative simple - defense in depth, defense in layers
+
+Privacy filter
+	goes over screen of laptop
+	very narrow angle of view to block out your screen
+	
+	

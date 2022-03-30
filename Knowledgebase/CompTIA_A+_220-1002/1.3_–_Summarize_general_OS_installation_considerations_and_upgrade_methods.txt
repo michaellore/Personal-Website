@@ -1,0 +1,118 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-28T12:41:31-04:00
+
+====== 1.3 – Summarize general OS installation considerations and upgrade methods ======
+
+You need a boot media
+	USB Drive - must be bootable and supported by computer
+	CD/DVD - common, but not all computers have drives
+	PXE (Pixie) Preboot execution environment - perform install over the network, common in enterprise
+	Netboot - similar to PXE, used for macOS
+	Solid state / hard drives - can store many OSes for installation
+	External/hot swappable - some can mount an ISO to make the computer think it is a DVD image - boot from usb
+	Internal drive - create and boot from a new partition on your internal drive
+
+Unattended installation - answer prompts in a file (unattend.xml) and install with no interruptions
+
+In place upgrade - upgrade while maintaining apps and data
+
+Clean install - wipes the slate clean. Migration tools can help backup and restore
+
+Image - deploy a clone of the os on every computer
+
+Repair install - fixes issues with the windows OS does not modify user files
+
+Multiboot - run multiple os on same computer, choose on startup
+
+Recovery partition - hiddne partition with install files, used with repair to fix problems without needing original media
+	Refresh/restore option on windows 10
+
+Disk partition - separates physical drive into logical pieces - keep data separate
+	Partition for each OS
+	Formatted partition called a volume in Windows
+	
+	MBR style - master boot record, old standard
+		primary - bootable, max of 4 primary partitions per disk, one marked Active to boot by default
+		extended - one per disk, can contain additional logical partitions which aren't bootable
+			Partitions are referred to by a drive letter
+	
+	GPT - GUID partition table
+		globally unique identifier
+		newest standard
+		requires UEFI bios or bios compatibility mode - bios compatibility mode disables SecureBoot
+		128 partitions per device
+		no need for extended partitions or logical drives
+		
+	Partitioning is the first step in preparing a new disk
+		may already be partitioned - existing partitions may not be compatible
+		Serious potential for data loss - changing, rmeoving or deleting partitions can delete data
+
+Storage types - layered on top of the partition and file system
+	
+	Basic disk storage
+		available in dos and windows versions
+		primary/extended partitions, logical drives
+		can't span separate physical disks
+
+	Dynamic disk storage
+		modern windows
+		span multiple disks across one large volume
+		split data across physical disks (striping)
+		duplicate data across physical disks (mirroring)
+		
+File system - partition must be formatted
+	Common are Fat32 and NTFS
+	Windows can read FAT, FAT32, NTFS, exFAT
+	
+	FAT - file allocation table - old, one of the first pc filesystem
+	FAT32 - larger volumes 2TB, max file size of 4GB
+	exFat - Extended file allocation table - flash drive file system, supports larger files
+	
+	NTFS - NT file system
+		improves over fat32
+		larger volumes and file size support, quotas, file compression, encryption, symbolic links, better recoverability
+	
+	CDFS - compact disk file system
+		ISO 9660 standard
+		All os can read the CD
+	
+	Ext3 - third extended file system, common used by Linux
+	ext4 - fourth extended file system, update to ext3, seen in Linux and Android
+	
+	NFS - network file system
+		access files across the network as if they were local
+		clients available on many os
+	
+	HFS+ - hierarchical file system, aka mac os extended
+		replaced by apple file system (APFS) in mac os high sierra (10.13)
+
+Swap partition - memory management
+	frees up memory by moving unused pages to the disk
+	copies back to Ram when needed
+	usually a fast drive or ssd
+
+Quick format - creates new file table, doesn't erase data, no physical health checks
+	default formal in 7/8/10
+	diskpart command does full format
+
+Full format - writes zeroes to the whole disk
+	data is unrecoverable
+	checks disk for physical bad sectors - time consuming
+	
+**Installing and upgrading Windows**
+	know what info is on the drive - remember to backup important files
+	partitioning and formatting occur during install
+	make sure you meet minimum reqs - windows 10 upgrade checker
+	know drive/partition info and have license key ready
+	
+	upgrade - keep files in place, start setup from inside existing OS
+	install - start over fresh, setup from boot
+	upgrades can save a ton of time by keeping user configs and program installs in place
+	
+	You can't upgrade from 32 to 64 bit, need to use a migration tool for that
+{{.\pasted_image.png?width=800}}
+{{.\pasted_image001.png?width=800}}
+
+After installing, you will want to run updates to get security patches, driver updates, etc
+

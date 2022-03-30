@@ -1,0 +1,235 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-29T14:01:26-04:00
+
+====== 1.9 – Use features and tools of the Mac OS and Linux client/desktop operating systems ======
+
+**MacOS**
+	MacOS scheduled backups - Time Machine
+		Hourly backups for last 24 hours
+		Daily backups for last month
+		Weekly backups for previous months
+		Deletes oldest backups when disk is full
+		Familiar Finder UI - dates along right side
+		If time machine is unavailable macOS takes snapshots and when Time Machine is available it is updated
+	
+	Scheduled disk maintenance
+		Disk utility
+		Rarely needed, no ongoing maintenance
+		First Aid - similar to windows check disk
+	
+	Centralized updates for both the OS and apps in the App store
+		Automatic - but can do manually
+		Patch management - view previous updates
+	
+	Driver/firmware updates are mostly invisible - designed to be hidden from user
+		Can see some info in System Information - read-only
+	
+	MacOS does not have antivirus built in
+		many 3rd party options - make sure to automate virus signature definitions
+		Fewer threats than windows, smaller install base
+		
+	Image Recovery - use disk utility to make a disk image file
+		Apple Disk Image .dmg file
+		Mount on a MacOS system
+			appears as a normal file system, can copy files from image
+		Restore a disk image to a volume
+		File system utilities - verify and repair, modify partitions, erase disks
+	
+	Terminal - command line access, no GUI
+
+	Screen sharing - Integrated into OS
+		also viewed with VNC (Virtual Network Computing)
+		Devices appear in the finder
+			can also access by IP or name
+			
+	Force Quit - stop a frozen ap from executing
+		open with CMD + OPTION + ESC
+		Hold Option key when right clicking app in Dock
+		
+	Mission Control and Spaces
+		Quickly view all running apps
+		Swipe upwards with 3 fingers or CTRL + Up Arrow
+		Spaces - create multiple desktops from top of screen in Mission Control
+	
+	Keychain - password management - all passwords saved here
+		Integrated into OS
+		Website, app passwords
+		Encrypted with 3DES - need login password for access
+	
+	Spotlight - searching within the OS, like windows Search
+		magnifying glass in upper right
+		Command+Space
+		define categories in System prefs / Spotlight
+	
+	iCloud - integrates apple hardware across macos and ios - backup and sync across platforms
+		similar to google drive.dropbox
+	
+	Gestures - more than point and click
+		one, two or three fingers
+		customize in System prefs / Trackpad
+	
+	Finder - central os file manager, file servers, remote storage, screen sharing
+	
+	Remote Disc - use an optical drive from another computer
+		Designed for copying files
+		does not work with audio CDs or video DVD
+		Sharing options in System Prefs
+		Integrated into Finder
+	
+	Dock - similar ot windows taskbar
+		Quick launch apps
+		Active apps have dot underneath
+		Folders can be in the dock
+	
+	Boot Camp - dual built into Windows on Mac hardware
+		Requires Apples device drivers
+		Managed through boot camp assistant
+
+**Linux**
+	Many different ways to perform tasks
+	
+	Scheduled backups - command line and graphical
+		tar - tape archive, easy to make a script for a backup schedule
+		
+		rsync - sync files between storage devices
+			instant or scheduled
+
+	Very little disk maintenance required
+		Check file system - file system can't be mounted
+			done after X numbe rof reboots
+			Force after reboot by adding a file to root with command:
+				sudo touch /forcefsck
+		Clean up log files in /var/log/
+
+	System update utilities
+		apt-get, yum commands
+		graphical update manager "software updater"
+		Patch management - can schedule updates
+		Software Center "linux app store"
+		
+	Many drivers are built into the kernel and update with the kernel
+		Other drivers are installed through software updates or command line
+	
+	Fewer viruses than Windows generally, but still important
+		ClamAV - open source
+		always keep signatures up to date
+		real time protection is best
+	
+	Backup tools may be built into the distribution - check docs
+		often there is a GUI with scheduling
+		command line always available - rsync
+	
+	Image recovery not as robust as in Windows, but some exist
+		dd command built into Linux
+			convert and copy a file
+			backup and restore an entire partition, very powerful
+		3rd party, GNU parted, clonezilla
+		
+	Screen sharing might be built into distro, or third party
+		Remmina, UltraVNC
+
+**Basic Linux Commands**
+	commands are similar in Linux and MacOS
+	
+	man <command> for help
+		man grep
+	
+	ls - list directory contents, dir in windows
+		ls -l for long output
+			ls -l | more to make pages
+			q to quit or CTRL + C
+	
+	cd - change directory - uses forward slash / instead of backslash \ like Windows
+	
+	grep - find text in a file or many files
+		grep PATTERN [file name]
+			grep failed auth.log
+			is case sensitive
+	
+	su/sudo - run command as root user
+		su - become a super user
+		sudo - execute one command as super user
+	
+	shutdown - shut the system down safely in software
+		sudo shutdown 2 - shutdown in 2 minutes
+		sudo shutdown -r 2 - shutdown in 2 minutes then reboot
+		crtl+C or shutdown -c - cancel shutdown
+	
+	pwd vs passwd
+		pwd - print working directory, by default terminal shows a ~, ~ is short for working directory
+		
+		passwd - change a user account password
+			passwd [username]
+
+	mv - rename a file
+		mv SOURCE DEST
+			mv first.txt second.txt - renames first.txt to second.txt
+	
+	cp - copy a file
+		cp SOURCE NEWFILE
+			cp second.txt third.txt
+	
+	rm - remove a file or directory (delete)
+		Does not remove directories by default - must be empty or removed with -r flag
+			rm second.txt
+	
+	mkdir - make a new directory
+		mkdir NAME
+	
+	chmod - change mode of a file system object
+		r = read permission
+		w = write permission
+		x = execute permissions
+		set permissions for owner (u), group (g), others (o) or all (a)
+			can use octal notation
+			{{.\pasted_image.png}}
+			chmod MODE FILE
+				__chmod 744 file.txt__
+					gives owner full [7] [rwx]
+					gives group read only [4] [r--]
+					gives others read only [4][r--]
+				__chmod a-w first.txt__
+					all users [a] no writing [w]
+				__chmod u+x first.txt__
+					owner [u] can execute [x]
+
+	chown - change file owner and group
+		sudo chown [OWNER:GROUP] file
+			sudo chown mike first.txt
+	
+	iwconfig - view and change wireless network config
+		essid, frequency/channel, mode, rate - requires knowledge of the network
+			iwconfig eth0 essid studio-wireless
+	
+	ifconfig - view and configure a wired network interface and IP config
+		ifconfig eth0
+		slowly being replaced by ip and ip address command
+	
+	apt-get - advanced packaging tool
+		handles unstalling and updating software packages
+			sudo apt-get install wireshark
+			
+	ps - view current running processes with process ID PID
+		ps - view user processes
+		ps -e | more - see all running processes on computer with pages
+	
+	vi - visual mode editor with fullscreen, copy and paste
+		vi FILE
+		insert text with __i TEXT__ - exit insert mode with ESC
+		save (write) file with __:wq __
+
+	dd - convert and copy a file - backup and restore a partition
+		dd if=<source file> of <target file> [options]
+		To create a disk image:
+			dd if=/dev/sda of=/tmp/sda-image.img
+		To restore, simply reverse
+			dd if=/tmp/sda-image.img of=/dev/sda
+	
+	killall - terminate programs
+		sudo killall firefox
+		xkill - graphical interface for kill
+		kill <pid> kill by PID
+		 
+
+

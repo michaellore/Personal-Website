@@ -14,7 +14,7 @@ Azure Marketplace - connects you with software vendors that provide solutions th
 * [[+Azure Architecture Fundamentals|Azure Architecture Fundamentals]]
 * [[+Choosing Azure Tools|Choosing Azure Tools]]
 * [[+Tools for Monitoring Azure|Tools for Monitoring Azure]]
-* [[Protect Against Security Threats on Azure]]
+* [[+Protect Against Security Threats on Azure|Protect Against Security Threats on Azure]]
 * [[+Secure network connectivity on Azure|Secure network connectivity on Azure]]
 * [[+Building a cloud governance strategy on Azure|Building a cloud governance strategy on Azure]]
 * [[+Privacy, Compliance, and data protection on Azure|Privacy, Compliance, and data protection on Azure]]

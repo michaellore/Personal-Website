@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T15:21:07-04:00
+
+====== 2.10 – Configure security on SOHO wireless and wired networks ======
+
+Change your SSID from the default, or disable broadcasting entirely
+	easily found through wireless analysis
+	security through obscurity
+
+Wireless encryption very important - anyone can listen in
+	everyone gets the password - only allowed users can decrypt the info
+
+Use as low-power a signal power as you can without negatively affecting performance
+
+WPS - wifi protected setup (originally wifi simple config)
+	allows easy device setup
+	pin on access point entered on device
+	push a button on access point
+	NFC
+	USB - no longer used
+	Dec 2011- wps hack
+		pin is 8 digit number, 7 digits and a checksum
+		two parts, 4 digit and 3 digit
+		only 10000 combos in first half, 1000 in second - only takes 4 hours to go through all possibilities
+			most devices have a lockout function
+
+Change default username and password for routers and access points
+	credentials provide admin access!
+
+Limit access to network by hardware MAC address
+	easy to find allowed mac through wireless analysis
+	can be spoofed
+	security through obscurity - once you know a working mac it is not useful
+
+A static IP is not a security technique.
+
+SOHO firewalls are often combined with router in one device. Keep firmware up to date.
+
+Firewall settings - extensive filtering
+	allow only required traffic
+	port forwarding
+	outbound traffic - blacklist - allow all, block unwanted
+					- whitelist - block all, allow only wanted traffic
+
+Disable physical ports and interfaces that aren't needed. 
+
+NAC - network access control - even if you are plugged in you need to provide credentials
+
+Content filtering - block sensitive or inappropriate data
+	parental controls, block disallowed sites
+
+Physical security important too - lots of security is bypassed with physical access
+

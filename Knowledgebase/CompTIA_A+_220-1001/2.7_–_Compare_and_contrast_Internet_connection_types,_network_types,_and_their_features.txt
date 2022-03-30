@@ -29,7 +29,7 @@ LAN - local network, building or group of buildings, high speed
 
 WAN - wide area network - spans the globe, generally slower than the LAN
 
-PAN - perosnal area network - your own private network, bluetooth, IR, NFC
+PAN - personal area network - your own private network, bluetooth, IR, NFC
 
 MAN - metropolitan area network - larger than lan, smaller than wan, network in a city, often run by local govt
 

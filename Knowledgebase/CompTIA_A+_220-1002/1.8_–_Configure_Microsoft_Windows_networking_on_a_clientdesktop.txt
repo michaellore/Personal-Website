@@ -1,0 +1,126 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-29T12:53:12-04:00
+
+====== 1.8 – Configure Microsoft Windows networking on a client/desktop ======
+
+Homegroup vs Workgroup vs Domain
+
+Homegroup - designed for home use - share within your home private network
+	Removed from Windows 10
+	Network must be set to "Home"
+	Single password for the all the device son the homegroup to access media
+
+Workgroup - logical groups of network devices, each device is a standalone system, everyone is a peer - could mean different logins for each different system in the group
+	Small departments
+	Each computer has its own user info
+	Not Centralized
+	Control Panel / System
+
+Windows Domain - business network, centralized authentication and access across many devices and networks
+	Active directory domain services
+	Designed for enterprise
+	User accounts are centralized
+	devices added to the domain
+	Deploy software, updates
+	Need to be on Windows Pro or higher
+	Control Panel / System / Change settings / Join domain by clicking Network ID
+	
+Windows Network Technology
+	Windows 7 - automatically change security settings based on what network you are on
+		Home - trusted
+		Work - can see other devices, can't join a homegroup
+		Public - you are invisible to external devices
+	
+	Windows 8/10
+		Private - sharing and connections
+		Public - no sharing
+		Network and internet status - change connection properties
+
+Remote Access
+	Remote assistance - windows home
+		one time remote access - single use passwords
+		chat, diagnostics
+	
+	Remote Desktop Connection - non-home windows
+		ongoing access
+		local authentication - normal user/pass
+		may need port forwarding
+
+Proxy
+	Manage traffic flow - internet middleman
+	Internet properties / LAN settings
+	Can set proxy server and exceptions
+
+Network shares - make a folder sharable across network
+	assign a map drive letter to the share - reconnect automatically
+	Shares ending with $ are hidden but you can connect manually - not for security
+	CP / Admin tools / Computer management
+	Access a share -> This PC - map network drive
+		net use x: \\server\sharename
+
+Printer share - similar to file share
+	Users can add in windows explorer - search for a printer
+
+Network Setup - CP / Network and Share
+	Set up new connection - use wizard
+	VPN concentrator - creates a secure tunnel between your device and a corporate or secure network
+		connect to vpn instea dof directly to the secure network
+		Built in VPN client - after configuring you can connectusing network status icon in taskbar
+	
+	Dialup - Modem phone line connection
+		authenitcation and phone number
+	
+	Wireless WiFi
+		Network name - SSID Service Set ID
+		Security type - WEP, WPA2
+		Encryption - TKIP, AES
+		Security key - pre-shared password
+			WPA-2 Enterprise uses 802.1x auth - uses normal password instead of preshared
+	
+	Ethernet - direct, fastest connection, used as the default 
+	
+	In adapter properties can set IP and DNS
+	
+	Wireless WAN - built in mobile tech
+		Hardware adapter
+		Phone tethering or hotspot
+
+Firewall should always be enabled - can tmep. disable for troubleshooting
+	change settings for public/private networks
+	turn on and off notifications
+	Allow/disallow specific apps, port numbers
+	Choose from predefined exceptions, or define custom rules
+	
+Windows IP Address Config
+	Uses DHCP by default - automatic IP provisioning
+	If DHCP does not work
+		APIPA private address is given - link local address
+		169.254.1.0 through 169.254.254.255
+		no internet connectivity, only on local network
+		
+		If APIPA is not wanted, you can manually set an alternative config
+	
+	Static IP - assigned manually - permanent association with device, need to know all specific
+		IP Address - unique on network
+		subnet mask
+		Gateway - route of the subnet to the rest of the world
+		DNS - domain name - resolves ip addresses to names
+	
+	DHCP can assign dynamic or static IP
+	
+	Loopback address is 127.0.0.1 - references local computer
+	
+	Work environments usually have multiple redundant DHCP servers
+	
+Network Adapter Properties
+	Link speed and duplex / Speed and Duplex - adapter card properties - Advanced
+		Auto negotiation does not always work
+	Wake on LAN - computer sleeps until needed, useful for late night updates
+	Quality of Service QoS - prioritize certain traffic like VOIP and video
+		Differentiated Services Code Points DSCP
+			Value assigned to give apps different priority
+			Computer config - windows settings - policy based QoS
+			Arbitrary number value - network admin has a QoS that prioritizes traffic based on configs 
+	
+	BIOS settings - enable and disable adapters, on and off, not much nuance

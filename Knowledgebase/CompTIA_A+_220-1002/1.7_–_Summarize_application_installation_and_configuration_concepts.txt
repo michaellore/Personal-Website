@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-29T12:49:17-04:00
+
+====== 1.7 – Summarize application installation and configuration concepts ======
+
+Applications extend function of the os, found anywhere, usually on the internet.
+Consider: Drive space requirements, RAM (more than just os needs), OS compatibility
+
+Local install - downloaded executable/usb flash/CD, installs on local computer
+
+Network-based - default in most companies, apps are stored and deployed from a central server
+
+Local user permissions - programs need folder/file access that the amdin might have to grant
+	some apps will install new Services or drivers - be careful
+
+Applications have the same permissions as the user - unknown apps can cause issues - delete files, access the network, etc
+

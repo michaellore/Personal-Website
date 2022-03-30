@@ -1,0 +1,106 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-28T12:58:58-04:00
+
+====== 1.4 – Use appropriate Microsoft command line tools ======
+sometimes a command line is all you have available
+standard user and administrator - standard can run most commands but admin is needed for some - type cmd then CTRL+SHIFT+ENTER
+type exist to close
+
+Use 'help' with command for help directory
+	help chkdsk
+	or use [command] /?
+
+dir - lists files and directories
+cd - change directory
+.. - reference folder above current folder
+shutdown - shuts down the computer
+	shutdown /s /t nn - wait nn seconds, then shutdown
+	shutdown /r /t nn - shutdown and restart after nn seconds
+shutdown /a - abort the countdown sequence, do not shutdown
+
+dism - Deployment image servicing and management tool
+	manage windows imaging format WIM files
+	make changes to windows images - update apps, drivers, manage updates, mount an image
+	__/Get-WIMInfo /WimFile:d:\sources\boot.wim__
+		get the info of the WIM file at this location
+		
+sfc - system file checker, scan integrity of all protected system files
+	sfc /scannow - scan system and locate and fix corrupted files
+
+chkdsk /f - fixes logical system errors on disk
+chkdsk /r - locates bad sectors and recovers readable info - much more intensive, does /f first
+	if volume is locked - choose to run during startup and reboot
+
+diskpart - manage disk configuration, list disks, volumes, create new, format
+
+tasklist - displays list of running processes
+
+taskkill - terminate tasks by process id (PID) or image name
+	taskkill /IM notepad.exe
+	taskkill /PID 1234 /T
+		tasklist will show the PID
+		/T to temrinate
+
+Group policy - manage computers in active directory
+	updated at login
+	use gpupdate to force an update
+		gpudate /target:(computer/user) /force
+			gpupdate /target:mike /force 
+			
+	gpresult - verify policy settings for a computer or user
+		gpresult /r - group policy settings for computer
+		gpresult /user sgc/mike /v - policy settings on a rmeote device
+
+format - formats a disk for use in windows
+	can delete data - be careful
+
+copy - copies file to new directory
+	/v - verifies new files are written correctly
+	/y - suppress prompting to overwrite if the file already exists at destination
+		copy /v myfile.txt d:/my documents
+
+xcopy - copies files and directory trees
+	xcopy /s Documents D:\backups
+		copies documents folder and subdirectories to the backups folder
+
+robocopy - robust file copy - better xcopy, can resume copying if it is interrupted
+	robocopy /s Documents D:\backups
+
+**Network command line tools**
+ipconfig - ping local router/gateway
+	tells tcp/ip and network adapter info, DNS info, dhcp server
+	ipconfig /all - even more info
+
+ping - test reachability, determines round trip time, use sinternet control message protocol (ICMP)
+	primary troubleshooting tool
+	performs 4 pings before it stops
+	shows time it tool and time to live ttl
+	TTL counts number of hops between your device and destination ping
+	pinging an ip not on the network will time out
+
+tracert - determine the route a packet takes to its destination
+	map the entire path from source to destination
+	uses ICMP time to live error messages
+	some firewalls will filter the messages, so may not always be the best tool
+		some OSs like linux and macos can use different protocol 
+			iOS sends udp datagrams over port 33434
+{{.\pasted_image.png?width=800}}
+	Tracert can show where in the process the problem is
+
+netstat - network statistics, many different oses
+	netstat -a - shows all active connections
+	netstat -b - shows binaries with inbound and outbound
+	netstat -n do not resolve names, show ip addresses
+
+nslookup - lookup info from DNS servers
+	canonical names, ip addresses, cache timers
+	can lookup by ip address or name
+
+net - specific to windows
+	view network resources - net view \\<servername> or net view /workgroup:<workgroupname>
+	map network share to drive letter - net use h: \\servername\sharename
+	view user account info and reset password 
+		net user <username>
+		net user <username> * /domain
+

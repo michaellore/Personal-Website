@@ -50,9 +50,10 @@ smb server message block, windows file and printer sharing - modern direct SMB o
 	older devices might use netbios - udp/137 for netbios name services
 	udp/138 - netbios datagram service
 	tcp/139 netbios session service
+slp - service location protocol - find services in a LAN - port 427
 Apple Filing protocol - file service in macOS - tcp and udp 548
 DHCP - dynamic host configuration - udp 67 and 68 - automated configuration of ip addresses, addresses can be reserved by MAC address
 LDAP - lightweight directory access tcp/389 - store and receive info in network
-simple network management - queries udp 161 traps over udp 162
+simple network management snmp - queries udp 161 traps over udp 162
 
 

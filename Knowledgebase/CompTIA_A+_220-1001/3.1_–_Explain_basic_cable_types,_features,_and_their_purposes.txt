@@ -10,12 +10,12 @@ most ethernet is twisted pair copper cables - balanced pair operation, two wires
 Cabling is standardized. by multiple orgs. EIA - electronic industries alliance - RS-# or EIA-# standard numbers. TIA - telecom industry association TIA/EIA-568 standard. International ISO/IEC 11801 cabling standard
 
 Copper cable categories
-{{.\pasted_image.png}}
+{{.\pasted_image007.png}}
 
 Plenum is the are aabove the drop ceiling where HVAC and cabling can be run. Cable jacket traditionally made of PVC, cable in plenum can be sheathed ina fire-rated jacket like flourinated ethylrnr polymer (FEP) or low-smoke polyvinyl chloride (PVC). Plenum-rated may not be as flexible as traditional cable
 
 UTP - unshielded twisted pair, no shielding under jacket, most common
-STP - shielded twiste dpair - additional shielding against interference, requires cable to be grounded
+STP - shielded twisted pair - additional shielding against interference, requires cable to be grounded
 U - unshielded, S - braided shielding, F - foil shielding
 
 (overall cable) / individual pairs) TP
@@ -46,6 +46,7 @@ DVI - digital video inerface - single and dual link,
 	DVI-A - analog
 	DVI-D - digital
 	DVI-I  - both
+{{.\pasted_image005.png}}
 
 **Multipurpose Cables**
 

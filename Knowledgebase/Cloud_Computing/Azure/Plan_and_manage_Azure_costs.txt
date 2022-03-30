@@ -13,7 +13,7 @@ Azure reservations  can help you get discounted prices by reserving services by 
 
 Azure Cost Management + Billing is a tool to help break down your costs by resource, and can generate reports and budgets and set appropriate alerts.
 
-Tags cna be applied to resources to help group together costs by department.
+Tags can be applied to resources to help group together costs by department.
 
 VMs can be resized or deallocatted when idle or not needed. This preserves data but shuts down VMs when not needed.
 

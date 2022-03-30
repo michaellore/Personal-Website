@@ -1,0 +1,98 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-28T12:39:18-04:00
+
+====== 1.1 – Compare and contrast common operating system types and their purposes ======
+
+OS controls interaction between the components of the PC and provides a way to interact with the machine. A platform for your applications.
+	File management
+	Application support - memory management
+	Input and output - printers, keyboards, hard drives, usb drives
+	Configuration and monitoring tools
+	
+Microsoft Windows
+	Major market presense
+	Many different versions - Windows 7, 10, Server
+	
+	Advantages:
+		Large industry support - almost every app written for Windows
+		Many OS options - home and business
+		Wide software support
+		Custom hardware options
+	
+	Disadvantages:
+		Large install base = big target for security exploits
+		Supporting so much hardware can be hard to integrate
+
+Apple's MacOS - desktop designed to run on Apple hardware
+	Advantages:
+		Easy to use
+		Extremely compatible
+		Fewer security concerns
+	
+	Disadvantages:
+		Requires Apple hardware
+		less industry support
+		Higher initial hardware cost
+		
+Linux - Free Unix-compatible software system
+	Many different distributions - Ubuntu, Debian, Red Hat/Fedora, many many more
+	
+	Advantages:
+		Free!
+		Wide hardware support
+		Passionate user community
+		
+	Disadvantages:
+		Limited driver suuport - especially laptops
+		Limited support options
+
+Chrome OS - Google's OS, based on Linux kernel
+	Centers around Chrome browser - most apps are web-based
+	many different manufactures, usually cheap because hardwar eis less demanding
+	Relies on the internet/cloud
+
+**OS Technologies**
+32 bit vs 64 bit
+	32 bit processors can store 2^{32 }= 4,294,967,296 values
+		Can only support 4GB of memory
+	
+	64 bit processors can store 2^{64} = 18,446,744,073,709,551,616 values
+		4GB vs 17 billion GB
+		OS has a max supported value
+	
+	Hardware drivers are specific to OS version
+		32-bit uses x86 drivers
+		64-bit uses x64 drivers
+	
+	32 bit OS cannot run 64-bit apps
+		64bit can run 32bit apps
+			32bit apps stored in \Program Files (x86)
+			64 bit apps stored in \Program Files
+
+**Windows on mobile devices**
+	Windows 10 on fully featured tablets
+		Early tablets used a less-featured os called Windows Mobile - dev stopped, no support after December 2019
+
+**Phones**
+	Android - open handset alliance
+		open source OS based on linux
+		Apps developed with Android SDK
+		Apps available on Google Play store and third party sites and stores
+	
+	Apple iOS -  used on iphone and ipad
+		Based on Unix
+		Only on Apple hardware
+		Closed source - no access to source code
+		Apps developed with iOS SDK on MacOS
+		apps must be approved by Apple
+		Apps are in Apple App store
+
+**Choosing an OS:**
+	End of life - different companies set their own EOL policies
+	Updates - iOS, Android, Windows 10 check and prompt, Chrome OS auto updates
+	Compatibility between OSs - some movies and music can be sure
+		Almost no direct app compatibility - Windows apps can't run on Mac
+		Some data files can be shared
+		Web-apps are a potential solution
+

@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T15:09:09-04:00
+
+====== 2.9 – Implement appropriate data destruction and disposal methods ======
+
+Physical destruction
+	Shredder - heavy machinery - total destruction
+	Drill/hammer - quick and easy
+	electromagnetic (degaussing) - removes magnetic field, destroys data drive and electronics
+	incineration
+
+Certificate of destruction - often done by a third party, gives confirmation and a paper trail for data
+
+Disk formatting - low level formatting, provided at the factory not by the user
+
+Quick format - installs boot sector, clears master file table but does not delete data
+	can be recovered
+
+Regular format - overwrite every sector on drive with zeros, can't be recovered
+
+People often forget to format a drive before selling.
+
+If you don't want to format, use a tool like Sdelete to securely delete files and folders
+
+Whole drive wipe - DBAN Darik's boot and nuke
+

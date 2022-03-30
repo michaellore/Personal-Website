@@ -1,0 +1,128 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T10:20:39-04:00
+
+====== 2.2 – Explain logical security concepts ======
+
+Active Directory
+	Centralixed management to limit and control access
+	Login scripts can manage app updates and antivirus
+	Set group policies for complex passwords, login time restrictions
+	
+	Organized in Organization Units
+		Based on locations or departments
+	
+	Home folder - network share as user's home
+		folder redirection - instead of a local folder, redirect to the server
+		Access files from anywhere
+
+Mobile Device Management (MDM)
+	manage company and user owned devices - BYOD Bring your own device
+	Central management of mobile devices
+	set policies on apps, data, camera
+	Control the remote device, set partitions for personal/company data
+	Manage access control - force PIN or password
+
+Port security
+	prevent unauthorized users from connecting to the switch interface
+		Alert or disable the port
+	Monitoring based on Source MAC address
+	Each port has its own config - unique rules for each interface
+		Ex - configure max number of source MAC addresses on interface, disable if exceeded
+
+MAC filtering - media access control "hardware" address
+	limit access through physical hardware address
+	additional admin required - gusts must be manually added
+	Easy to find working addresses through wireless lan analysis
+		MAC address can be spoofed
+		Security though obscurity
+
+Smart card - physical card to provide digital access - a digital certificate
+	Multiple factors - commonly used with a pin or password
+
+Certififcate based Auth
+	Smart card - private key on card
+	PIV card - personal id verification card - US Fed smart card
+	CAC - common access card - US department of defense
+	IEEE 802.1X - gain access using a certificate, on-device storage or a separate physical device
+
+Antivirus and antimalware
+	runs on the computer
+	signatures must be uipdated constantly
+		becomes a scaling issue
+		need to be tracke din large orgs - enterprise management tools
+	mobility adds more challenge
+
+Host-based "personal firewall"
+	Software based
+	included in many OSes, 3rd party solutions
+	Stops unauthorized access
+	"stateful", blocks traffic by app or port
+
+Network firewall
+	filters traffic by port number
+	Next gen firewalls can identify app
+	Some can encrypt your traffic in a vpn tunnel
+	Can proxy your traffic
+	Most can also be a router
+	
+User auth
+	Identifier - unique, in Windows it is a Security Identifier (SID)
+	Credential - password, smart card, pin, etc
+	Profile - info stored about the user, name contact info, groups
+
+Passwords
+	Weak passwords can be brute force donline or offline with a password list
+	Should be complex and refreshed often
+	
+Multifactor
+	something you are - biometric
+	something you have - smart card
+	something you know - password
+	somewhere you are - gps check
+	something you do - signature
+	can be expensive - hardware tokens
+	can be inexpensive - software app token generators
+		pseudo random - changes constantly, can't guess
+
+Directory permissions
+	NTFS
+		much more granular than FAT
+		lock down access
+		prevent accidental mods or deletion
+	User permission
+		not everyone should be Admin
+		may ned to run audits
+
+VPN concentrator
+	encrypt data moving across a public network
+	may be hardware or software
+	Sometimes built in os, or third party
+	
+Data loss prevention (DLP)
+	stop the data before the bad guy gets it
+	so many data sources and destinations, need solutions in different places
+
+Access control list (ACL)
+	allow or deny traffic
+	also used for NAT, QoS
+	often on router or switch
+	incoming and outgoing traffic
+	evaluate based on IP, ports, icmp
+
+Email filtering
+	stop unsolicited email at the gateway - onsite or cloud based
+	scan and block malicious software
+	phishing attempts
+	suspicious attachments
+
+Trusted software source
+	consider the source
+	internal apps, well known publisher, digitally signed apps
+	Untrusted sources - third party sites, links from email, pop ups
+
+Least privilige 
+	Rights and permissions should only get exactly what they need
+	apps run with minimum priviliges
+	Don't allow admin priviliges
+	

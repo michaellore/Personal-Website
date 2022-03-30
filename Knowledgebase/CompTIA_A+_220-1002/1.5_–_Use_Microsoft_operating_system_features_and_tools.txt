@@ -1,0 +1,176 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-28T14:47:49-04:00
+
+====== 1.5 – Use Microsoft operating system features and tools ======
+**Computer Management** - prebuilt management console
+	predefined mix of plugins, Control panel/administrative tools, add whatever you want
+	mmc.exe
+	Add snap-ins to add features to your console, customized panel
+
+**Device manager** - os doesn't know how to speak directly to hardware
+	drivers are hardware and operating system specific
+	devmgmt.msc
+	gives you complete control over hardware - disable, update or rollback drivers
+
+**Users and Groups**
+	Admin - windows super user
+	Guest - limited access if enabled
+	Regular user - starndard access, running apps
+	Groups - Admins, Users, Backup Operators, Power Users - users added to groups have different permissions
+		manage groups instead of individual users
+
+**Local security policy**
+	Big companies have large policies managed through active directory group policies
+	At home you can use local policies - not available in Home editions of Windows
+		Account policies - passwords and lockouts
+			enforce max password age, minimum length, etc
+		Local - auditing, user rights, security options
+		Windows defender firewall
+
+**Performance Monitor** - long term usage stats, Disk use, memory use, CPU use
+	set alerts to monitor and automate actions
+	store statistics for long term analysis and reports
+	
+**Services** - background processes, no user interactions. Services.msc or control panel/admin tools
+	file indexing, antivirus, network browsing
+	many start automatically, can troubleshoot startup issues
+	control on command line with __net start__ and __net stop__
+	can set actions to take when service fails automatically
+
+**Task Scheduler** - schedule an app or batch file Control Panel/Admin tools
+	includes predefined schedules to click and go
+
+**Component Services** - Microsoft COM+ component object model
+	Distributed applications designed for enterprise
+	Manage COM+ apps - event viewer, services
+
+**OBDC Data Sources** - open database connectivity  - Control Panel/Admin tools
+	application independence - database and os doesn't matter
+
+**Print Management** - Control panel / admin tools - not in windows 10 home
+	manage printers - share from one central console
+	add and manage printer drivers
+
+**Memory Diagnostics** - you may be notified automatically or launched manually - control panel/admin tools
+	runs multiple passes to try and find a bad memory module
+	prompts to restart now and check or check later
+
+**Event Viewer** - Central event consolidation for entire system
+	info, warning, error, critical, succesul audit, failure audit
+
+**Windows firewall with advanced security**
+	Stateful firewall - understands and remembers state of traffic flow - blocks unknown traffic that doesn't have an existing rule
+	Windows Defender Firewall - built into os
+	Control panel/windows firewall
+		Advanced settings options
+	
+	Allowed Apps - based on applications as a whole, no detailed control
+		no scope, all traffic applies
+		no security rules
+	
+	Windows firewall with advance dsecurity
+		allows you to define specific inbound and outbound rules
+		granular security - define protocol/ports, scope, action and profile
+
+**System Config** - msconfig or Control panel/admin tools
+	Manage boot processes, startup, services, etc. A one stop shop
+		General Tab - control startup process
+			Normal - normal startup
+			Diagnostic - similar to safe mode
+			Selective - you decide what to load
+			
+		Boot Tab - control boot location, how many processors, max memory
+			create a log file, remove GUI
+		
+		Services tab - enable and disable services, choose which start on boot
+			simple check marks, easier than Services tab
+		
+		Startup tab - choose which prgrams start on login - has been moved to task manager
+		
+		Tools tab - easy access to popular admin tools
+			UAC settings, system info, computer management
+
+**Task Manager** - real time system stats, CPU, ram, disk access, network usage
+	Start with CTRL ALT DEL and choose task manager, right click taskbar, or do CTRL SHIFT ESC
+	
+	Windows 8 and 10 have enhancements over 7
+		Windows 7 has a separate Applications tab and Processes tab
+			Combined into processes tab in newer versions - shows all apps and proceses from all accounts
+	
+	Performance tab shows cpu, memory use, network use, real time graphs.
+		Windows 7 has a separate networking tab 
+	
+	Users tab in widows 7 shows all logged in users
+		In newer Windows it has detailed process info for each user
+
+**Disk Management** - start from Computer management - Storage/Disk Management
+	You can erase Data!!
+	Every disk assigned status 
+		Healthy 
+		Healthy (at risk) - could be failing
+		Initializing - normal startup message
+		Failed - cannot be started automatically, disk is damaged or file system corrupt
+	If in a RAID 1 or 5 array:
+		Failed redundancy - a dirve has failed and must be replaced
+		Resynching - mirrored (raid 1) volume is synching between drives
+		Regenerating - raid 5 is recreating data based on the parity data
+	
+	Mount a drive - Extend available storage space by mounting a new storage device as a folder
+		Mount in a folder - instant space, seamless for the user
+			in disk management - right click, change drive letter, mount in empty ntfs folder
+	
+	If you have partitioned too much space, you can right click, Shrink volume, to create a new volume
+		If you need to make a volume bigger, right click and Extend volume
+	
+	You can mirror volumes by creating two equal volumes, right click on one and New mirrored volume
+	
+	Storage spaces - storage for data centers, cloud infrastructure
+		multiple tiers, admininistrative controls
+		Storage pool - group of drives, combine different drives into a single pool, easily add and remove
+		Storage space - allocate virtual disks from available space in the pool
+			includes options for mirroring and parity
+
+**System Utilities**
+	Run line - start application while typing in the name in the search bar
+	CMD - type name of utility in command line
+	
+	Regedit - registry editor
+		large hierarchical database used by almost everything - configure drivers, sevices, security
+			EX - change notepad default font
+			Always backup before you make changes
+		HKEY - handle to registry key
+			classes_root, current user, local machine, users, current config
+	
+	Services - useful for controlling background apps, revealing dependencies between apps
+		Ex - Fax service depends on the Print Spooler service - check Dependencies tab in properties
+	
+	Management console - mmc in command line
+		Add snap ins to build custom console for system admin
+	
+	Microsoft terminal services client - mstsc in command line
+		remote desktop connection, access another computer
+		common to work on "headless" servers
+	
+	System information - msinfo32
+		breakdown of hardware and software running on computer
+	
+	DirectX diagnostic tool - dxdiag
+		Shows directX info, usually for graphics and audio troubleshooting
+	
+	Defrag - disk defragmentation
+		moves scattered file fragments together so they are contiguous
+		improves read and write on HDD
+			not used on SSDs
+		requires admin privs on cmd, graphical in drive properties
+			defrag <volume>
+	
+	System Restore - restore points for backups before big changes
+		Use restore point on boot with F8 - Advanced boot options - recovery
+		Control panel / Recovery
+		Reverts os install to the previous setting
+		does not always remove viruses
+	
+	Windows Update - built in update service, can be automatic or manually used
+	
+

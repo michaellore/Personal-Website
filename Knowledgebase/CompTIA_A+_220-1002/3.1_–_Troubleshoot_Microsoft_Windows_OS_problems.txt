@@ -1,0 +1,149 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T15:38:31-04:00
+
+====== 3.1 – Troubleshoot Microsoft Windows OS problems ======
+
+**Common issues:**
+	Slow System performance - hard to troubleshoot, many causes
+		Task manager- check for high cpu use and hard drive utilization
+		Windows update - an update could fix it
+		Disk space - needs enough for windows to read and write, HDD may need defragging
+		Laptop may be in power saver mode to save heat and battery
+		Anti-virus scans can detect malware
+	
+	Limited connectivity - yellow triangle or exclamation point - no internet access
+		check physical connection / connection to wireless
+		check ip address config
+		try a reboot
+		could be an external issue - router is off or needs a reboot
+		try pinging both router and an external ip
+	
+	Boot error - can't find os
+		boot loader replaced or changed - multiple os installed
+		check boot drives
+		try Startup Repair
+		may need to manually modify boot config
+			command prompt recovery console - bootrec /rebuildbcd
+			will look for installed version of windows
+	
+	Startup repair
+		Missing NTLDR - main boot loader is missing
+		run startup repair, disconnect removable media
+		
+		Missing operating system - boot config data may be incorrect
+		boots to safe mode
+	
+	App crashes - app may provide an erorr or disappear
+		check event log
+		check reliability monitor - history of app problems
+		try reinstalling the application
+		
+	Spontaneous shutdowns - blue screen of death
+		bad hardware, drivers, application
+		Use last known good, system restore, or rollback driver
+			try Safe Mode
+		Reseat or remove new hardware
+		Run hardware diagnostics - from manufacturer
+	
+	Black screen - no login/desktop
+		start in VGA mode with F8 on startup
+		Run system file check SFC from recovery console
+		update drivers in safe mode
+		use startup repair/refresh or recover from backup
+	
+	Printer
+		print or scan a test page from inside printer properties
+		Use diagnostic tools built into printer, web based app, or os
+	
+	Hardware not starting
+		check device manager - often a bad driver
+			remove and allow system to replace
+	
+	Service fails to start
+		bad driver, bad hardware
+		check account permissions
+		confirm service dependencies
+		Windows service - check system files
+		Application service - reinstall
+		
+	Slow boot - boot process hangs or takes a long time
+		check what apps are starting on boot
+		or, disable all and add one by one
+		
+		Roaming user profile - your desktop follows you to any computer, changes are synced
+			may be network latency
+			may pick a rmeote domain controller instead of local
+
+**Troubleshooting Solutions**
+	Defragmentation - movies file fragments so they are contiguous, improves read and write times on HDD, not SSD
+		drive properties - Defragment Now
+		scheduled weekly automatically
+	
+	Reboot - sometimes, it just works.
+		app using too many resources
+		memory leak bug can consume all your ram - reboot clears the RAM
+	
+	Kill task - find the problem app and kill it. Task manager - processes
+	
+	Services - similar issues as an app can have
+		restart or stop
+	
+	Network - one config mismatch can cause problems
+		auto mostly works
+		speed and duplex setting - both sides should match, device and switch
+		Check event viewer - driver may not give info
+	
+	Reimage or reload OS - windows is huge
+		can't always find the needle, sometimes just build a new haystack
+		many orgs will have prebuilt known-good images
+		at home you can reset - settings / update & security / recovery
+		
+	Roll back - rewind to an earlier point
+		restore point created during app updates, new installs, other major changes
+		Device drivers can break, roll back on bootup with F8
+	
+	Updates - many issues solved with Windows Update
+		lots of flexibility - install times
+		apps must be updated by you manually
+	
+	Repair application
+		some apps have a repair function to fix missing/corrupted files, registry issues
+	
+	Update boot order
+		Booting from a usb drive - need to put it above primary, every bios is different 
+	
+	Disable startup services/apps - hard to tell what the problem is
+		trial and error
+		task manage, or control panel/admin tools/services
+	
+	Safe mode - windows 7 and 8
+		Press F8 on boot, advanced boot options
+		only necessary drivers get loaded
+		command prompt
+		low-rez vga mode
+	
+	Safe mode - windows 10
+		F8 probably won't work - fast startup, prevents complete shutdown
+		From desktop:
+			Hold down shift key when clicking restart
+			Settings/Update and security/Recover/Advanced startup/restart now
+			or configure in System config  - msconfig
+		
+		interrupt boot process 3 consecutive times and boot options screen will appear
+			Troubleshoot - advanced - see more recovery - startup settings
+
+	Rebuild windows profiles - domain profiles can corrupt
+		Profile service may fail logon - user profile cannot be loaded.  user docs "missing"
+		Delete existing corrupt profile - login with domain admin rights
+		rename \Users\name folder - saves important files
+		Backup user's registry - HKLM\software\Microsoft\Windows NT\CurrentVersion\ProfileList
+			right click and export
+		Delete the existing registry
+			will be rebuilt when user logs in
+		Login with user's login - profile and registry will be rebuilt
+			will recreate \Users\name folder
+		Logout as user, log in as domain admin
+			copy over important files from backup renamed folder
+				only important docs - not all files as they could be corrupted
+

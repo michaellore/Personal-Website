@@ -14,6 +14,7 @@ If no DHCP server found - computer is assigned a automatic private address APIPA
 	169.254.1.0 through 169.254.254.255
 	169.254.0.0/24 through 169.254.255.0/24 are reserved
 	computer is assigned one of these addresses
+	{{.\pasted_image.png}}
 
 If Share is not available
 	server unavailable

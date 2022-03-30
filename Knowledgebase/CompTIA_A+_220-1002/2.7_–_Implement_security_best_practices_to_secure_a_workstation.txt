@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T14:32:18-04:00
+
+====== 2.7 – Implement security best practices to secure a workstation ======
+
+Make your password strong
+	no single words
+	no obvious passwords
+	mix upper and lower, special character
+	at least 8 characters - consider a phrase or set of words
+	set password expiration, require change
+		30, 60, 90 days
+		recovery process should not be trivial 	
+	change default usernames/passwords on infrastructure
+	always require passwords - no blank, no auto logins
+	
+	BIOS/UEFI password
+		supervisor - prevent bios changes
+		user - prevent booting
+
+Automatic lock when system goes unused
+
+Disable autorun in registry - devices automatically start on insert
+	not in windows 7/8/10
+
+Consider changing autoplay.
+
+Restrict user permissions - only give users what they need
+	assign rights based on groups - not per user
+	login time restrictions
+	disable unnecessary accounts like guest accounts
+	disable interactive logins - not all accounts need to login
+	change default username and passwords
+
+Implement a lockout policy for continuous wrong passwords
+	normal for most users
+	can cause issues for service accounts
+	Disable user account when an employee leaves org - may not want to delete immediately
+
+Users and passwords can be managed from active directory
+	add users to domain
+	reset passwords, unlock accounts
+	disable accounts
+
+Full disk encryption - encrypt the entire drive with bitlocker
+Filesystem encryption - EFs, files and folders
+Encrypt removable media
+
+Also backup decryption keys - integrated into active directory
+
+Always keep os and app security patches up to date
+	built into os at home
+	deployment managed in stages at organizations
+	many apps have their own update checker inside the app
+	

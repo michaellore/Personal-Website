@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T14:14:57-04:00
+
+====== 2.6 – Compare and contrast the differences of basic Microsoft Windows OS security settings ======
+
+User and Groups
+	Admin - super user
+	Guest - limited access
+	Standard user
+	
+	Groups
+		power users - gives regular users some more permissions, not as many as admin
+
+NTFS permissions apply for local and network connections
+	permissions inherited from parent objects
+
+Share permissions only apply to connections over the network
+	most restrictive setting wins - deny beats allow
+	
+Administrative shares  
+	hidden shares created during install (C$)
+	local shares are created by users
+	
+	System files and folders
+		C$, ADMIN$, PRINT$
+	
+	view shares with net share command or Computer management / shared folders
+	
+Explicit permissions - set default permissions for a share
+
+Inherited permissions - propagated from parent to child
+	set once, applies to everything underneath
+
+Explicit permissions take precedence over inherited - even inherited deny permissions
+
+User authentication
+	proves you are account holder
+	user/password
+	
+	Single sign on - common in business
+		log in once - access all resources
+		managed through kerberos
+
+Run as admin - special priviliges - edit system files, install services
+	not on by default - have to choose, right click and choose or ctrl-shift-enter
+
+Bitlocker - encrypt entire volume, including the os
+	data always protected even if physical drive is removed
+	Bitlocker to go - encrypted removable usb flash drives
+	
+EFS - encrypting file system
+	encrypt at filesystem level with NTFS - files and folders without encrypting entire os
+	available in pro and higher versions of windows
+	username and password encrypt key - resets make files inaccessible
+	

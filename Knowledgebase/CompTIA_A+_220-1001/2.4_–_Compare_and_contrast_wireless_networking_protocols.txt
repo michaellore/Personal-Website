@@ -18,7 +18,7 @@ Wireless networking 802.11 managed by IEEE standards committee
 	
 	802.11n, update to all, both channels 600Mbit/s, MIMO multiple input/output, multiple antennas for simultaneous traffic, 20 or 40Mhz bandwidth (2 contiguous bonded channels)
 	
-	802.11ac - upgrades over N, 5Ghz band, much larger set of channels with bonding, eight MIMO streams, 866Mbit, 40 mhz bandwidth for 802.11n stations, 80 for 802.11ac stations, 160 optional for bonded channels
+	802.11ac - upgrades over N, 5Ghz band, much larger set of channels with bonding, eight MIMO streams, 866Mbit, 40 mhz bandwidth for 	802.11n stations, 80 for 802.11ac stations, 160 optional for bonded channels
 	
 Frequency - 2.4Ghz, 5Ghz 
 Channels - groups of frequencies, some channels overlap

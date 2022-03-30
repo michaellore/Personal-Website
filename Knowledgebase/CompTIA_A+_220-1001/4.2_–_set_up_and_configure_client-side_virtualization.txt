@@ -34,6 +34,8 @@ Most VM managers have their own virtual internal networks
 	Uses a private IP internally
 	uses NAT to convert to the physical host IP
 	
+**Internal virtual networks are isolated segments accessible by VMs and by the Hyper-V host, while private virtual networks are only accessible to VMs. Private virtual networks are obviously the most secure virtual network type because they never communicate with the Hyper-V host or with the physical network.**
+	
 Bridged network address - VM is a device on the physical network
 
 Private address - VM does not communicate outside of the virtual network

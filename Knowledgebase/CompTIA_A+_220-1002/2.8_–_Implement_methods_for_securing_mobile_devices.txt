@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T14:46:53-04:00
+
+====== 2.8 – Implement methods for securing mobile devices ======
+
+Screen lock - restrict access to device
+	need fingerprint, face unlock, swipe, passcode
+	ios - erase data after 10 attempts
+	android - log in to google account
+
+Built in GPS - find phone on map
+	play sound
+	wipe data remotely
+
+remote backup - backup to the cloud
+	constant - not manual
+	no wires, uses the network
+	restore with one click
+	
+antivirus
+	apple - tightly closed, regulated
+	Android - more open, apps can be installed from everywhere
+	apps run in a sandbox
+
+keep devices up to date with patches and security updates
+	security, os updates
+
+Biometric auth
+	multifactor - facescan and pin
+
+authenticator app
+	psuedo random token generator used during login process
+	used to be physical key - software is more convenient
+
+Encrypt all device data - phone keeps the key
+	iOS 8 and later - your passcode is the key
+
+In android, be careful installing random apk files - sideloading
+	in apple, all apps are curated
+	
+Most phones have no firewall - activity is outbound
+	there are some third party apps, not very used
+	enterprise environments can control mobile apps
+
+BYOD - bring your own device - use personal device for work
+	use a mobile device manager to centralize management
+	set policies on apps, data , camera
+		entire device or make a business "partition"
+

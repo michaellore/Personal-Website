@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T12:20:40-04:00
+
+====== 2.3 – Compare and contrast wireless security protocols and authentication methods ======
+
+All wireless computers are transmitters and receivers, so we must encrypt data
+	One password for all, or everyone gets their own password
+	WPA - wifi protected access, created in 2002, replacement for WEP (wired equivalent privacy)
+		short term bridge between WEP and a successor - runs on existing hardware
+		RC4 with TKIP - temporal key integrity protocol
+			Initialization vector IV is larger and has an encrypted hash
+			Every packet has unique 128 bit encryption key
+			TKIP mixes the secret key with IV
+			Adds sequence counter
+			64 bit message integrity check protects against tampering
+			TKIP deprecated in 2012
+	
+	WPA2 cert began in 2004
+		AES (advanced encryption standard) replaced RC4
+		CCMP (counter mode with cipher block chaining message authentication code protocol) replaced tkip
+			block cipher, 128bit key and 128 bit block size
+			requires additional computing resources
+			Data confidentiality (AES), authentication, and access control
+
+	Configure your security on router/access point
+		open - no password
+		wpa2-personal/psk - everyone uses same password, common at home
+		wpa2-enterprise /wpa2-802.1X - authenticates users individually with auth server (RADIUS, TACACS), multiple factors
+			RADIUS - remote auth dial in user service
+				common AAA protocol, authenticate authorization account
+				central management of auth for user
+				built into most server os
+			
+			TACACS - terminal access controller access-control system
+				remote auth protocol - created to control access to dialup to ARPANET - around a long time
+				
+			TACACS+ - new versiom
+					more auth requests and response codes
+					released as open standard in 1993
+

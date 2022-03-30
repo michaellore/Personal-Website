@@ -18,3 +18,4 @@ General Knowledge:
 
 Specific Certifications:
 	* [[+CompTIA A+ 220-1001|CompTIA A+ 220-1001]]
+	* [[+CompTIA A+ 220-1002|CompTIA A+ 220-1002]]

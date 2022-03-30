@@ -28,6 +28,7 @@ Motherboard expansion slots
 	PCIe - express, has mostly replaced PCI and other expansion types
 		communicates seirally, so slower devices dont slow donw everyone
 		x1, 2, 4, 8, 16, and 32 lanes, pronounced "by"
+		{{.\pasted_image.png}}
 		has had multiple versions with increasing speed support
 		v1 - 250MB/s
 		v2 500MB

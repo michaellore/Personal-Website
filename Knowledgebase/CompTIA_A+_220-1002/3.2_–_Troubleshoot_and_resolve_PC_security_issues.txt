@@ -1,0 +1,68 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-30T16:31:18-04:00
+
+====== 3.2 – Troubleshoot and resolve PC security issues ======
+
+Popups - may look legit, might be malware
+	update your browser
+	check inbuilt block up feature
+	scan foro malware
+
+Browser redirect - instead of going where you expect, browser sends you somewhere else
+	malware common cause
+	use a malware cleaner or better, restore from backup
+
+Security alert and invalid cert
+	look at cert details - check for the lock icon
+		check expire date and domain name
+		may not be properly signed - untrusted cert authority
+
+Netowrk symptoms from malware
+	slow performance - network lockups
+	internet connection issues
+	controls where you go
+	may block you from downloading antimalware and windows update
+	reload os or clean
+
+Malware OS issues
+	renamed/deleted system files
+	encrypted files
+	changed permissions
+	access denied to infected files
+
+System lockup
+	check if completely locked - check caps and numlock indicator lights
+	maybe able to terminate bad apps
+	check logs when restarting
+	maybe a security issue
+	check hardware
+
+Application issues
+	error message, might just disappear
+	check event log
+	reliability monitor gives more info
+	reinstall app
+
+Virus alerts and hoaxes
+	rogue antivirus - may look like real antivirus
+	may require money or subscription to unlock pc
+	often requires specific antimalware program or technique to remove
+
+Email security
+	spam - unsolicited messages
+	advertisements
+	phishing attempts
+	spread viruses through links and attachments
+	spam filters can help
+	
+	Hijacked email
+		infected computers can become spammers
+		receive odd replies - you never sent them an email
+		bounce messages from unknown emails
+		scan for malware
+
+Many errors go undetected - use event viewer
+	can filter to narrow down
+	
+	
