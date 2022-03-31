@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T11:51:08-04:00
+
+====== 4.5 – Explain environmental impacts and appropriate controls ======
+
+Disposal procedures - read material safety data sheets (MSDS / SDS)
+	mandated by OSHA, download from component manufacturer
+	provides all info for disposal of all hazardous - batteries/crts/toner, etc
+		product name, company
+		composition, ingredients
+		hazard info
+		first aid / firefighting measures
+		accidental release/leaking
+		handling and storage
+
+Room control - required temps and humidity for devices
+	high humidity cause condensation
+	low causes static discharge
+	need proper ventiliation - not everything in a closet
+
+Use an uninterruptible power supply (UPS) where you can - protects from black/brownouts, surges
+
+Use power strip/surge protector 
+	noise filters remove line noise - higher Db is better
+	amount of surge protection measured in Joules - higher is better, aim for 600
+	Surge amp ratings - higher is better
+	UL 1449 voltage let through ratings
+		500, 400, 330 volts, lower is better
+
+Enclosures - protect devices in manufacturing area - dust, oil, smoke
+
+Clean with neutral detergents, avoid alcohol on outsdie of cases.
+	use a computer vacuum, maintain ventilation
+	use a compressed air pump
+
+
+

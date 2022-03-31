@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T10:30:42-04:00
+
+====== 3.5 – Troubleshoot mobile OS and application security issues ======
+
+Drops and weak signals prevent traffic flow
+	make sure you connect to a trusted network, if not - use a vpn
+	never trust public wifi
+	tether if you can
+
+Power draining faster than expected
+	heavy app use, increased network use - could be DoS
+	check apps with scanner before install
+	try a clean install if you can't figure it out
+
+Slow data speeds
+	wrong wifi connection
+	over data limit
+	use a wifi analyzer, check network speed
+	check apps for unusualy activity
+
+Unintended bluetooth pairing
+	Remove any unknown device
+	Disable bluetooth when not needed
+
+Leaked info
+	Unauthorized account access
+	determine cause of data breach
+	factory reset and clean install
+	check online data sources - icloud, drive, onedrive
+	check passwords
+
+Unauthorized location tracking
+	run antimalware
+	use offline app scanner
+	factory reset
+
+Unauthorized camera/mic use
+	Confirm apps are legitimate
+	

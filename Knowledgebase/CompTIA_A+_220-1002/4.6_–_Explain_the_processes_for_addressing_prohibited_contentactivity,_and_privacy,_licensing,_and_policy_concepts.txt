@@ -1,0 +1,74 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T12:24:53-04:00
+
+====== 4.6 – Explain the processes for addressing prohibited content/activity, and privacy, licensing, and policy concepts ======
+
+Incident response
+	Identify the issue - logs, in person data, monitoring data
+	Report incident using proper chanel
+	Collect and protect event information	
+
+Documentation
+	available to all
+	gather as much info as possible
+	constant updates, wiki model
+
+Chain of custody
+	maintain integrity
+	Avoid tampering - use a hash
+	label and catelog everything - digital signatures
+	
+Licensing/EULA
+	Closed source/commercial
+		source code is private - end user gets compiled exe
+	
+	Free and open source (FOSS)
+		source code freely available
+		user can compile executable from source code
+	
+	End user licensing agreement
+		determines how software can be used
+	
+	Digital rights management (DRM)
+		manages use of software
+	
+	Personal license
+		designed for home user, single license for single device
+		perpetual one time purchase
+	
+	Enterprise
+		per seat or site license
+		may be installed everywhere
+		often has ongoing or annual costs
+
+PII - personally identifiable infor
+	any data that can identify you - part of company privacy policy
+	common to have it online, easy to forget it is important to protect
+	July 2015 - office of personnel management (OPM), huge breah, 21.5 mil people affected
+	
+PCI DSS - payment card industry data security standard
+	Standard for protecting credit cards
+	Six objectives:
+		1. build and maintain secure network and systems
+		2. protect cardholder data
+		3. maintain a vulnerability management program
+		4. implement strong access control measures
+		5. regularly monitor and test networks
+		6. maintain an information security policy
+
+GDPR - general data protection regulation
+	data protection and privacy for individuals in the EU
+	controls export of personal data
+	individual is in control of data - can request deletion, "right to be forgotten"
+	in site privacy policy
+
+PHI - protected health info
+	health status, record, payments for health care
+	providers must maintain security
+	HIPAA regulations
+
+All orgs should have a set of policies and procedures detailing how tech should be used
+	also should have a set of best practices that should be followed no matter what
+		you need a firewall, strong passwords, etc
+

@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T13:02:33-04:00
+
+====== 4.9 – Use remote access technologies ======
+
+Remote desktop protocol RDP - share desktop remotely ove rport 3389
+	many windows versions
+	connect to entire desktop or individual app
+	Clients for windows, mac, linux, mobile
+
+Telnet - port 23
+	console based view into another device
+	Not encrypted - not great for production systems
+
+SSH secure shell Port 22
+	similar look and feel to telnet, but is encrypted
+
+Third party tools
+	VNC - virtual network computing
+		remote frame buffer (RFB protocol)
+		clients for many os, many open source
+	
+	Commercial solutions
+		teamviewer, logmein
+		screen sharings, file sharing
+		
+Security concerns
+	Microsoft remote desktop - open port 3389 is a big tell. 
+		Brute force attacks are common
+	
+	Third party solutions mostly use a username and passwords
+		many combos are reused across wbesites
+		once you're in, you're in
+			make purchases from user's browser, etc
+

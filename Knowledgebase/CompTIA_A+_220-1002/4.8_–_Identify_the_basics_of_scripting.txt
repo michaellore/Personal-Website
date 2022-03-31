@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T12:52:28-04:00
+
+====== 4.8 – Identify the basics of scripting ======
+
+Scripting can help automate repetitive tasks, you can solve problems remotely and monitor for errors
+	Fast, no typing or delays, no human error
+
+Variables - associate a name with an area of memory. X = 8, y = X+1, y = 9
+	variables have data types
+	Strings - name "mike"
+	integer - whole number, 42
+	floating point - number with decimal, 3.14
+
+Loops - perform a process over and over. Loop a certain number of times or until something happens
+
+Comments - annotate code to tell whats happening
+
+Environment variables - describe os environment
+	location of windows install
+	search path
+	name of pc
+	drive letter and path of user home directory
+
+Batch file - .bat extension
+	run from command line, goes back to DOS times
+	{{.\pasted_image.png?width=800}}
+
+Powershell script - .ps1 extension
+	extends batch files with cmdlets, more functions
+	useful for automating system admin and active domain
+	
+VBscript - .vbs extension
+	General purpose scripting
+	backend web server scripts
+	microsoft office functions
+
+Shell script - scripting in linux/unix command line
+	starts with a sheband or hash-bang #!
+	often has .sh extension
+	
+Python - general purpose language, .py extension
+	popular, broad support
+
+Javascript - scripting inside browser, .js extension
+	adds interactivity to websites
+	it is NOT Java - Java is its own thing
+	
+	

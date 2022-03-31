@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T11:06:00-04:00
+
+====== 4.3 – Implement basic disaster prevention and recovery methods ======
+
+Need to have a plan for disasters
+	Always have a backup
+		Image - bare metal complete backup, an exact copy of everything - recover an entire system
+		File - copy individual files - may need to rebuild the os
+		
+	Critical apps
+		often distributed across multiple servers
+		data stored across databases - sometimes  both in cloud and local
+		All info needed when restoring backup
+	
+	You need a backup but need to be able to restore too
+		do disaster recovery testing - simulate a disaster
+		do periodic audits of your backups
+	
+	UPS - uniterruptable power supply
+		gives you short term power when main power goes out
+		Offline/standby - constantly monitoring main power, switches over when power goes out
+		Line-interactive - can slowly ramp up power during brownout
+		Online/Double conversion - always running, no delay 
+		Some have an autoshutdown feature to turn off devices when battery is low
+	
+	Surge suppresor
+		power spikes diverted to ground
+		storms, sudden outages
+		Noise filters remove line noise
+			Devibel levels, higher Db is better
+
+	Cloud storage - data available everywhere
+		lets you keep data offsite, no tape drives to manage
+		Data not under direct control - needs to be strongly encrypted
+	
+	Account recovery - apps don't work if users can't use
+		Windows domain backups
+		consider multifactor auth methods
+		central admin is good - avoids local accounts, easier to restore
+

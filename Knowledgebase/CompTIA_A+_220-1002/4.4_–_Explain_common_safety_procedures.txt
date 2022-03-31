@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T11:38:29-04:00
+
+====== 4.4 – Explain common safety procedures ======
+
+Power is dangerous - remove power sources before working
+	don't touch if you aren't sure
+	replace entire power supply
+	some devices are very high voltage
+
+Most devices connect to the ground - diverts electrical faults away from you
+	do not rmeove ground connection or connect yourself to ground
+
+Toxic Waste
+	Batteries/UPS must be disposed of at hazardous waste facility
+	CRT - cathode ray tubes - glass contains lead
+	Toner - recycle and reuse, manufacturers provide a return box
+		some offer discount for recycling
+	
+	Mobile devices - wipe data, look into recycling program
+		dispose of at hazardous waste
+	
+	When working - remove jewelry and neck strap badges - get a breakaway
+		Lift with legs, don't lift too much, use equipment to lift
+	
+	Electrical fire safety - use carbon dioxide or FM-200, remove power source
+	
+	Avoid trip hazards - use cable ties
+	
+	Safety gogles when working with chemicals
+	
+	Air filter mask when dusting computers, toner
+	
+	Follow all safety laws and building codes
+
+static electricity - electric that doesn't move
+	discharge is what hurts computers
+	if you feel a shock from touching door - 3500 volts
+	computer harmed with 100 volts
+	
+	Keep humidity high - over 60% helps
+	Use your hand to self-ground - touch exposed metal chassis outside pc
+	keep pc turned off and unplugged
+	Try to touch components by outside edges
+	Use anti-static strap, connect metal part to metal on the pc
+	Put pc on antistatic pad - connect strap to it
+	Use antistatic bags for moving components around

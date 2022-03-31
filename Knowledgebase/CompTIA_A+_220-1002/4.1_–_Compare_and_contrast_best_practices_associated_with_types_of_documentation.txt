@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T10:35:44-04:00
+
+====== 4.1 – Compare and contrast best practices associated with types of documentation ======
+
+Organizations have different policies and procedures. 
+	Downtime notifications, facilities issues
+	Software upgrade - testing, change control
+	Documentation is key - everyone knows policies
+
+Network topology diagram - describes the network layout
+
+Knowledge base
+	external - manufacturer kb, internet communities
+	Internal - institutional knowledge, help desk
+	Searchable	
+
+Security policy must be documented and available - often in a wiki model online
+	Compliance - meeting laws, policies, regulations - industry specific or situational
+		Penalties for not following, fines, firing, imprisonment
+		Scope - domestic and international
+	Sarbanes-Oxley Act (SOX) - public company accounting reform and investor protection act 2002
+	Health Insurance Portability and Accountability Act (HIPPA) - healthcare standards for use of private health info
+	Gramm-Leach-Biley Act of 1999 (GLBA) - disclosure of privacy info from finance orgs
+
+Acceptable Use Policies (WUP)
+	detailed docs on how you can use your companies tech
+		covers internet use, phone use, mobile devices
+		limits legal liability for the org
+
+Password policies
+	complex
+	expire after 30, 60, 90 days or more often
+	Account unlock process - should not be trivial
+
+When someone leaves org, disable instead of delete
+
+Inventory management - record of every tech asset, make and model, purchase date
+	Devices tagged with barcodes, RFID, etc
+

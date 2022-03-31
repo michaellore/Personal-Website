@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T12:44:06-04:00
+
+====== 4.7 – Use proper communication techniques and professionalism ======
+
+Communication is one of the most important troubleshooting skills.
+	Avoid jargons and acronyms - outside of IT might not know
+	Communicate in terms everyone understands
+	Avoid interrupting - listen to the entire explanation of the problem
+		take notes, ask questions, build a relationship
+		especially useful on the phone
+	Clarify customer statements
+		Drill down for details
+		Ask questions - was there an error message or code?
+		Avoid being judgmental
+	Repeat your understanding back to the customer
+	Keep an open mind - obvious problem might not be so obvious
+
+Set expectations - offer different options
+	Repair vs Replace
+	Document everything you can - leave no one in the dark
+	Keep everyone informed - even if nothing changes
+	Follow up afterwards - verify satisfaction
+
+Be professional!
+	Maintain a positive attitude - project confidence
+	Problems can't akways be fixed - provide most hopeful options
+	Attitude has a direct impact on the experience
+	
+	Use appropriate titles
+	you're a teacher - not a warden
+	Make people smarter - help them help themselves
+	You will make mistakes - remember them
+	
+	Be on time
+	Don't allow interruptions
+	apologize for delays
+	Be open and inviting
+		In person - try a candy bowl
+		Phone - no backgrund noise, clear audio, no speakerphone
+	
+	Tech issues can be stressful
+		Don't argue or contradict
+		Always listen and ask questions to diffuse
+		person might just need to vent
+		Always communicate - even with no updates
+		Never take it personally or post on social media
+	
+	Don't minimize customer issues
+		Small problems to you can be big to someone else
+	
+	Maintain confidentiality
+		privacy concerns - be professional and private, you have a lot of access
+		treat people's info how you want yours treated
+

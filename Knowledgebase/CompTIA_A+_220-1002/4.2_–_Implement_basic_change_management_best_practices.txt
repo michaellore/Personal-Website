@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T11:02:35-04:00
+
+====== 4.2 – Implement basic change management best practices ======
+
+Change control - formal process for managing changes
+	avoid downtime and issues
+	nothing changes without following process
+	
+		determine scope and risk
+			may be limited to one server or the whole network - can have dramatic effects
+			how long will change take?
+			Is risk, high, medium or low?
+				Fixes can break other things
+				Is there a risk from NOT changing? - security updates
+				
+		make a plan
+			detailed, technical info - complete picture
+			Schedule with completion timeframe
+			
+		get approval of users
+			end users decide if a change is worth it
+			ideally a formality
+
+		present proposal to change control board
+			app parts of the org are represented
+			some changes may be rescheduled
+			
+		have a backup plan if change doesn't work
+			change may not always go right
+			prepare for the worst
+			some changes can be hard to revert
+			always have backups
+			
+		document the changes
+			everyone needs to know the changes
+			track changes over time
+		

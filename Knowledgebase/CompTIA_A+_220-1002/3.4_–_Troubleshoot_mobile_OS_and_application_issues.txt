@@ -1,0 +1,68 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-03-31T10:14:22-04:00
+
+====== 3.4 – Troubleshoot mobile OS and application issues ======
+
+Dim display - check brightness, replace bad display - backlight issue
+
+Intermittent connection
+	move closer to access point/try different access
+	check wifi is enabled - check security key
+	try hard reset
+
+Broadcast to a TV
+	check app requirements
+	All devices must be on same network
+	Signal strength is important
+
+Nonrespnsive touchscreen
+	Restart device
+		apple - press power, slide to power off | hold down power and volume for 10 seconds
+		android - remove and replace battery if you can | hold down power and volume down
+			some device use different combo
+
+App Issues
+	Restart the phone
+	Stop the app and restart
+	Try updating app
+	
+Unable to decrypt email	
+	Need private keys installed - use mobile device manager
+
+Short battery life
+	bad reception - constantly searching
+	Desable unused features - bluetooth, gps
+	Check if apps are using excell battery
+	Aging battery - only so many cycles
+
+Overheating
+	Will autoshutdown
+	Check app/cpu usage
+	avoid direct sunlight
+
+Frozen device
+	Try soft reset by holding power down
+	May require a hard reset
+	may need a complete factory reset
+
+No sound
+	Check volume settings for phone and app
+	Bad software
+	Try headphones
+	Sound starts then stops - dueling apps, stop one
+
+Inaccurate touchscreen
+	close some apps
+	restart device
+	may need hardware replaced - digitizer
+
+System lockout - too many incorrect attempts
+	iOs - deletes data after 10 attempts - need to restore from backup
+	Android - can also lock, use google login to unlock
+
+App log - most logs are hidden
+	use dev tools - might take researh
+	iOS - Xcode
+	Android - logcat
+	
