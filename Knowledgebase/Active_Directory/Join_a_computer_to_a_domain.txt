@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-06T18:27:11-04:00
+
+====== Join a computer to a domain ======
+
+Log in as a local account on the computer you want to join to the domain.
+
+	* Make sure network settings are correct for server and computers you want to join to domain (for lab, set to static)
+	* Open File Explorer
+	* Right click on This PC, choose Properties
+	* Choose Rename this PC (advanced)
+	* Click the Change... button next to where it says "To rename this computer or change its domain or workgroup
+	* Enter account info of an account on the domain with permission to join computers to the domain
+The PC will be joined to the domain and will show under Computers in AD Users and Computers
+
+{{.\pasted_image.png}}
+
+If a computer falls from the domain:
+	* Log in to the computer as a local user
+	* Open up the Rename this PC (advanced) dialog from the System Properties
+	* Click Change...
+	* Remove the domain
+	* Restart the PC
+	* Log back in as a local account
+	* Re-add the domain - it will prompt you to log in as an account with required permissions
+	* Restart the PC again
+	* Refresh the Computers panel in AD Users and Computers on the server/OU and the PC will appear

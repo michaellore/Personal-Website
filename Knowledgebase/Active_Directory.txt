@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-07T16:43:25-04:00
+
+====== Active Directory ======
+
+Common problems and use cases for Active Directory services
+
+	* [[+Create a new user from an existing user|Create a new user from an existing user]]
+	* [[+Reset a user's password, unlock accounts, disablereenable accounts|Reset a user's password, unlock accounts, disable/re-enable accounts]]
+	* [[:Knowledgebase:Active Directory:Join a computer to a domain|Join a computer to a domain / re-add a computer that has fallen]]
+	* [[+Pinging a domain computer fails|Pinging a domain computer fails]]

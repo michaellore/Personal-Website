@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-07T15:29:43-04:00
+
+====== Pinging a domain computer fails ======
+
+Ping is a useful command line utility to test the connection to another computer or domain. If you are trying to ping a domain computer from the server and the request is timing out, it may be because of firewall rules on the domain computer.
+{{.\pasted_image.png}}
+
+Try these steps:
+
+	* On the domain computer, open up the Advanced Firewall Settings
+	* You will be prompted to log into an admin account
+	* Select "Inbound Rules" in the left panel
+	* Scroll down the list until you find the rule for "Echo Request - ICMPv4-In" - ICMP is the protocol that ping uses
+		* On the VM, this rule is Virtual Machine Monitoring (Echo Request - ICMPv4-In)
+	* On the right panel, select "Enable Rule"
+	* Try to ping again from the server
+{{.\pasted_image001.png}}

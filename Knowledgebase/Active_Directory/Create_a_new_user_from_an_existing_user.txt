@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-07T16:46:57-04:00
+
+====== Create user from an existing user ======
+
+Sometimes you want to create a new user with the same permissions/options as an existing user. 
+	* Open AD Users and Computers from Server Manager -> Tools or Start Menu -> Windows Administrative Tools
+	* Select the user you want to make a copy of.
+	* Right click and select Copy
+	* Fill in the new user account details
+
+This user will have the exact same permissions / be a member of the same groups as the original user.
+
+To check user details on the command line, run the command:
+
+	net user <username> /domain

@@ -42,7 +42,7 @@ Licensing/EULA
 		may be installed everywhere
 		often has ongoing or annual costs
 
-PII - personally identifiable infor
+PII - personally identifiable info
 	any data that can identify you - part of company privacy policy
 	common to have it online, easy to forget it is important to protect
 	July 2015 - office of personnel management (OPM), huge breah, 21.5 mil people affected
