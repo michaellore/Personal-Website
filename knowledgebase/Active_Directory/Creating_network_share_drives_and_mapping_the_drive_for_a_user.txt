@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T11:19:47-04:00
+
+====== Creating network share drives and mapping the drive for a user ======
+
+An important part of business infrastructure is having shared folders across the network. 
+
+	* First, find or create the appropriate folders on the server
+	* In AD Users and Computers, create security groups for each folder and add the appropriate users to them
+		* Open up the user properties, Member Of tab, Add button
+	* Right click on the folder you want to share and select Properties > Security tab > Advanced
+	* Choose 'Disable inheritance', then choose 'Convert inherited permissions into explicit permissions...'
+	* Remove permissions from default groups that shouldn't have them for the folder, such as the catch-all Users group
+	* Press Add > Select a principal
+	* Type in the group name or indiivual user you want to give access and check the appropriate permissions box
+	* Close the dialog box, then go to the Sharing tab in folder properties
+	* Press Share, then select the group/user you just gave permission to and choose the appropriate permission level
+	* Note the Network Path of the folder in the Share tab
+	
+	The folder on the server:
+	{{.\pasted_image.png}}
+	
+
+To map the drive for the user:
+
+	* Ensure the user is logged in to the correct account
+	* Open up File Explorer > right click This PC > Map Network Drive
+		* Or choose Computer in the top bar > Map Network Drive
+	* Direct the user to type in the Network Path of the folder
+		* Or choose Browse and find the folder graphically
+	* Choose a drive letter and ensure the 'reconnect at sign-in' box is checked'
+	
+	The folder on the user's PC:
+	{{.\pasted_image001.png}}

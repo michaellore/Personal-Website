@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-28T14:06:37-04:00
 
 ====== Filesystems ======
-See:[[:Knowledgebase:Operating Systems:Windows:Filesystems| Filesystems for Windows]]
+See:[[:knowledgebase:Operating Systems:Windows:Filesystems| Filesystems for Windows]]
 
 Instructs the os in how to organize files.
 

@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T15:12:30-04:00
+
+====== Deploying software with PDQ Deploy ======
+
+Softwar eis often distributed to computers over the network, without needing to physically access the PC. One tool that can perform this feature is PDQ Deploy. For this lab I've downloaded the free version. 
+
+An available package with the free version is PDF Sam Basic 4.2.12.0. We will install that software on the server and on one of our domain computers.
+
+	* Inside PDQ Deploy, choose Package Library in the left panel and navigate to PDF Sam Basic
+	* Right click on PDF Sam Basic and choose Download Selected > As Standard Package
+		* The software will appear under Packages in the left panel
+	* Choose Deploy > Deploy Once
+		* Here you must choose a computer to deploy the software to
+	* Choose Targets > Active Directory
+		* Choosing Computers will list the computers on the domain
+		* Choosing Container will allow you to choose a specific container and deploy the software to all computers in that container
+	* Choose which computers to deploy the software to, using the > to move them to the Target List, then press OK
+	* Press Deploy Now and the software will be silently installed on the chosen computers
+Here the software can be seen on the user "patty" running on Desktop2.
+
+{{.\pasted_image.png}}
+
+

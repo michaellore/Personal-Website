@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-25T13:12:42-04:00
 
 ====== File and Text Manipulation ======
-See: [[:Knowledgebase:Operating Systems:Linux:File and Text manipulation|File and Text Manipulation in Linux]]
+See: [[:knowledgebase:Operating Systems:Linux:File and Text manipulation|File and Text Manipulation in Linux]]
 
 * __cat__ - view contents of file - __cat myfile.txt__
 	* __-Head__ - show first 10 lines

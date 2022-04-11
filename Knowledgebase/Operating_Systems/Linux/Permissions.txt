@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-26T15:29:13-04:00
 
 ====== Permissions ======
-See: [[:Knowledgebase:Operating Systems:Windows:Permissions|Permissions in Windows]]
+See: [[:knowledgebase:Operating Systems:Windows:Permissions|Permissions in Windows]]
 
 Read - read contents
 write - can write info to a file or folder

@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-09T20:26:42-04:00
+
+====== Restrict user permissions in AD / Delegate Control ======
+
+Often you will want to give an employee certain AD abilities without giving them full access to domain settings, such as allowing a Tier 1 helpdesk employee to reset user passwords while not allowing them to change group memberships or create new user accounts.
+
+	* Open up AD Users and Computers
+	* Right click on the folder you want to delegate control to and choose Delegate Control
+	* Choose Add and enter the name of a user or Security Group to give control to
+	* Choose a task to delegate, such as resetting passwords
+	* To test, log in to a computer as a user that was just given control
+	* Open up AD Users and Computers and find a user profile
+	* Go to the Account tab
+	* Notice that all options besides "reset password" are grayed out
+	* The user can also right click and Reset Password
+	* But if the user tries to Disable the account they are met with an error
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}

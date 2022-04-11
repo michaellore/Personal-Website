@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-25T13:16:18-04:00
 
 ====== File and Text manipulation ======
-See: [[:Knowledgebase:Operating Systems:Windows:File and Text Manipulation|Windows File and Text Manipulation]]
+See: [[:knowledgebase:Operating Systems:Windows:File and Text Manipulation|Windows File and Text Manipulation]]
 
 * __cat <file>__ - view contents of document
 * __less <file>__- similar to windows **more **- better functionality than cat
@@ -23,7 +23,7 @@ Search for file name or word in file:
 	* __grep <term> <file name>__
 	* __grep <term> *.txt__
 
-Same 3 output streams as in [[:Knowledgebase:Operating Systems:Windows:Powershell commands|Windows.]]
+Same 3 output streams as in [[:knowledgebase:Operating Systems:Windows:Powershell commands|Windows.]]
 	* __echo woof > dog.txt__ - redirects text 'woof' into a file dog.txt
 	* __echo woof >> dog.txt__ - appends text instead
 	* __<__ to get input from a file instead of keyboard

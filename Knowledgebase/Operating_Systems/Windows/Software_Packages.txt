@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-28T10:53:36-04:00
 
 ====== Software Packages ======
-See: [[:Knowledgebase:Operating Systems:Linux:Software Packages|Software Packages in Linux]]
+See: [[:knowledgebase:Operating Systems:Linux:Software Packages|Software Packages in Linux]]
 
 Software is usually packaged in a .exe executable file that contains instructions for the computer to run. Created according to Microsofts portable executable PE format.
 

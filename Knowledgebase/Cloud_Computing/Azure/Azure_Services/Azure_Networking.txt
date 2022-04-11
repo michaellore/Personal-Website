@@ -29,7 +29,7 @@ Azure VPN Gateways - all data is inside a private tunnel - 2 types
 		* Active/active - unique public ip for each instance, separate tunnels from on-premises device to each ip address
 ExpressRoute - extend on-premises networks into the cloud over a private connection that doesn't go over the public internet. More reliable, faster, and more secure than a typical connection. 
 
-	Focus on 2 layers of the [[:Knowledgebase:Networking:OSI Model|Osi Model]]. 
+	Focus on 2 layers of the [[:knowledgebase:Networking:OSI Model|Osi Model]]. 
 		* Layer 2 - data link, node-to-node comms on the same network
 		* Layer 3 - network layer 0 address and routing between nodes on a multi-node network
 	

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-29T13:36:03-04:00
 
 ====== Processes ======
-See: [[:Knowledgebase:Operating Systems:Linux:Processes|Processes in Linux]]
+See: [[:knowledgebase:Operating Systems:Linux:Processes|Processes in Linux]]
 
 Programs are applications like Chrome. Processes are programs that are running, you cna have lots of processes for the same program - many Chrome windows.
 

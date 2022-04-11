@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T14:07:43-04:00
+
+====== Set a new Group Policy ======
+
+Often you want to have specific policies in place for certain groups or indviduals
+
+In this case we will apply a policy to Disable Task Manager for all users in the 'Human Resources' organizational unit
+
+	* Open up Group Policy Management
+	* Right click on Group Policy Objects in the left panel and select New, then give it a name
+	* Choose User Configuration > Policies > Administrative Templates > System > Ctrl + Alt + Del
+	* Select Remove Task Manager
+	* Choose Enabled
+
+Now the new policy needs to be enabled for specific users or groups
+	* Drag the policy into the 'Human Resources' OU Folder
+	* Right click the policy inside of the OU folder and choose "Enforced"
+		* This will apply the policy to all users within that OU
+Alternatively:
+	* Click the policy and choose the Delegation tab
+	* Choose Add, and add any specifc users or security groups to apply the policy to them
+
+In our lab we may need to sign out and back in or force an update from the cmd using:
+	gpupdate /force
+
+Now we can log in as our 'patty' HR user and see that the task manager is unavailable form right-clicking the taskbar
+{{.\pasted_image.png}}
+
+We can also see that if we run taskmgr from cmd as Patty that we receive an error
+{{.\pasted_image001.png}}
+
+However, if we run taskmgr from cmd as admin, using an account that is not a member of the Human Resources OU, the task manager appears correctly.
+
+{{.\pasted_image002.png}}

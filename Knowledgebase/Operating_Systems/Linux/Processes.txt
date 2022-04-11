@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-29T13:36:48-04:00
 
 ====== Processes ======
-See: [[:Knowledgebase:Operating Systems:Windows:Processes|Processes in Windows]]
+See: [[:knowledgebase:Operating Systems:Windows:Processes|Processes in Windows]]
 
 Processes have a parent-child relationship. Initial process is init, which has a process id (PID) of 1. Init starts other startup processes.
 

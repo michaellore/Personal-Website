@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-09T20:47:49-04:00
+
+====== Use the Microsoft Account Lockout Tool ======
+
+The Microsoft Account Lockout Tool can give you valuable information regarding user account lockouts and expired passwords.
+
+	* Open the tool and choose File > Select Target
+	* Input the target username
+	* The tool will tell you if the account is locked out, what server did the locking, and when the account was locked
+	* Right click on the event and choose to unlock the account and reset the password from with the Lockout Tool

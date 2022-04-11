@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-09T18:11:13-04:00
+
+====== Adding a printer to the domain ======
+
+	* Assign a static IP to the printer you want to add
+	* Open Print Management in the Server Manager
+	* Right click > Add Printer
+	* Choose the appropriate option - search for a printer already on the network or add one by IP address
+	* Right click on the printer > Properties > Sharing Tab and ensure the printer is shared and give it a share name
+	* Optionally add the printer to the director for it to be listed in AD
+	* Go to Security tab and adjust permissions - remove Everyone and add specific groups
+
+To add the printer as a user:
+
+	* Open control panel > Devices and Printers
+	* Add a printer
+	* Choose "the printer I want is not listed"
+	* Choose "Select a shared printer by name" or "find a printer in the directory"
+	* Enter the printer name in \\ServerName\PrinterName format
+		* if you chose to find the printer in the directory, look for the printer in the search results screen
+	* The printer will be added
+
+Some modern orgs have printer ops in the cloud, where they use an App in the cloud - users log in and see a list of printers they can access and simply click and install.

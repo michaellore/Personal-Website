@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T14:31:26-04:00
+
+====== View all Group Policies for a computer or user ======
+
+Viewing all of the group policies that apply to a particular user or computer is simple.
+
+	* Open Group Policy Management
+	* In the left panel, right-click Group Policy results and choose Group Policy Results Wizard
+	* Choose whether you want to see policies for a user on the current computer or a separate networked computer
+	* Choose the user
+	* View the report
+
+Also can view on the command line with gpresult /r

@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T12:51:28-04:00
+
+====== Remote connection to a network computer ======
+
+There are several ways to rmeotely connect to another user's PC.
+
+Remote Desktop connection:
+	* Connect directly to another PC using your account
+	* This will sign out the currently active user on the remote PC
+
+Remote Registry:
+	* Open the Registry Editor, File > Connect Network Registry
+	* Enter the name of a remote computer
+	* This gives you access to the remote registry where you can make edits without disturbing the active user
+
+C$ Method:
+	* From File Explorer on your PC, edit the address bar to \\<Computer Name>\c$
+	* This gives you access to that Computer's files
+
+Windows Remote Assistance
+	* Screen sharing
+	* Remote user invites you, sends invitation file and generates passcode
+	* You open the invitation file and enter the passcode
+
+Third party tools
+	* Tools like Teamviewer may also be used

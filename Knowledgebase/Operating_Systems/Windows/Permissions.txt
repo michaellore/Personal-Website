@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2021-08-26T15:19:38-04:00
 
 ====== Permissions ======
-See: [[:Knowledgebase:Operating Systems:Linux:Permissions|Permissions in Linux]]
+See: [[:knowledgebase:Operating Systems:Linux:Permissions|Permissions in Linux]]
 
 File and directory permissions assigned using Access Control Lists or ACLs.
 	* System Access Control Lists SACLS - tell windows to use an event log to make a note every time a file is accessed

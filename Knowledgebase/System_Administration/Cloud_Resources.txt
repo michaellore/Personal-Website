@@ -5,7 +5,7 @@ Creation-Date: 2021-09-02T16:36:59-04:00
 ====== Cloud Resources ======
 When decided between different cloud provider options, start small and scale up. Consider geographic regions - data centers further from users will cause more latency.
 
-Different types of cloud services, see [[:Knowledgebase:Networking:Troubleshooting|Network Troubleshooting.]]
+Different types of cloud services, see [[:knowledgebase:Networking:Troubleshooting|Network Troubleshooting.]]
 
 Typical setup:
 A web server provides a website, multiple virtual machines serve it, and are configured to spin up more and shut down as needed for load balancing. Autoscaling. Vms usually connected to a cloud database

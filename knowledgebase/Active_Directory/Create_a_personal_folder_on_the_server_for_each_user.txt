@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-08T11:42:19-04:00
+
+====== Create a personal folder on the server for each user ======
+
+Often you will want to have users be members of groups that all share certain shared folders, such as Reports, Marketing Materials, etc. But users should also have access to a personal folder that is not shared with the group but is still on the server.
+
+First, follow the steps for creating a networked folder outlined in [[Creating network share drives and mapping the drive for a user]]
+
+In this example we have created a Security Group called Personal and added the users 'patty' and helpdesk' to the group, and we have created the Personal folder and given it the correct permissions.
+
+We want this Personal folder to be a 'Home Directory' of sorts for users.
+
+	* Open up AD Users and Computers, find the user you want to give a Personal folder to, and open up their Properties.
+	* Choose the Profile tab
+	* In the Home Folder dialog, choose Connect and select a drive letter
+	* Add the Network Path of the Personal folder on the server, and then add \%username%
+		* \\Server2016\Personal\%username%
+{{.\pasted_image.png}}
+	* On the next sign-in this folder will be created for the user and automatically mapped

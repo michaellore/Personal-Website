@@ -3,7 +3,7 @@ Wiki-Format: zim 0.6
 Creation-Date: 2022-03-12T14:38:05-05:00
 
 ====== Cloud Types and Benefits ======
-See [[:Knowledgebase:Networking:Troubleshooting|Network Troubleshooting]] for some more info
+See [[:knowledgebase:Networking:Troubleshooting|Network Troubleshooting]] for some more info
 
 public cloud - pay for what you use, quick provisioning
 private cloud - own hardware, complete control, company responsible for maintenance
