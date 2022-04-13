@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-12T16:37:02-04:00
+
+====== Homelab ======
+
+A comprehensive virtual environment hosting a Windows Server 2016 VM with multiple client VMs running Windows 10 on Virtualbox. As I've been working towards advancing my career in IT, this project has been instrumental in getting me job-ready. Through this project, I've learned:
+
+	* Active Directory domain services, including managing user accounts and Group Policy
+	* Joining client computers to the domain and configuring the virtual network to allow them to communicate
+	* Configuring networked printers and shared folders
+	* Using PDQ Deploy and Inventory to remotely deploy software from the server and check the status of domain computers
+	* Familiarity with using the command line
+	* I've documented some of these processes in my [[:knowledgebase:Active Directory|Knowledgebase]]
+
+I'm looking forward to expanding the lab to learn Powershell and SQL, along with adding new machines to become more familiar with Linux and MacOS.
