@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-14T16:35:33-04:00
+
+====== Consolidate your PC game library with Playnite ======
+tags: [[tags:gaming|gaming]], [[tags:guides|guides]]
+
+If you're like me, you've accumulated a ton of PC games over the years. Between Steam sales, Humble bundles, GOG games, Twitch Prime giveaways, Epic Games giveaways, Ubisoft sales, EA Origin sales and giveaways, massive Itch.io bundles, Indiegala giveaways, and random other sources, I have a library of PC games numbering in the thousands. It can be hard to keep track of what games I have on which platform, and more than once I've almost bought I game that I already owned on a different account. There are solutions to this, of course - you can utilize Steam's "Add a non-Steam game" function to simply add all your games to Steam, or you can keep an Excel spreadsheet manually. These solutions can quickly become unwieldy and tedious, though, if you have a large library and often buy large bundles of games. GOG Galaxy exists, but in my experience it is slow to import my library and often loses connection to my other accounts. 
+
+Enter [[https://playnite.link/|Playnite]]. With Playnite you can connect all of your accounts and import every game you own into one large library, seamlessly installing, launching, and uninstalling your games. You can also add your ROMs and Emulators to your library, which I'll cover in a separate article. It's really easy to get set up.
+
+	* Download and install Playnite from the above link. It's open source and totally safe, but you can check the code over at Github [[https://github.com/JosefNemec/Playnite/|here]].
+	* Launch the program and you'll be greeted by the Integration wizard. You could set up your integrations here, but we want to prepare a bit first. Leave all of the boxes unchecked and continue.
+	* The program will install the IGDB metadata plugin automatically. This will help when we download metadata later.
+	* Next, we'll want to install a metadata plugin for Steam, since this is usually where most of your games reside.
+	* Press F9, or click on the Gamepad icon in the top-right and choose the Add-ons option.
+		* See [[posts:Customize Playnite with Themes and Add-ons|this article]] for configuring some useful Add-ons.
+	* For now, under the Browse tab, choose Metadata Sources and search for Universal Steam Metadata. Install it, and you'll be prompted to restart the program.
+	* Press F4 to open the Settings menu, or press the Gamepad icon and click Settings. 
+	* Ensure the checkbox for "Download metadata for newly imported games" is checked
+	* Close the Settings dialog box
+	* Press the gamepad icon, hover over Library, and press Configure Integrations
+	* Go down the list, logging into your accounts by pressing the Authenticate button. You need to have each respective launcher installed on your PC
+		* For Steam, your Steam profile needs to be public to import your games. You can set this within the Privacy Settings on the [[https://steamcommunity.com/id/me/edit/settings|Edit Profile page on Steam]].
+	* Press Save and your games will begin importing and downloading metadata. If you have a ton of games, this will take a while.
+	* Once completed, press the Grouping Settings button {{.\pasted_image.png}} and choose Library to sort your games by their respective library.
+	{{.\pasted_image001.png}}
+	
+You may notice that some games will appear in multiple libraries, for example if you own a game both on Steam and Epic. That's okay, we'll take care of it with an [[:posts:Customize Playnite with Themes and Add-ons|Add-on in another article]]. 
+
+If you have games that aren't part of another library, such as a downloaded exe file or other DRM-free game, you can also add them to Playnite.
+	* The easiest method is simply dragging the game's executable file onto the Playnite program
+	* You can also press the Gamepad icon, Add Game > Scan Automatically, and point the scanner at the folder containing the game
+	* If metadata for these games don't download automatically, you can right click on the game, press Edit, then press Download Metadata and try searching manually.
+
+Next: [[posts:Customize Playnite with Themes and Add-ons|Customize Playnite with Themes and Add-ons]]
+
+Other articles about Playnite:
+* [[:posts:Add your retro game ROMs to Playnite using RetroArch|Add your retro game ROMs to Playnite using RetroArch]] 
+* [[:posts:Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite|Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite]]

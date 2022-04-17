@@ -6,3 +6,11 @@ Creation-Date: 2022-04-12T17:16:49-04:00
 
 I write sometimes.
 
+filter by tag: [[+tags:gaming|gaming]] | [[+tags:guides|guides]]
+
+All posts:
+
+[[:posts:Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite|[gaming/guides] Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite]]
+[[+Add your retro game ROMs to Playnite using RetroArch|[gaming/guides] Add your retro game ROMs to playnite using RetroArch]]
+[[+Customize Playnite with Themes and Add-ons|[gaming/guides] Customize Playnite with Themes and Add-ons]]
+[[+Consolidate your PC game library with Playnite|[gaming/guides] Consolidate your PC game library with Playnite]]

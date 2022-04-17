@@ -2,9 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2022-04-07T16:43:25-04:00
 
-====== Active Directory ======
+====== Active Directory / Windows Server ======
 
-Common problems and use cases for Active Directory services
+Common problems and use cases for Active Directory services and Windows Server
 
 	* [[+Create a new user from an existing user|Create a new user from an existing user]]
 	* [[+Reset a user's password, unlock accounts, disablereenable accounts|Reset a user's password, unlock accounts, disable/re-enable accounts]]

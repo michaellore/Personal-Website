@@ -1,0 +1,65 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-17T13:40:53-04:00
+
+====== Add your retro game ROMs to Playnite using RetroArch ======
+tags: [[tags:gaming|gaming]], [[tags:guides|guides]]
+Previous: [[Customize Playnite with Themes and Add-ons]]
+
+In previous articles, I covered [[:posts:Consolidate your PC game library with Playnite|merging your separate PC libraries together with Playnite]] and [[:posts:Customize Playnite with Themes and Add-ons|customizing Playnite with Themes and Add-ons]] like achievements and hiding duplicate games. Now, let's take a look at adding some games from consoles like the SNES and Gameboy Advance using the popular emulator frontend, [[https://www.retroarch.com/index.php|RetroArch]]. 
+Here's what you'll need:
+	* Playnite, which you should [[:posts:Consolidate your PC game library with Playnite|already have set up for your PC games]]
+	* A fresh install of RetroArch 
+		* I recommend installing RetroArch in a convenient location, maybe together with your ROM files. I have my copy installed in E:/ROMS/Emulators/RetroArch
+	* ROM files for the console games you'd like to add, with each console's games in their own folder 
+		* NOTE: Downloading game ROMs from the internet is at best a legally gray area. It's best to use files dumped from your own copies of games, which is outside the scope of this article.
+
+RetroArch is notorious for being full of menus, inscrutable settings, and just being hard to use. It's all true, to an extent, so we'll be interacting with the actual RetroArch program as little as possible and will do most of our configuration in Playnite. However, we do have just a bit of work to do inside of RetroArch.
+
+	* Launch RetroArch and select the Load Core option from the main menu
+		* RetroArch defines its emulators as "cores" - for example the popular PSP emulator PPSSPP is a "core" inside RetroArch
+	* Choose Download a Core and you'll be presented with a long list of cores
+	* For this article, I'll be using SNES games as an example. The core Nintendo - SNES/SFC (Snes9x - Current) works best for me, so I'll select that and RetroArch will download and install it
+	* That's all we have to do within RetroArch. We'll handle the rest inside of Playnite.
+
+Now launch Playnite. 
+
+	* Click on the Gamepad Icon > Library > Configure Emulators
+	* At the bottom of the leftmost pane, choose Add
+	* Name the emulator RetroArch, choose the path to retroarch.exe in Installation Folder, and select RetroArch in the emulator specification dropdown
+	* Now we need to add the Snes9x core we downloaded inside RetroArch as a Profile for the RetroArch emulator
+	* At the bottom of the Prolfiles panel, choose Add, then scroll down until you find Built in: Snes9x
+		* In RetroArch, we downloaded the Snes9x - Current core, not any of the Snes9x cores with a year in the name, so make sure you select the profile that is simply "Snes9x"
+	* Playnite should fill in the details automatically, giving the profile the name Snes9x, the platform as Nintendo SNES, and some built in arguments. Leave these alone.
+
+Now we need to add this profile as a "Scanner" for Playnite, so that when we add our ROMs they launch using the correct configuration.
+
+	* Within the same Configure Emulators window, choose the Auto-scan configurations tab
+	* Under the left-side panel, choose Add and select the empty Config that appears
+	* Give the config a nice descriptive name - I chose "SNES (RetroArch)" for mine.
+	* For Scan Folder, choose the directory holding your SNES ROMs. For me, this is E:/ROMS/SNES
+	* For Scan with Emulator, the first dropdown should be RetroArch, and the second should be the Snes9x profile we just created for it.
+	* Leave the rest of the options at their defaults and press Save
+
+We're finally ready to import our ROMs into Playnite. 
+
+	* Click the Gamepad Icon > Add Game > Emulated Game
+	* Choose Add Saved Scanner and select the SNES (RetroArch) scanner we just created
+	* Our created scanner will appear, with the correct settings and ROM path already loaded
+	* Press Start Scan and Playnite will scan the directory for your games and list all the games it finds.
+		* If Playnite doesn't find all your games, make sure the ROMs are named cleanly - just have the game title and an optional region.
+	* Press import and Playnite will add the games to your library and attempt to download metadata for your games.
+		* Metadata can be a little tricky for some games and Playnite can sometimes download incorrect or incomplete data. If this happens, just right-click on a game in your library, choose Edit, then Download Metadata > IGDB. If nothing appears, try changing the search query by removing any special characters or region information.
+	* Once you add multiple consoles, you might want to group your library by Platform, so Playnite will group your games by PC, SNES, GBA, etc.
+
+Now just plug in any controller (or use the keyboard, if you want) and launch a game. The Playnite window will minimize and the emulator window will appear, and RetroArch will automatically configure most controllers. You can use the options in the menubar to make the game window smaller or larger and configure various options within RetroArch. The Playstation Button on a PS4 or PS5 controller and their equivalents will bring up the RetroArch Quick Menu, where you can configure graphics shaders, hotkeys, and other options, that are out of the scope of this article. There's an article [[https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/|here]] that explores Retroarch more in-depth. 
+
+You can configure pretty much any game console to work with Playnite. Just follow the steps above for any core in Retroarch. If you're using a console that isn't in RetroArch, like 3DS, Switch, or PS3, use the Configure Emulators dialog and you can press Import and have Playnite scan the emulator's install folder to set up the options for you. Just set the "emulator specification" field to the emulator you're using, and then set up a Scanner just like we did above with that emulator.
+
+Remember how we added achievement information to our [[:posts:Customize Playnite with Themes and Add-ons|PC games in Playnite using the SuccessStory plugin]]? We can do the same thing with a lot of our Retro games too, using a combination of RetroArch, Playnite, and a great website called RetroAchievements.
+
+Next: [[:posts:Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite|Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite]]
+
+Other articles about Playnite:
+* [[:posts:Consolidate your PC game library with Playnite|Consolidate your PC game library with Playnite]]
+

@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-17T15:14:43-04:00
+
+====== Add Achievements to retro games with RetroAchievements, RetroArch, and Playnite ======
+tags: [[tags:gaming|gaming]], [[tags:guides|guides]]
+Previous: [[:posts:Add your retro game ROMs to Playnite using RetroArch|Add your retro game ROMs to Playnite using RetroArch]]
+
+Now that we've consolidated our PC game library with Playnite, customized Playnite with themes and add-ons, and added some console game support with RetroArch, let's take it a step further and add some Achievement support to those console games as well.
+
+I love achievements. Ever since Sony added the Trophies feature to the PS3 back in 2008 I've loved collected them. It's a great feeling playing through a game and seeing that Trophy Unlocked notification, seeing your achievement totals pile up, and finally getting that elusive 100% completion in your favorite game. Achievements can add hours of replayability to a game and create all new challenges and ways to play for me.
+
+[[https://retroachievements.org/|RetroAchievements]] is a great site that hosts the achievement lists for each game. Not every game has achievements, as they have to be manually coded by volunteer developers, but many popular games do. Currently, almost 4700 games have achievements across the Gameboy, Gameboy Color, Gameboy Advance, Nintendo DS, NES, SNES, N64, Gamecube, PS1, PSP, Genesis, and various other more obscure consoles. Let's get started. 
+
+	* Make sure you have your [[:posts:Add your retro game ROMs to Playnite using RetroArch|Playnite Library configured with your console games]] and RetroArch and have the [[:posts:Customize Playnite with Themes and Add-ons|SuccessStory plugin installed]].
+		* We'll be using the same core as last time - Snes9x Current. Not every core in RetroArch supports achievements. Check [[https://docs.libretro.com/guides/retroachievements/#cores-compatibility|here]] for a list of supported cores.
+	* First, navigate your browser to [[https://retroachievements.org/|RetroAchievements.org]] and create an account.
+	* Navigate to the [[https://retroachievements.org/controlpanel.php|Settings Page]] at My Pages > Settings and note the listed Web API Key
+	* Open up the standalone RetroArch program, by navigate to its install location and choosing retroarch.exe
+	* In RetroArch, navigate to Settings, then scroll down the list until you find Achievements and select it.
+	* Make sure Achievements is toggled to ON then enter your RetroAchievements account username and password
+	* Toggle the rest of the settings to your preference. Hardcore mode will disable save states, rewinding, fast forwarding, cheats, and other emulator features, but will give you double points on the RetroAchievements website.
+Now close RetroArch and open up Playnite.
+
+	* Choose the Gamepad Icon > Add-ons
+	* Choose Extensions Settings > Generic > SuccessStory
+	* Check the box that says Enable RetroAchievements, then click the little > to open up the options
+	* Enter your RetroAchievements username and paste the Web API Key you saved above
+	* Make sure the box for "Show separate view or RetroAchievements" is unchecked
+	* Click the Misc tab, and ensure that "Automatically import data when library is updated" is checked
+	* Press save and close the Add-ons dialog.
+	* Press the Gamepad Icon > Extensions > SuccessStory > Download Plugin data
+	* Choose All and select the box for Only download missing, because we only want to download data for our ROMs, not our PC games that we have already downloaded data for.
+	* It may take a while if you have a ton of ROMs
+	* When it's done, you'll see the achievements box on each game's page if that game supports it. For example, here's my Achievements for Super Mario World (SNES)
+{{.\pasted_image.png}}
+	* Clicking the little star icon brings up an expanded view, just like with PC games
+{{.\pasted_image001.png?width=800}}
+
+	* You can also navigate to Gamepad Icon > Extensions > SuccessStory > View achievements to get a more complete picture of all your achievements across platforms
+
+When you launch a supported game on RetroArch through Playnite, you'll be greeted by a brief overlay confirming you're logged in and achievements are enabled
+{{.\pasted_image002.png}}
+
+If for some reason you launch a game and the achievements do not work even though that game has an achievement list on RetroAchievements, make sure you're using a clean ROM. Patched ROMs, mods, romhacks, and other edits can all change the ROM enough that the achievements don't work.
+
+If you've been following along, we now have a pretty complete library. We've got a consolidated PC library bringing in games from across multiple launchers, we have some add-ons to manage them, we have emulators and console games in one convenient place, and we even have achievements for our console games. All that's left is one important thing: Save Backups! It's so frustrating when a game doesn't utilize cloud saves and uninstalling the game deletes your save. We'll take care of that by using one more simple program and Playnite plugin that handles your backups automatically, and we can even back up our ROM saves, too.
+
+Other articles about Playnite:
+* [[:posts:Consolidate your PC game library with Playnite|Consolidate your PC game library with Playnite]]
+* [[Customize Playnite with Themes and Add-ons]]

@@ -1,0 +1,57 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-16T11:30:13-04:00
+
+====== interview notes ======
+
+tell me about yourself
+	* professionally, have experience working remotely and self sufficiently and in person, most recent work was essentially a research role using data from maps providers. given a search query, evaluate results for relevance and then further evaluate for result accuracy and correct where needed. for example, if query was for a mcdonalds, i'd be given a list of mcdonalds near the query location and would have to research if the address and physical location on the map were correct.
+
+	* Prior, was working in an office doing data entry processing insurance claims, then became team leader
+
+	* personally, try and always be working on something to advance skills, try and learn at least one new thing every day. enjoy sports, reading, video games occasionally, campfires with friends on weekends
+
+strengths
+	* previous jobs required extreme attention to detail and organization, work well in groups - can adjust my role in the group based on whats needed at the time and am easy to get along with, and can work self sufficently with very little direction. learn quickly, thinking outside the box, life experiences have forced me to be creative
+
+weaknesses
+	* can be a bit timid in new groups at first, but once get comfortable im fine, "anticipation anxiety" - get a bit anxious before big events, always turns out fine and it disappears once i get started
+
+
+
+Full Job Description
+Overview:
+Service Desk Technician/Tier 1
+
+POSITION SUMMARY
+
+The Service Desk Technician is primarily responsible for acting as first point of contact for all company support needs and executing basic user support. Other main functions include triaging support requests, creating and tracking tickets, providing basic user training, completing and updating documentation, and completing administrative tasks when required.
+Responsibilities:
+
+INCLUDE, BUT ARE NOT LIMITED TO THE FOLLOWING:
+* Serve as first point of contact for all support issues.
+* Create, update, and manage tickets for all support requests.
+* Assist users with support issues via email, chat, RMM, and occasionally by phone.
+* Document and update solutions and contribute to internal knowledge bases.
+* Triage and escalate more complex issues to tier 2 support and administrators.
+* Provide basic user training where needed. (Ex. browsers, files/folders, Microsoft Office)
+* Communicate effectively and professionally with customers and stakeholders at all levels of the organization.
+* Assist tier 2 support and administrators with other tasks as needed.
+* Contribute to a corporate culture of continual improvement and customer service.
+* Maintain confidentiality of all information; abiding by HIPAA and PHI guidelines at all times.
+
+Qualifications:
+REQUIRED:
+* High School Diploma
+* 6 months – 1 year of experience in a Service Desk/Help Desk role or similar environment
+* Experience providing basic user support and troubleshooting for Microsoft Office/Office 365, SaaS solutions, Windows 10, hardware, peripherals
+* Strong communication and writing skills
+* Strong customer service skills
+* Must be self-motivated and able to troubleshoot issues
+* Must pass background check
+
+PREFERRED:
+* Associate’s degree
+* CompTIA A+ certified
+* 1+ years of working in IT support
+* Previous healthcare/HIPAA experience

@@ -15,8 +15,8 @@ General / Fundamental Knowledge:
 	* [[+System Administration|System Administration]]
 	* [[+Security|Security]]
 
-Tips & Tricks:
-	* [[+Active Directory|Active Directory]]
+Tips & Tricks / Project Docs:
+	* [[+Active Directory|Active Directory / Windows Server]]
 
 Specific Certifications:
 	* [[+CompTIA A+ 220-1001|CompTIA A+ 220-1001]]
