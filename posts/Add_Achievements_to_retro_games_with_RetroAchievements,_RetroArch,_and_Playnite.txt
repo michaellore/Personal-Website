@@ -20,6 +20,7 @@ I love achievements. Ever since Sony added the Trophies feature to the PS3 back 
 	* In RetroArch, navigate to Settings, then scroll down the list until you find Achievements and select it.
 	* Make sure Achievements is toggled to ON then enter your RetroAchievements account username and password
 	* Toggle the rest of the settings to your preference. Hardcore mode will disable save states, rewinding, fast forwarding, cheats, and other emulator features, but will give you double points on the RetroAchievements website.
+
 Now close RetroArch and open up Playnite.
 
 	* Choose the Gamepad Icon > Add-ons
