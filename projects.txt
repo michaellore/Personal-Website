@@ -6,4 +6,4 @@ Creation-Date: 2022-04-12T16:13:08-04:00
 
 In my free time I like working on various projects, either to advance my professional skills, as a creative outlet, or just for fun. [[posts|Sometimes I like to write, too]]. 
 
-* [[+Homelab|Homelab]] - Windows Server / Active Directory
+* [[+Homelab|Homelab]] - Windows Server / Active Directory / Office365 / Outlook

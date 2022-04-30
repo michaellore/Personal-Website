@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T13:40:42-04:00
+
+====== Use command line switches to troubleshoot ======
+
+List of commands: https://support.microsoft.com/en-us/office/command-line-switches-for-microsoft-office-products-079164cd-4ef5-4178-b235-441737deb3a6
+Sometimes Office apps can work incorrectly or glitch, or an add-in can cause an issue. In this case we can run the app in Safe mode and try add-ins one by one.
+	* Type 'run' into the search bar and open the Run dialog
+	* Type outlook.exe /safe to boot into Safe mode with Add-ins disabled.
+
+If your left-side pane gets messed up or misconfigured, or you simply want to reset to default, you can:
+	* Open the run dialog
+	* Type outlook.exe /resetnavpane
+
+If a user wants to reset their categories/color-codes, you can run:
+	* outlook.exe /cleancategories
+
+If a user has a rule that has become corrupted, you can run the following to disable rules:
+	* outlook.exe /cleanclientrules
+
+Users can save their current View settings by choosing Change View>Save Current view as a new view. If a user's view has become corrupted you can run the following to reset the view to default:
+	* outlook.exe /cleanviews
+
+To start outlook with no reading pane, use:
+	* outlook.exe /nopreview

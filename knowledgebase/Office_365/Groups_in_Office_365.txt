@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T18:39:45-04:00
+
+====== Groups in Office 365 ======
+
+Groups cut down on tedium - you can email a group instead of dozens of individual people. Assign permissions to a group and then all members get those permissions.
+Different types of groups for different situations.
+
+Sharing email and calendar - Microsoft 365 group in Outlook / exchange admin
+Collaborate in persistent chat environment / embedded apps - Microsoft Teams
+Large open discussion group - Yammer
+
+When you create a group you can be added as a delegate and send mail as or on behalf of that group.

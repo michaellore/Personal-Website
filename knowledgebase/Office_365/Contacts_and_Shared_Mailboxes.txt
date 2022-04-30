@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T20:28:56-04:00
+
+====== Contacts and Shared Mailboxes ======
+
+Contacts in O365 are created by administrators and are shown under People to all users in Office 365. Useful for people you email often, vendors, etc - can create mail contacts for people outside of your org. Can be added to distribution groups/lists
+
+Shared mailboxes don't have their own username and password - users don't log in directly. Users must be granted permissions to access, then sign into their personal account and access the shared mailbox through that in Outlook.
+
+You create a shared mailbox in Exchange admin and then delegate access to users - they can open that mailbox in Outlook

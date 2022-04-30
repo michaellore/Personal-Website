@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T18:02:39-04:00
+
+====== Working with Exchange admin center ======
+
+Can edit people's info from within Exchange admin center - email, display name. You can hide users from the address book - they won't show up when you type their name in Outlook.
+
+In Exchange admin center, you can add additional email addresses as aliases, set mobile device policies. In the mobile app users can turn off focused inbox and email threads. Can also reset account from the phone if something goes wrong.
+
+Mailbox delegation allows you to send email as another mailbox owner, or to send email on behalf of another mailbox.
+
+When you delegate someones mailbox to you, you can open their mailbox and send/receive email as them. Open Outlook web app > click user top right > open another mailbox

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T20:53:05-04:00
+
+====== Admin Roles ======
+
+Permissions are based on Roles. Roles define what tasks an admin or user can perform. When a role is assigned to a user, that user is granted the permissions provided by the role.
+
+Administrative roles - roles that contain permissions that can be assigned to admins or specialist users that manage a part of Exchange, such as severs or databases
+
+End user - roles that enable users to manage some aspects of their mailboxes and groups
+
+Exchange admin center has some built in role groups, like Compliance, Helpdesk, etc.
+
+Exchange role groups are just for Exchange, Office/MS365 role groups can also grant permissions in Exchange.

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-04-25T20:11:56-04:00
+
+====== Resources in Office 365 ======
+
+Resources are mailboxes assigned to a physical location such as a conference room, or to a piece of equipment that is not location-specific, such as a projector. Users can reserve that room or piece of equipment by including the room mailbox in the meeting request. After creating the room/equipment mailbox, when you are ready to use it, in Outlook:
+
+	* Go to Home>New Items>Meeting, or from the calendar view > New Meeting
+	* In the Required field, add the room you just created
+	* The room finder panel will appear with available dates and times that the room is open

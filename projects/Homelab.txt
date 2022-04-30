@@ -13,4 +13,8 @@ A comprehensive virtual environment hosting a Windows Server 2016 VM with multip
 	* Familiarity with using the command line
 	* I've documented some of these processes in my [[:knowledgebase:Active Directory|Knowledgebase]]
 
+	* Recently added MS Developer Sandbox to practice with Office365/Outlook
+	* Working with Office365 Admin and Exchange Admin
+	* Creating groups, shared mailboxes, meetings
+	* Outlook troubleshooting
 I'm looking forward to expanding the lab to learn Powershell and SQL, along with adding new machines to become more familiar with Linux and MacOS.
