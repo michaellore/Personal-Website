@@ -10,7 +10,7 @@ I'm an Interactive Multimedia graduate from The College of New Jersey working in
 This is my personal website and serves as a repository for my [[Knowledgebase|Personal Knowledgebase]], other [[projects]], random [[posts]], and anything else I find interesting.
 
 Email: mlore95 [at] gmail [dot] com
-[[https://www.linkedin.com/in/mlore/|LinkedIn]] | [[https://github.com/michaellore|Github]] | [[https://www.mhlore.com/files/Michael%20Lore%20-%20Resume.pdf|Resume (pdf, 117kb)]]
+[[https://www.linkedin.com/in/mlore/|LinkedIn]] | [[https://github.com/michaellore|Github]]
 
 --------------------
 Built with [[https://www.zim-wiki.org/|Zim]]
